@@ -35,6 +35,7 @@ Low contrast minimums https://chartability.github.io/POUR-CAF/#__lowcontrast___c
 - Chrome Version 127.0.6533.89 (64-bit)
 - WCAG Color Contrast checker extension
 - Windows 11 Build 22631.3958
+
 *Updated as of: August 2nd, 2024*
 
 ### Notes
