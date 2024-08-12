@@ -1,14 +1,6 @@
 # Bokeh dashboard for accessibility audit
 
-A dashboard with commonly used Bokeh plot elements to be used for the initial audit.
-
-It includes:
-
-- Line, bar, and scatter plots
-- Annotations: Plot title, axes labels, legend labels, legend title, legend rows/columns
-- Hover tooltips
-- Interactive legend with "mute"
-- More to be added soon
+A dashboard with commonly used Bokeh plot elements for an initial accessibility audit.
 
 ## Run the dashboard code locally
 
@@ -26,4 +18,4 @@ Run and the update the code in `dashboard.ipynb`.
 
 ## Deploy dashboard with GitHub pages
 
-Coming soon.
+The final section in `dashboard.ipynb` exports the dashboard as an HTML file ("index.html") at the root of the repository. Check the file into git in the `pages` branch, which is served using GitHub pages. Go to the repo settings to update GitHub pages configurations.
