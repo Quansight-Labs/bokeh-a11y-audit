@@ -1,14 +1,14 @@
 ### Test Type Performed
-Color Contrast.
+Spacing is appropriate.
 
 ### Artifact Evaluated
 [Plot tools](https://docs.bokeh.org/en/latest/docs/user_guide/interaction/tools.html#ug-interaction-tools). Specifically, evaluating the interface icons that are used to access the tools that are in the [scatter plot](https://quansight-labs.github.io/bokeh-a11y-audit/#_ts1723552414769).
 
 ### Results Summary
-Plot tool icons fail minimum contrast. Results are 2.46:1.
+These are fine
 
 ### Expected Behavior (Pass/Fail)
-- *FAIL* - We would expect interactive elements to pass a contrast ratio of either 4.5:1 for text or 3:1 for graphics.
+- *Pass* - Use of white space and other forms of padded, structured spacing should be appropriate. Too much or too little white space on charts with intervals (like a bar chart with thin bars and large gaps or vice a versa) can cause perceivable and understandable issues.
 
 ### Image or Video of Failure 
 <figure>
@@ -18,22 +18,19 @@ Plot tool icons fail minimum contrast. Results are 2.46:1.
 
 
 ### Steps to Reproduce
-Using a dropper tool to gather the color, compare the foreground color against the backgroud color to calculate the contrast score.
-
-In this particular case, we tested the full grey interior pixels of the icon against the full white background (avoiding aliased/partial pixels).
+Measure gap size and element size for repeating, aligned elements. Gaps should not be wider than 50% of element size in cases where elements are laid out in a regular pattern or fashion. At least 1 pixel visual and interactive gap should be provided between interactive elements that are categorically different. For clustering and encodings where non-interactive elements overlap, this test is not relevant.
 
 ### Guidelines and Standards Used
-Low contrast minimums [https://chartability.github.io/POUR-CAF/#__lowcontrast___critical_](https://chartability.github.io/POUR-CAF/#__lowcontrast___critical_)
+Spacing is inappropriate [https://chartability.github.io/POUR-CAF/#__spacingisinappropriate__](https://chartability.github.io/POUR-CAF/#__spacingisinappropriate__)
 
 ### Related Evidence
-(Added if additional evidence has already been gathered for related elements. This will not be edited retroactively, however, due to scope creep. This means that the latest issues will have the most Related Evidence listed.)
+See "Meaningful elements can be distinguished from each other" evidence about borders.
 
 ### Known or Documented Issues
 (If there is already a github issue created for this test or a related test, it will be listed here.)
 
 ### Technical Details
 - Chrome Version 127.0.6533.89 (64-bit)
-- WCAG Color Contrast checker extension
 - Windows 11 Build 22631.3958
 
 *Updated as of: August 2nd, 2024*

@@ -1,14 +1,14 @@
 ### Test Type Performed
-Color Contrast.
+Visual presents seizure risk.
 
 ### Artifact Evaluated
 [Plot tools](https://docs.bokeh.org/en/latest/docs/user_guide/interaction/tools.html#ug-interaction-tools). Specifically, evaluating the interface icons that are used to access the tools that are in the [scatter plot](https://quansight-labs.github.io/bokeh-a11y-audit/#_ts1723552414769).
 
 ### Results Summary
-Plot tool icons fail minimum contrast. Results are 2.46:1.
+Passes.
 
 ### Expected Behavior (Pass/Fail)
-- *FAIL* - We would expect interactive elements to pass a contrast ratio of either 4.5:1 for text or 3:1 for graphics.
+- *PASS* - Plot tools do not pose a seizure risk
 
 ### Image or Video of Failure 
 <figure>
@@ -18,12 +18,10 @@ Plot tool icons fail minimum contrast. Results are 2.46:1.
 
 
 ### Steps to Reproduce
-Using a dropper tool to gather the color, compare the foreground color against the backgroud color to calculate the contrast score.
-
-In this particular case, we tested the full grey interior pixels of the icon against the full white background (avoiding aliased/partial pixels).
+Record screen while using interactive features and elements and then run that through PEAT testing tool. In addition, check against common heuristics from WCAG (number of flashes present on the screen per second, etc).
 
 ### Guidelines and Standards Used
-Low contrast minimums [https://chartability.github.io/POUR-CAF/#__lowcontrast___critical_](https://chartability.github.io/POUR-CAF/#__lowcontrast___critical_)
+Visual presents seizure risk [https://chartability.github.io/POUR-CAF/#__visualpresentsseizurerisk___critical_](https://chartability.github.io/POUR-CAF/#__visualpresentsseizurerisk___critical_)
 
 ### Related Evidence
 (Added if additional evidence has already been gathered for related elements. This will not be edited retroactively, however, due to scope creep. This means that the latest issues will have the most Related Evidence listed.)
@@ -33,7 +31,6 @@ Low contrast minimums [https://chartability.github.io/POUR-CAF/#__lowcontrast___
 
 ### Technical Details
 - Chrome Version 127.0.6533.89 (64-bit)
-- WCAG Color Contrast checker extension
 - Windows 11 Build 22631.3958
 
 *Updated as of: August 2nd, 2024*
