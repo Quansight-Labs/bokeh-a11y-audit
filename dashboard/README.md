@@ -3,7 +3,7 @@
 
 This repository contains assets and artefacts related to Bokeh accessibility audits:
 
-- [A dashboard with commonly used Bokeh plot elements](./dashboard/dashboard.ipynb). This dashboard can be accessed at <https://quansight-labs.github.io/bokeh-a11y-audit/>.
+- [A dashboard with commonly used Bokeh plot elements](./dashboard.ipynb). This dashboard can be accessed at <https://quansight-labs.github.io/bokeh-a11y-audit/>.
 
 ## Run the dashboard code locally
 
