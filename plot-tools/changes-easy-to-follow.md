@@ -12,7 +12,8 @@ Plot tools fail to convey the changes to the chart in a way that lets SR users (
 For example, when interacting with the scatterplot's tabs, there is so clear indication to SR users if their input worked or if changes occured. The tabs also do not note what is currently selected when you renavigate to the "Selected Species" tab. The SR is simply announcing what the user has done, like pressing ENTER. (See video evidence below for example.)
 
 ### Image or Video of Failure 
-<video controls src="plot-tools_changes-easy-to-follow.mp4" title=""></video> <figcaption>A scatter plot is shown. A screen reader is navigating through the chart's dropdown menu, but when an option is selected, the user is forced back to the top of the webpage.  (fails).</figcaption>
+<video controls src="plot-tools_changes-easy-to-follow.mp4" title=""></video>
+A scatter plot is shown. A screen reader is navigating through the chart's dropdown menu, but when an option is selected, the user is forced back to the top of the webpage.  (fails).
 
 
 ### Steps to Reproduce
