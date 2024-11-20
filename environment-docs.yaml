@@ -10,4 +10,5 @@ dependencies:
   - myst-parser
   - pip:
     - sphinx-autobuild
+    - sphinxcontrib-video
     - pre-commit
