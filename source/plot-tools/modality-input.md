@@ -23,14 +23,26 @@ The screen reader TAB focus moves forward to the buttons, but they are not inter
 ## Image or Video of Failure
 
 First video: Mouse-click input. From 00:10-00:15s, a keyboard is used to show mouse incapability.
-<video controls src="assets/plot-tools_modality-input-type_mouse.mp4" title="Title"></video>
+
+```{video} assets/plot-tools_modality-input-type_mouse.mp4
+:width: 100%
+:playsinline:
+```
 
 Second video: Keyboard-only input. From 00:28-00:38s, the tester SHIFT+TABto move backwards back into the scatter plot testing area (continuing to TAB after selecting a specific tool mode brings the user to the top of the page versus staying in the chart space.)
 From 00:43-00:47 the tester is trying to interact in the chart space with the tool, but cannot.
-<video controls src="assets/plot-tools_modality-input-type_keyboard.mp4" title="Title"></video>
+
+```{video} assets/plot-tools_modality-input-type_keyboard.mp4
+:width: 100%
+:playsinline:
+```
 
 Third video: JAWS screen reader input.
-<video controls src="assets/plot-tools_modality-input-type_SR.mp4" title="Title"></video>
+
+```{video} assets/plot-tools_modality-input-type_SR.mp4
+:width: 100%
+:playsinline:
+```
 
 ## Steps to Reproduce
 

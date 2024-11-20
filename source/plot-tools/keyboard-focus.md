@@ -18,18 +18,26 @@ Plot tools fail for minimum contrast and border size for focus indicators. Resul
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A screenshot of 4 blue squares are shown. Above the others is a black square that is highlighted, and says '1x1' pixel (fails)." src="./assets/plot-tools_keyboard-focus.png">
-    <figcaption>A screenshot of 4 blue squares are shown. Above the others is a black square that is highlighted, and says '1x1' pixel (fails).</figcaption>
-</figure>
-<figure>
-    <img width="803" alt="A scatter plot is shown. A plotting tool button is toggled on on the right. The contrast checking score is shown on the bottom left corner (fails)." src="./assets/plot-tools_contrast-interactive_1.png">
-    <figcaption>A scatter plot is shown. A plotting tool button is toggled active on the right. The contrast checking score is shown on the bottom left corner (fails).</figcaption>
-</figure>
-<figure>
-    <img width="803" alt="A scatter plot is shown. A plotting tool button is selected, toggled on, and has a mouse hover on the right highlight. The contrast checking score is shown on the bottom left corner (fails)." src="./assets/plot-tools_contrast-interactive_3.png">
-    <figcaption>A scatter plot is shown. A plotting tool button is selected, toggled "on", and has a mouse hover on the right highlight. The contrast checking score is shown on the bottom left corner (fails).</figcaption>
-</figure>
+```{figure} ./assets/plot-tools_keyboard-focus.png
+:width: 100%
+:alt: A screenshot of 4 blue squares are shown. Above the others is a black square that is highlighted, and says '1x1' pixel (fails).
+
+A screenshot of 4 blue squares are shown. Above the others is a black square that is highlighted, and says '1x1' pixel (fails).
+```
+
+```{figure} ./assets/plot-tools_contrast-interactive_1.png
+:width: 100%
+:alt: A scatter plot is shown. A plotting tool button is toggled on on the right. The contrast checking score is shown on the bottom left corner (fails).
+
+A scatter plot is shown. A plotting tool button is toggled active on the right. The contrast checking score is shown on the bottom left corner (fails).
+```
+
+```{figure} ./assets/plot-tools_contrast-interactive_3.png
+:width: 100%
+:alt: A scatter plot is shown. A plotting tool button is selected, toggled on, and has a mouse hover on the right highlight. The contrast checking score is shown on the bottom left corner (fails).
+
+A scatter plot is shown. A plotting tool button is selected, toggled "on", and has a mouse hover on the right highlight. The contrast checking score is shown on the bottom left corner (fails).
+```
 
 ## Steps to Reproduce
 

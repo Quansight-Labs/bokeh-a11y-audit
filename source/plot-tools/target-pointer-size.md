@@ -18,10 +18,12 @@ Plot tools pass for interactive elements button size. Results are 30 x 30px.
 
 ### Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A screenshot of a interaction plot tool button. The button is highlighted via the command console, and says '30x30' pixels size (fails)." src="./assets/plot-tools_target-pointer-size.png">
-    <figcaption>A screenshot of a interaction plot tool button. The button is highlighted via the command console, and says '30x30' pixels size (fails).</figcaption>
-</figure>
+```{figure} ./assets/plot-tools_target-pointer-size.png
+:width: 100%
+:alt: A screenshot of a interaction plot tool button. The button is highlighted via the command console, and says '30x30' pixels size (fails).
+
+A screenshot of a interaction plot tool button. The button is highlighted via the command console, and says '30x30' pixels size (fails)
+```
 
 ### Steps to Reproduce
 

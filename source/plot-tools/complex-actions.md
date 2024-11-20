@@ -18,7 +18,10 @@ Plot tools fail for standard UI alternatives for custom/complex chart controls. 
 
 ## Image or Video of Failure
 
-<video controls src="plot-tools_complex-actions.mp4" title="Title"></video>
+```{video} ./assets/plot-tools_complex-actions.mp4
+:width: 100%
+:playsinline:
+```
 
 ## Steps to Reproduce
 

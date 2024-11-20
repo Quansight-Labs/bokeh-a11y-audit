@@ -18,10 +18,12 @@ Plot tool icons fail screen reader navigability and perceivability. Elements can
 
 ## Image or Video of Failure
 
-<figure>
-    <video controls src="./assets/plot-tools_visual-only.mp4" title="Plot-tools_visual-only"></video>
-    <figcaption>A color scatter plot is shown. A screen reader highlighter box is on a plot tool icon, but when the tool is selected it opens a previous link instead of toggling (fails).</figcaption>
-</figure>
+```{video} ./assets/plot-tools_visual-only.mp4
+:width: 100%
+:playsinline:
+```
+
+A color scatter plot is shown. A screen reader highlighter box is on a plot tool icon, but when the tool is selected it opens a previous link instead of toggling (fails).
 
 ## Steps to Reproduce
 

@@ -20,10 +20,12 @@ In this particular case, we focused on keyboard-only and SR interactions and exp
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A screenshot a scatterplot is shown. On the right, there is a column of a toolbar for interactive buttons." src="./assets/plot-tools_explanation-purpose.png">
-    <figcaption>A screenshot a scatterplot is shown. On the right, there is a column of a toolbar for interactive buttons.</figcaption>
-</figure>
+```{figure} ./assets/plot-tools_explanation-purpose.png
+:width: 100%
+:alt: A screenshot a scatterplot is shown. On the right, there is a column of a toolbar for interactive buttons.
+
+A screenshot a scatterplot is shown. On the right, there is a column of a toolbar for interactive buttons.
+```
 
 ## Steps to Reproduce
 

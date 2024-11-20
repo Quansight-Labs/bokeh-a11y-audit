@@ -19,7 +19,11 @@ Plot tools fail to convey the changes to the chart in a way that lets SR users (
 
 ## Image or Video of Failure
 
-<video controls src="plot-tools_changes-easy-to-follow.mp4" title=""></video>
+```{video} ./assets/plot-tools_changes-easy-to-follow.mp4
+:width: 100%
+:playsinline:
+```
+
 A scatter plot is shown. A screen reader is navigating through the chart's dropdown menu, but when an option is selected, the user is forced back to the top of the webpage. (fails).
 
 ## Steps to Reproduce

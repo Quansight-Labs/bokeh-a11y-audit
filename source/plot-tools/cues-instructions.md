@@ -22,10 +22,12 @@ It is especially worse for screen readers as the toolbar icons are not even expl
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A scatter plot is shown. A toolbar for interactive plotting tools is on the right-hand side. No instructions are written in the chart space for how to use the tools (fails)." src="./assets/plot-tools_cues-instructions.png">
-    <figcaption>A scatter plot is shown. A toolbar for interactive plotting tools is on the right-hand side. No instructions are written in the chart space for how to use the tools (fails).</figcaption>
-</figure>
+```{figure} ./assets/plot-tools_cues-instructions.png
+:width: 100%
+:alt: A scatter plot is shown. A toolbar for interactive plotting tools is on the right-hand side. No instructions are written in the chart space for how to use the tools (fails).
+
+A scatter plot is shown. A toolbar for interactive plotting tools is on the right-hand side. No instructions are written in the chart space for how to use the tools (fails).
+```
 
 ## Steps to Reproduce
 

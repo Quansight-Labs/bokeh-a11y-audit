@@ -18,20 +18,26 @@ Plot tools fail for minimum contrast on interactive elements. Results are 2.65:1
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A scatter plot is shown. A plotting tool button is toggled on on the right. The contrast checking score is shown on the bottom left corner (fails)." src="./assets/plot-tools_contrast-interactive_1.png">
-    <figcaption>A scatter plot is shown. A plotting tool button is toggled active on the right. The contrast checking score is shown on the bottom left corner (fails).</figcaption>
-</figure>
+```{figure} ./assets/plot-tools_contrast-interactive_1.png
+:width: 100%
+:alt: A scatter plot is shown. A plotting tool button is toggled on on the right. The contrast checking score is shown on the bottom left corner (fails).
 
-<figure>
-    <img width="803" alt="A scatter plot is shown. A plotting tool button has a mouse hover highlight on the right, while the contrast checking score is shown on the bottom left corner (fails)." src="./assets/plot-tools_contrast-interactive_2.png">
-    <figcaption>A scatter plot is shown. A plotting tool button has a mouse hover highlight on the right, while the contrast checking score is shown on the bottom left corner (fails).</figcaption>
-</figure>
+A scatter plot is shown. A plotting tool button is toggled active on the right. The contrast checking score is shown on the bottom left corner (fails).
+```
 
-<figure>
-    <img width="803" alt="A scatter plot is shown. A plotting tool button is selected, toggled on, and has a mouse hover on the right highlight. The contrast checking score is shown on the bottom left corner (fails)." src="./assets/plot-tools_contrast-interactive_3.png">
-    <figcaption>A scatter plot is shown. A plotting tool button is selected, toggled "on", and has a mouse hover on the right highlight. The contrast checking score is shown on the bottom left corner (fails).</figcaption>
-</figure>
+```{figure} ./assets/plot-tools_contrast-interactive_2.png
+:width: 100%
+:alt: A scatter plot is shown. A plotting tool button has a mouse hover highlight on the right, while the contrast checking score is shown on the bottom left corner (fails).
+
+A scatter plot is shown. A plotting tool button has a mouse hover highlight on the right, while the contrast checking score is shown on the bottom left corner (fails).
+```
+
+```{figure} ./assets/plot-tools_contrast-interactive_3.png
+:width: 100%
+:alt: A scatter plot is shown. A plotting tool button is selected, toggled on, and has a mouse hover on the right highlight. The contrast checking score is shown on the bottom left corner (fails).
+
+A scatter plot is shown. A plotting tool button is selected, toggled "on", and has a mouse hover on the right highlight. The contrast checking score is shown on the bottom left corner (fails).
+```
 
 ## Steps to Reproduce
 
