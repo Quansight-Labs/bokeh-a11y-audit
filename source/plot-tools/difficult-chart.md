@@ -1,4 +1,4 @@
-# Difficulty chart
+# Difficulty Chart
 
 ## Test Type Performed
 

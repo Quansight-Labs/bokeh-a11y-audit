@@ -1,4 +1,4 @@
-# Statistical uncertainty
+# Statistical Uncertainty
 
 ## Test Type Performed
 

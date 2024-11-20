@@ -1,4 +1,4 @@
-# Small text
+# Small Text
 
 ## Test Type Performed
 

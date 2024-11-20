@@ -1,4 +1,4 @@
-# Visual only
+# Visual Only
 
 ## Test Type Performed
 

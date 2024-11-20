@@ -1,4 +1,4 @@
-# Info complexity
+# Info Complexity
 
 ## Test Type Performed
 

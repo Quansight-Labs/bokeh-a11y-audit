@@ -1,4 +1,4 @@
-# Cues Instructions
+# Cues (or Instructions)
 
 ## Test Type Performed
 

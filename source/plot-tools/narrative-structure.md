@@ -1,4 +1,4 @@
-# Narrative structure
+# Narrative Structure
 
 ## Test Type Performed
 

@@ -1,4 +1,4 @@
-# Seizure risk
+# Seizure Risk
 
 ## Test Type Performed
 

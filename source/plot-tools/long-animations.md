@@ -1,4 +1,4 @@
-# Long animations
+# Long Animations
 
 ## Test Type Performed
 

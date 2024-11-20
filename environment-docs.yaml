@@ -1,4 +1,4 @@
-name: bokeh-a11y-dev
+name: bokeh-a11y-docs
 channels:
   - conda-forge
   - defaults

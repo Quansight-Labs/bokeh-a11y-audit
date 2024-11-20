@@ -1,4 +1,4 @@
-# Static table
+# Static Table
 
 ## Test Type Performed
 

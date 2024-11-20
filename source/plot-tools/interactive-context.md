@@ -1,4 +1,4 @@
-# Interactive context
+# Interactive Context
 
 ## Test Type Performed
 

@@ -1,4 +1,4 @@
-# Human readable
+# Human Readable
 
 ## Test Type Performed
 

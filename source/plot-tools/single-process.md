@@ -1,4 +1,4 @@
-# Single process
+# Single Process
 
 ## Test Type Performed
 

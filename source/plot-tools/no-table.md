@@ -1,4 +1,4 @@
-# No table
+# No Table
 
 ## Test Type Performed
 

@@ -1,4 +1,4 @@
-# Metrics variables
+# Metrics Variables
 
 ## Test Type Performed
 

@@ -1,39 +1,39 @@
 # CVD Friendly
 
-### Test Type Performed
+## Test Type Performed
 
 Color Vision Deficiency (CVD) friendly.
 
-### Artifact Evaluated
+## Artifact Evaluated
 
 [Plotting interface](https://docs.bokeh.org/en/latest/docs/user_guide/basic.html#ug-basic). Specifically, evaluating the interfaces for all [charts](https://quansight-labs.github.io/bokeh-a11y-audit/#_ts1723552414769) in our test environment: line, bar, table and scatter plot.
 
-### Results Summary
+## Results Summary
 
 Plotting interface pass for being CVD safe.
 
-### Expected Behavior (Pass/Fail)
+## Expected Behavior (Pass/Fail)
 
 - _Pass_ - We expect any colors used would pass standards for CVD.
 
-<!-- ### Image or Video of Failure
+<!-- ## Image or Video of Failure
 ... -->
 
-### Steps to Reproduce
+## Steps to Reproduce
 
 Using a dropper tool to gather the RGB color codes, compare the background, icon, toggle button identifier, hover highlight, and button selected highlight colors using a CVD tester.
 
-### Guidelines and Standards Used
+## Guidelines and Standards Used
 
 Not CVD-friendly [https://chartability.github.io/POUR-CAF/#**notcvdfriendly**](https://chartability.github.io/POUR-CAF/#__notcvdfriendly__)
 
-<!-- ### Related Evidence
+<!-- ## Related Evidence
 ...
 
-### Known or Documented Issues
+## Known or Documented Issues
 ... -->
 
-### Technical Details
+## Technical Details
 
 - Chrome Version 128.0.6613.120 (64-bit)
 - Chroma.js Color Palette Helper
@@ -41,5 +41,5 @@ Not CVD-friendly [https://chartability.github.io/POUR-CAF/#**notcvdfriendly**](h
 
 _Updated as of: September 10th, 2024_
 
-<!-- ### Notes
+<!-- ## Notes
 A seasoned SR (screen reader) user could have the knowledge to navigate and explore webpages and graphs with more nuance, whether through manual mode switching, certain key shortcuts, etc. These tests are done by a sighted user with the SR’s default options and performed as if a new or beginner user is interacting with these elements. We would expect that all users could be able to navigate smoothly, regardless of experience levels.  -->

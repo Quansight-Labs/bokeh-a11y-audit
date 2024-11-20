@@ -1,4 +1,4 @@
-# Contrast
+# Color Contrast
 
 ## Test Type Performed
 

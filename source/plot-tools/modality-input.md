@@ -1,4 +1,4 @@
-# Modality input
+# Modality Input
 
 ## Test Type Performed
 

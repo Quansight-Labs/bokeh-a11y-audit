@@ -1,4 +1,4 @@
-# Design consistent
+# Design Consistent
 
 ## Test Type Performed
 

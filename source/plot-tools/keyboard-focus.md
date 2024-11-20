@@ -1,4 +1,4 @@
-# Keyboard focus
+# Keyboard Focus
 
 ## Test Type Performed
 
