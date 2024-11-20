@@ -18,10 +18,12 @@ Plotting interface fails to allow users to adjust text, like text stroke, font, 
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A line chart is shown. A text stroke filter has been implemented to +1. The text on the web page has adjusted to an increased text stroke, but the chart space retains it's default settings -- no adjustments have been made. (fails)." src="./assets/plotting-interface_text-adjustments.png">
-    <figcaption>A line chart is shown. A text stroke filter has been implemented to +1. The text on the web page has adjusted to an increased text stroke, but the chart space retains it's default settings -- no adjustments have been made. (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_text-adjustments.png
+:width: 100%
+:alt: A line chart is shown. A text stroke filter has been implemented to +1. The text on the web page has adjusted to an increased text stroke, but the chart space retains it's default settings -- no adjustments have been made. (fails).
+
+A line chart is shown. A text stroke filter has been implemented to +1. The text on the web page has adjusted to an increased text stroke, but the chart space retains it's default settings -- no adjustments have been made. (fails).
+```
 
 ## Steps to Reproduce
 

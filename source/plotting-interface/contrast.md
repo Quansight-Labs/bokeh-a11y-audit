@@ -53,36 +53,46 @@ Although it does fail, the table's contrast of row color alternation does not se
 
 Figure 1: Grid lines
 
-<figure>
-    <img width="803" alt="A line chart is shown. A color selection dropper is highlighting a gride line within the chart. The contrast checking score of 1.2 is shown on the bottom left corner (fails)." src="./assets/plotting-interface_color-contrast_1.png">
-    <figcaption>A line chart is shown. A color selection dropper is highlighting a gride line within the chart. The contrast checking score of 1.2 is shown on the bottom left corner (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_color-contrast_1.png
+:width: 100%
+:alt: A line chart is shown. A color selection dropper is highlighting a gride line within the chart. The contrast checking score of 1.2 is shown on the bottom left corner (fails).
+
+A line chart is shown. A color selection dropper is highlighting a gride line within the chart. The contrast checking score of 1.2 is shown on the bottom left corner (fails).
+```
 
 Figure 2: Line charts
 
-<figure>
-    <img width="803" alt="A line chart is shown. A color selection dropper is highlighting a data line within the chart. The contrast checking score of 4.01 is shown on the bottom left corner (fails)." src="./assets/plotting-interface_color-contrast_2.png">
-    <figcaption>A line chart is shown. A color selection dropper is highlighting a data line within the chart. The contrast checking score of 4.01 is shown on the bottom left corner (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_color-contrast_2.png
+:width: 100%
+:alt: A line chart is shown. A color selection dropper is highlighting a data line within the chart. The contrast checking score of 4.01 is shown on the bottom left corner (fails).
+
+A line chart is shown. A color selection dropper is highlighting a data line within the chart. The contrast checking score of 4.01 is shown on the bottom left corner (fails).
+```
 
 Figure 3: Table
 
-<figure>
-    <img width="803" alt="A table is shown. A color selection dropper is highlighting a selected row in the chart. The contrast checking score of 1.07 is shown on the bottom left corner (fails)." src="./assets/plotting-interface_color-contrast_3.png">
-    <figcaption>A table is shown. A color selection dropper is highlighting a selected row in the chart. The contrast checking score of 1.07 is shown on the bottom left corner (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_color-contrast_3.png
+:width: 100%
+:alt: A table is shown. A color selection dropper is highlighting a selected row in the chart. The contrast checking score of 1.07 is shown on the bottom left corner (fails).
+
+A table is shown. A color selection dropper is highlighting a selected row in the chart. The contrast checking score of 1.07 is shown on the bottom left corner (fails).
+```
 
 Figure 4 and 5: Bar Chart
 
-<figure>
-    <img width="803" alt="A color bar chart is shown. A color selection dropper is highlighting the first bar color on the legend. The contrast checking score of 1.26 is shown on the bottom left corner (fails)." src="./assets/plotting-interface_color-contrast_5.png">
-    <figcaption>A color bar chart is shown. A color selection dropper is highlighting the first bar color on the legend. The contrast checking score of 1.26 is shown on the bottom left corner (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_color-contrast_5.png
+:width: 100%
+:alt: A color bar chart is shown. A color selection dropper is highlighting the first bar color on the legend. The contrast checking score of 1.26 is shown on the bottom left corner (fails).
 
-<figure>
-    <img width="803" alt="A color bar chart is shown. The contrast checking score of 1.25 is shown on the bottom left, comparing two colors right next to one another (fails)." src="./assets/plotting-interface_color-contrast_4.png">
-    <figcaption>A color bar chart is shown. The contrast checking score of 1.25 is shown on the bottom left, comparing two colors right next to one another (fails).</figcaption>
-</figure>
+A color bar chart is shown. A color selection dropper is highlighting the first bar color on the legend. The contrast checking score of 1.26 is shown on the bottom left corner (fails).
+```
+
+```{figure} ./assets/plotting-interface_color-contrast_4.png
+:width: 100%
+:alt: A color bar chart is shown. The contrast checking score of 1.25 is shown on the bottom left, comparing two colors right next to one another (fails).
+
+A color bar chart is shown. The contrast checking score of 1.25 is shown on the bottom left, comparing two colors right next to one another (fails).
+```
 
 ## Steps to Reproduce
 

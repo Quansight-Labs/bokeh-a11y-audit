@@ -25,45 +25,57 @@ At high zoom: Reflow does not take place while font quality becomes poor. Some s
 
 Figure 1: Mobile view
 
-<figure>
-    <img width="803" alt="A mobile web browser is shown with five different charts. The font size of most text is too small to read. At the bottom, one of the charts is aligned far to the right, cutting off parts of the image from view (fails)." src="./assets/plotting-interface_zoom-reflow_1.jpg">
-    <figcaption>A mobile web browser is shown with five different charts. The font size of most text is too small to read. At the bottom, one of the charts is aligned far to the right, cutting off parts of the image from view (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_zoom-reflow_1.jpg
+:width: 100%
+:alt: A mobile web browser is shown with five different charts. The font size of most text is too small to read. At the bottom, one of the charts is aligned far to the right, cutting off parts of the image from view (fails).
+
+A mobile web browser is shown with five different charts. The font size of most text is too small to read. At the bottom, one of the charts is aligned far to the right, cutting off parts of the image from view (fails).
+```
 
 Figure 2: Responsive + reflow check
 
-<figure>
-    <img width="803" alt="Chrome developer tools are open and the page is being resized to 350px wide. Elements in the first column of the first two rows of charts are squished (responsive sizing), while the second column is shown off-screen (fails to reflow the second column into single-column view). Charts in the grid seem to be semi-responsive but not reflow (this is a fail)." src="./assets/plotting-interface_zoom-reflow_2.png">
-    <figcaption>Chrome developer tools are open and the page is being resized to 350px wide. Elements in the first column of the first two rows of charts are squished (responsive sizing), while the second column is shown off-screen (fails to reflow the second column into single-column view). Charts in the grid seem to be semi-responsive but not reflow (this is a fail).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_zoom-reflow_2.png
+:width: 100%
+:alt: Chrome developer tools are open and the page is being resized to 350px wide. Elements in the first column of the first two rows of charts are squished (responsive sizing), while the second column is shown off-screen (fails to reflow the second column into single-column view). Charts in the grid seem to be semi-responsive but not reflow (this is a fail).
+
+Chrome developer tools are open and the page is being resized to 350px wide. Elements in the first column of the first two rows of charts are squished (responsive sizing), while the second column is shown off-screen (fails to reflow the second column into single-column view). Charts in the grid seem to be semi-responsive but not reflow (this is a fail).
+```
 
 Figure 3: Scatter reflow check
 
-<figure>
-    <img width="803" alt="Chrome developer tools are open and the page is being resized to 350px wide. The scatter plot's view shows a large amount of empty space with a chart just out of view to the right of the screen (fails, does not reflow)." src="./assets/plotting-interface_zoom-reflow_3.png">
-    <figcaption>Chrome developer tools are open and the page is being resized to 350px wide. The scatter plot's view shows a large amount of empty space with a chart just out of view to the right of the screen (fails, does not reflow).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_zoom-reflow_3.png
+:width: 100%
+:alt: Chrome developer tools are open and the page is being resized to 350px wide. The scatter plot's view shows a large amount of empty space with a chart just out of view to the right of the screen (fails, does not reflow).
+
+Chrome developer tools are open and the page is being resized to 350px wide. The scatter plot's view shows a large amount of empty space with a chart just out of view to the right of the screen (fails, does not reflow).
+```
 
 Figure 4: Text not reflowing with canvas chart
 
-<figure>
-    <img width="803" alt="Viewport is resized to 350px wide and the title text within a chart (marked with red underline) is truncated and unreadable compared to the HTML-based text above it, which is reflowing properly by default (fails)." src="./assets/plotting-interface_zoom-reflow_4.png">
-    <figcaption>Viewport is resized to 350px wide and the title text within a chart (marked with red underline) is truncated and unreadable compared to the HTML-based text above it, which is reflowing properly by default (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_zoom-reflow_4.png
+:width: 100%
+:alt: Viewport is resized to 350px wide and the title text within a chart (marked with red underline) is truncated and unreadable compared to the HTML-based text above it, which is reflowing properly by default (fails).
+
+Viewport is resized to 350px wide and the title text within a chart (marked with red underline) is truncated and unreadable compared to the HTML-based text above it, which is reflowing properly by default (fails).
+```
 
 Figure 5: Massive whitespace from lack of reflow
 
-<figure>
-    <img width="803" alt="Viewport is zoomed in to 500% and the scatterplot area (when first scrolling to it) is primarily whitespace (fails)." src="./assets/plotting-interface_zoom-reflow_5.png">
-    <figcaption>Viewport is zoomed in to 500% and the scatterplot area (when first scrolling to it) is primarily whitespace (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_zoom-reflow_5.png
+:width: 100%
+:alt: Viewport is zoomed in to 500% and the scatterplot area (when first scrolling to it) is primarily whitespace (fails).
+
+Viewport is zoomed in to 500% and the scatterplot area (when first scrolling to it) is primarily whitespace (fails).
+```
 
 Figure 6: Font readability suffers at high zoom levels
 
-<figure>
-    <img width="803" alt="Viewport is zoomed in to 400% showing the canvas-based text from the bar chart labels being highly aliased and fuzzy, compared to the text for the Scatter plot beneath (circled in red) which is high fidelity and readable (fails)." src="./assets/plotting-interface_zoom-reflow_6.png">
-    <figcaption>Viewport is zoomed in to 400% showing the canvas-based text from the bar chart labels being highly aliased and fuzzy, compared to the text for the Scatter plot beneath (circled in red) which is high fidelity and readable (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_zoom-reflow_6.png
+:width: 100%
+:alt: Viewport is zoomed in to 400% showing the canvas-based text from the bar chart labels being highly aliased and fuzzy, compared to the text for the Scatter plot beneath (circled in red) which is high fidelity and readable (fails).
+
+Viewport is zoomed in to 400% showing the canvas-based text from the bar chart labels being highly aliased and fuzzy, compared to the text for the Scatter plot beneath (circled in red) which is high fidelity and readable (fails).
+```
 
 ## Steps to Reproduce
 

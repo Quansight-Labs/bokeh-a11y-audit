@@ -22,7 +22,11 @@ In addition, the interactive scatterplot can change glyph size and select specie
 
 ## Image or Video of Failure
 
-<video controls src="./assets/plot-tools_complex-actions.mp4" title="Plot-tools_Complex-actions"></video>
+```{video} ../plot-tools/assets/plot-tools_complex-actions.mp4
+:width: 100%
+:playsinline:
+```
+
 A scatter plot is shown. The mouse cursor hovers over a plot tool called "Wheel Zoom." Using a mouse, a user zooms in and out on the chart space before clicking and panning away from the visible data points into an empty space. There is nothing on the screen that states any action history.
 
 ## Steps to Reproduce

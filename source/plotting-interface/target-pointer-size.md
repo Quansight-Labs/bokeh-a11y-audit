@@ -18,10 +18,12 @@ Plotting interface's tooltip fails to have a large enough interaction target siz
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A line chart is shown with a tooltip being provided by a mouse hover event. The line is only 1 or 2px thick and is being hovered over perfectly by the mouse pointer to accomplish the tooltip appearance." src="./assets/plotting-interface_target-pointer-size.png">
-    <figcaption>A line chart is shown with a tooltip being provided by a mouse hover event. The line is only 1 or 2px thick and is being hovered over perfectly by the mouse pointer to accomplish the tooltip appearance.</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_target-pointer-size.png
+:width: 100%
+:alt: A line chart is shown with a tooltip being provided by a mouse hover event. The line is only 1 or 2px thick and is being hovered over perfectly by the mouse pointer to accomplish the tooltip appearance.
+
+A line chart is shown with a tooltip being provided by a mouse hover event. The line is only 1 or 2px thick and is being hovered over perfectly by the mouse pointer to accomplish the tooltip appearance.
+```
 
 ## Steps to Reproduce
 

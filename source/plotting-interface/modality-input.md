@@ -22,13 +22,25 @@ The tabs can be navigated to in multiple modalities, but interaction is limited 
 
 First video: Mouse then Keyboard-only input. From 00:09-00:08s, the user the mouse to hover over data points in the second line chart.
 From 00:12-00:28s, the tester TABs to navigate to the chart. Once there, they continue to press TAB to try and navigate into the chart with no success. Eventually they must SHIFT+TAB to move backwards to return to the correct chart testing area.
-<video controls src="plotting-interface_modality_1.mp4" title="Modality-input-type_Keyboard"></video>
+
+```{video} ./assets/plotting-interface_modality_1.mp4
+:width: 100%
+:playsinline:
+```
 
 Second video: JAWS screen reader input. From 00:09-00:19s, the SR navigates to the line chart with two lines by using TAB, then continues to try and access the data points. When they press SPACE or ENTER, they are taken to a visited link rather than being able to interact with the chart.
-<video controls src="../assets/plotting-interface_modality_2.mp4" title="Modalit-input-type_SR-1"></video>
+
+```{video} ./assets/plotting-interface_modality_2.mp4
+:width: 100%
+:playsinline:
+```
 
 Third video: JAWS screen reader input. From 00:04-00:19s, the SR navigates to the scatter plot by using TAB, then continues to try and access the "Selected Species" chart tab. When they press ENTER, the UI changes to show the updated species selected dropdown, but the SR cannot access this by pressing TAB or down arrow. They are instead taken to the website's toolbar.
-<video controls src="../assets/plotting-interface_modality_3.mp4" title="Modality-input-type_SR-2"></video>
+
+```{video} ./assets/plotting-interface_modality_3.mp4
+:width: 100%
+:playsinline:
+```
 
 ## Steps to Reproduce
 

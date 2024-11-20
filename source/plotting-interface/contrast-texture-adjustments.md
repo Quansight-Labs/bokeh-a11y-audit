@@ -18,10 +18,12 @@ Plotting interface fails to respect a user's custom changing of contrast and/or 
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A scatter plot is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails)." src="./assets/plotting-interface_style-change-respected.png">
-    <figcaption>A scatter plot is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_style-change-respected.png
+:width: 100%
+:alt: A scatter plot is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails).
+
+A scatter plot is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails).
+```
 
 ## Steps to Reproduce
 

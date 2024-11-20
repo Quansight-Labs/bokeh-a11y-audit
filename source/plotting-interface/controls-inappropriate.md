@@ -18,7 +18,13 @@ Plotting interface fails for irrelevant functionality in all charts (besides the
 
 ## Image or Video of Failure
 
-<video controls src="./assets/plot-tools_controls-inappropriate.mp4" title="Plot-tools_controls-inappropriate"></video>
+<!-- TODO: Move asset from plot-tools to plotting-interface directory -->
+
+```{video} ../plot-tools/assets/plot-tools_controls-inappropriate.mp4
+:width: 100%
+:playsinline:
+```
+
 A scatter plot is shown. The mouse cursor hovers over a plot tool called "Pan." Using the mouse, a user pans to the left of the chart (away from the visible data points) into an empty space. They pan to the right until the data points appear again. The user then uses the "Wheel zoom" tool to zoom out until the data points become a small cluster, indistinguishable from one another before zooming in to where the data points disappear once again.
 
 ## Steps to Reproduce

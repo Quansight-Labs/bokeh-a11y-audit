@@ -18,10 +18,12 @@ Plotting interface fails for the scatter plot density. When in the default view,
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A scatter plot is shown. A red circle is highlighting an area with three data sets differentiated by squares, circles, and triangles. From this view, it is hard to tell the patterns apart - they all look similar (fails)." src="./assets/plotting-interface_meaningful-elements_2.png">
-    <figcaption>A scatter plot is shown. A red circle is highlighting an area with three data sets differentiated by squares, circles, and triangles. From this view, it is hard to tell the patterns apart - they all look similar (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_meaningful-elements_2.png
+:width: 100%
+:alt: A scatter plot is shown. A red circle is highlighting an area with three data sets differentiated by squares, circles, and triangles. From this view, it is hard to tell the patterns apart - they all look similar (fails).
+
+A scatter plot is shown. A red circle is highlighting an area with three data sets differentiated by squares, circles, and triangles. From this view, it is hard to tell the patterns apart - they all look similar (fails).
+```
 
 <!-- ## Steps to Reproduce
 Use Inspect on the plot tool icon to open Console Command. Find the "style" section for the selected button then locate the font size. -->

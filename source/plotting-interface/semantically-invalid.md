@@ -20,15 +20,19 @@ The charts need to be given roles and put a system in place. Divs and canvas are
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="The element inspector pane of a web browser is opened. The axe DevTools tab is selected, with results on an assessment stating 'Total Issues: 25.'" src="./assets/plotting-interface_semantically-invalid_1.png">
-    <figcaption>The element inspector pane of a web browser is opened. The axe DevTools tab is selected, with results on an assessment stating "Total Issues: 25".</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_semantically-invalid_1.png
+:width: 100%
+:alt: The element inspector pane of a web browser is opened. The axe DevTools tab is selected, with results on an assessment stating 'Total Issues: 25.'
 
-<figure>
-    <img width="803" alt="A line chart is shown with the element inspector pane of a web browser is opened. A section of code is highlighted that shows elements are divs and canvas." src="./assets/plotting-interface_semantically-invalid_2.png">
-    <figcaption>A line chart is shown with the element inspector pane of a web browser is opened. A section of code is highlighted that shows elements are divs and canvas.</figcaption>
-</figure>
+The element inspector pane of a web browser is opened. The axe DevTools tab is selected, with results on an assessment stating "Total Issues: 25".
+```
+
+```{figure} ./assets/plotting-interface_semantically-invalid_2.png
+:width: 100%
+:alt: A line chart is shown with the element inspector pane of a web browser is opened. A section of code is highlighted that shows elements are divs and canvas
+
+A line chart is shown with the element inspector pane of a web browser is opened. A section of code is highlighted that shows elements are divs and canvas
+```
 
 ## Steps to Reproduce
 

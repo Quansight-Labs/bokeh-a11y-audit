@@ -20,17 +20,21 @@ Plotting interface fails for minimum contrast and border size for focus indicato
 
 Figure 1
 
-<figure>
-    <img width="803" alt="A data table is shown. A row is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:07:1 (fails)." src="./assets/plotting-interface_contrast-interactive-elements.png">
-    <figcaption>A data table is shown. A row is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:07:1 (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_contrast-interactive-elements.png
+:width: 100%
+:alt: A data table is shown. A row is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:07:1 (fails).
+
+A data table is shown. A row is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:07:1 (fails).
+```
 
 Figure 2
 
-<figure>
-    <img width="803" alt="A scatter plot is shown. A category tab widget is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:25:1 (fails)." src="./assets/plotting-interface_keyboard-focus.png">
-    <figcaption>A data table is shown. A row is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:25:1 (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_keyboard-focus.png
+:width: 100%
+:alt: A scatter plot is shown. A category tab widget is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:25:1 (fails).
+
+A scatter plot is shown. A category tab widget is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:25:1 (fails).
+```
 
 ## Steps to Reproduce
 

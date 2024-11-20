@@ -24,24 +24,30 @@ Bar chart: The lack of spacing for the bars in the chart create complexity.
 
 Figure 1
 
-<figure>
-    <img width="803" alt="A scatter plot is shown. In the chart's upper tab, 'All Species' is selected. Three categories are shown, but are hard to differentiate from one another based on their color and patterns." src="./assets/plotting-interface_information-complexity_1.png">
-    <figcaption>A scatter plot is shown. Three categories are shown, but are hard to differentiate from one another based on their color and patterns.</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_information-complexity_1.png
+:width: 100%
+:alt: A scatter plot is shown. In the chart's upper tab, 'All Species' is selected. Three categories are shown, but are hard to differentiate from one another based on their color and patterns.
+
+A scatter plot is shown. Three categories are shown, but are hard to differentiate from one another based on their color and patterns.
+```
 
 Figure 2
 
-<figure>
-    <img width="803" alt="A scatter plot is shown. In the chart's upper tab, 'Selected Spiecies' is selected. One category of data is shown and is signified by a blue square pattern." src="./assets/plotting-interface_information-complexity_2.png">
-    <figcaption>A scatter plot is shown. In the chart's upper tab, 'Selected Species' is selected. One category of data is shown and is signified by a blue square pattern.</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_information-complexity_2.png
+:width: 100%
+:alt: A scatter plot is shown. In the chart's upper tab, 'Selected Spiecies' is selected. One category of data is shown and is signified by a blue square pattern.
+
+A scatter plot is shown. In the chart's upper tab, 'Selected Species' is selected. One category of data is shown and is signified by a blue square pattern.
+```
 
 Figure 3
 
-<figure>
-    <img width="803" alt="A bar chart is shown. A red box is highlighting two bars that are side-by-side and are the same color. There is no spacing be tween the two, making it almost appear as one large bar (fails)." src="./assets/plotting-interface_spacing.png">
-    <figcaption>A bar chart is shown. A red box is highlighting two bars that are side-by-side and the same color. There is no spacing be tween the two, making it almost appear as one large bar (this is both a perceptual issue due to lack of differentiation as well as an information complexity issue for making it hard to meaningfully create visual categorization). Also, this chart is encoding color and height redundantly for the value of a category, which is may cause confusion for being an unconventional dual encoding.</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_spacing.png
+:width: 100%
+:alt: A bar chart is shown. A red box is highlighting two bars that are side-by-side and are the same color. There is no spacing be tween the two, making it almost appear as one large bar (fails).
+
+A bar chart is shown. A red box is highlighting two bars that are side-by-side and the same color. There is no spacing be tween the two, making it almost appear as one large bar (this is both a perceptual issue due to lack of differentiation as well as an information complexity issue for making it hard to meaningfully create visual categorization). Also, this chart is encoding color and height redundantly for the value of a category, which is may cause confusion for being an unconventional dual encoding.
+```
 
 ## Steps to Reproduce
 

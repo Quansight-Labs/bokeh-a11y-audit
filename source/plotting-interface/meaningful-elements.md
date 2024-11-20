@@ -22,17 +22,21 @@ The scatter plot may conditionally pass or fail, depending on the intent. From i
 
 Figure 1: Bar chart
 
-<figure>
-    <img width="803" alt="A bar chart is shown. A red box is highlighting two bars that are side-by-side and the same color. There is no spacing be tween the two, making it almost appear as one large bar (fails)." src="./assets/plotting-interface_meaningful-elements_1.png">
-    <figcaption>A bar chart is shown. A red box is highlighting two bars that are side-by-side and the same color. There is no spacing be tween the two, making it almost appear as one large bar (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_meaningful-elements_1.png
+:width: 100%
+:alt: A bar chart is shown. A red box is highlighting two bars that are side-by-side and the same color. There is no spacing be tween the two, making it almost appear as one large bar (fails).
+
+A bar chart is shown. A red box is highlighting two bars that are side-by-side and the same color. There is no spacing be tween the two, making it almost appear as one large bar (fails).
+```
 
 Figure 2: Scatter plot
 
-<figure>
-    <img width="803" alt="A scatter plot is shown. A red circle is highlighting an area with three data sets differentiated by squares, circles, and triangles. From this view, it is hard to tell the patterns apart - they all look similar (fails)." src="./assets/plotting-interface_meaningful-elements_2.png">
-    <figcaption>A scatter plot is shown. A red circle is highlighting an area with three data sets differentiated by squares, circles, and triangles. From this view, it is hard to tell the patterns apart - they all look similar (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_meaningful-elements_2.png
+:width: 100%
+:alt: A scatter plot is shown. A red circle is highlighting an area with three data sets differentiated by squares, circles, and triangles. From this view, it is hard to tell the patterns apart - they all look similar (fails).
+
+A scatter plot is shown. A red circle is highlighting an area with three data sets differentiated by squares, circles, and triangles. From this view, it is hard to tell the patterns apart - they all look similar (fails).
+```
 
 ## Steps to Reproduce
 

@@ -19,7 +19,12 @@ Redundant test, not applicable here (plot tools fail to allow the user to undo o
 ## Image or Video of Failure
 
 (similar test provided by plot tools, see below:)
-<video controls src="./assets/plot-tools_interactions-forgiveable.mp4" title="Plot-tools_Interactions-Forgiveable"></video>
+
+```{video} ../plot-tools/assets/plot-tools_interactions-forgiveable.mp4
+:width: 100%
+:playsinline:
+```
+
 A scatter plot is shown. A mouse cursor hovers over a plot tool called "Wheel Zoom." Using the mouse, a user zooms in on the chart space. The user then hovers over each chart plot tool until it comes to "Reset." They press it and the chart returns to it's default display.
 
 ## Steps to Reproduce

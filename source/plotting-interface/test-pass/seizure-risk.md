@@ -18,9 +18,12 @@ Passes.
 
 ## Image or Video of Failure
 
-<video controls src="../assets/plotting-interface_PEAT-seisure.mp4" title="Plotting-interface_PEAT-test"></video>
+```{video} ../assets/plotting-interface_PEAT-seisure.mp4
+:width: 100%
+:playsinline:
+```
 
-<p>A line chart, bar chart, and scatter plot are shown on a web browser. The user is selecting and deselecting tools rapidly to make the highlight color "flash". They then zoom in and out on each chart rapidly to check for any seizure risks (passes).</p>
+A line chart, bar chart, and scatter plot are shown on a web browser. The user is selecting and deselecting tools rapidly to make the highlight color "flash". They then zoom in and out on each chart rapidly to check for any seizure risks (passes).
 
 ## Steps to Reproduce
 

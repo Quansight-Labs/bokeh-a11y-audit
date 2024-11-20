@@ -18,10 +18,12 @@ Plotting interface fails to provide explanations for any of the charts.
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A screenshot of a bar chart is shown. While there is a tile and axes titles, there is no explanation for the chart or it's purpose with it." src="./assets/plotting-interface_explanation-purpose.png">
-    <figcaption>A screenshot of a bar chart is shown. While there is a tile and axes titles, there is no explanation for the chart or it's purpose with it.</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_explanation-purpose.png
+:width: 100%
+:alt: A screenshot of a bar chart is shown. While there is a tile and axes titles, there is no explanation for the chart or it's purpose with it.
+
+A screenshot of a bar chart is shown. While there is a tile and axes titles, there is no explanation for the chart or it's purpose with it.
+```
 
 <!-- ## Steps to Reproduce
 Navigate to the "Scatterplot" chart heading. -->

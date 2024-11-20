@@ -18,10 +18,12 @@ Plotting interface fails for allowing infinite scrolling in the charts. While th
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="Two line charts are shown side by side. The chart on the left has been scrolled out so far that you barely see it in the center, and cannot gain any information from it. The chart on the right is scrolled in the point where the lines are not visible at all." src="./assets/plotting-interface_scrolling.png">
-    <figcaption>Two line charts are shown side by side. The chart on the left has been scrolled out so far that you barely see it in the center, and cannot gain any information from it. The chart on the right is scrolled in the point where the lines are not visible at all.</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_scrolling.png
+:width: 100%
+:alt: Two line charts are shown side by side. The chart on the left has been scrolled out so far that you barely see it in the center, and cannot gain any information from it. The chart on the right is scrolled in the point where the lines are not visible at all.
+
+Two line charts are shown side by side. The chart on the left has been scrolled out so far that you barely see it in the center, and cannot gain any information from it. The chart on the right is scrolled in the point where the lines are not visible at all.
+```
 
 ## Steps to Reproduce
 

@@ -18,10 +18,12 @@ Plotting interface provides filtering and sorting for table data.
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A data table is shown. A sorting table is selected and highlighted in blue, sorting the data by 'Number of degrees earned in 2010'." src="./assets/plotting-interface_table-static.png">
-    <figcaption>A data table is shown. A sorting table is selected and highlighted in blue, sorting the data by 'Number of degrees earned in 2010'.</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_table-static.png
+:width: 100%
+:alt: A data table is shown. A sorting table is selected and highlighted in blue, sorting the data by 'Number of degrees earned in 2010'.
+
+A data table is shown. A sorting table is selected and highlighted in blue, sorting the data by 'Number of degrees earned in 2010'.
+```
 
 <!-- ## Steps to Reproduce
 Use Inspect on the plot tool icon to open Console Command. Find the "style" section for the selected button then locate the font size. -->

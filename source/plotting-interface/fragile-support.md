@@ -18,7 +18,11 @@ Plotting interface fails to give access across different technologies, most nota
 
 ## Image or Video of Failure
 
-<video controls src="./assets/plotting-interface_fragile_support.mp4" title="Title"></video>
+```{video} ./assets/plotting-interface_fragile_support.mp4
+:width: 100%
+:playsinline:
+```
+
 A line chart is shown. A screen reader attempts to navigate by headings using the "H" control, and can be heard stating "H". No heading navigation occurs. The user then presses TAB to navigate forward before attempting once again to use H to get to the headings. It fails once more.
 
 ## Steps to Reproduce

@@ -22,7 +22,11 @@ Overall, in our test environment, none of the charts can really be differentiate
 
 ## Image or Video of Failure
 
-<video controls src="./assets/plotting-interface_visual-only.mp4" title="Plotting-interface_Visual-only"></video>
+```{video} ./assets/plotting-interface_visual-only.mp4
+:width: 100%
+:playsinline:
+```
+
 A web browser is shown with multiple charts. A screen reader navigates through the page and through multiple charts, but very limited information is given as they do so (fails).
 
 ## Steps to Reproduce

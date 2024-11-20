@@ -18,7 +18,11 @@ Plotting tools fails for providing titles, summaries, or captions for screen rea
 
 ## Image or Video of Failure
 
-<video controls src="./assets/plotting-interface_metrics-variables.mp4" title="Plotting-terface_Title-Summaries"></video>
+```{video} ./assets/plotting-interface_metrics-variables.mp4
+:width: 100%
+:playsinline:
+```
+
 A line chart is shown. A screen reader begins to navigate down through a webpage to get to the chart. Once the user navigates to the chart, they taken to the tools of the chart. No title, metrics, axes labels, etc are given to the user (fails).
 
 ## Steps to Reproduce

@@ -18,10 +18,12 @@ Plotting interface fails for minimum contrast on interactive elements for the da
 
 ## Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A data table is shown. A row is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:07:1 (fails)." src="./assets/plotting-interface_contrast-interactive-elements.png">
-    <figcaption>A data table is shown. A row is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:07:1 (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_contrast-interactive-elements.png
+:width: 100%
+:alt: A data table is shown. A row is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:07:1 (fails).
+
+A data table is shown. A row is selected and highlighted. The contrast checking score is shown on the bottom left corner at 1:07:1 (fails).
+```
 
 ## Steps to Reproduce
 

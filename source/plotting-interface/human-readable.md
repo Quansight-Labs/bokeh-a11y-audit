@@ -20,17 +20,21 @@ Plotting interface fails for human-readability. When using the zoom tool feature
 
 Figure 1
 
-<figure>
-    <img width="803" alt="A line chart is shown. A 'Wheel Zoom' tool has been used to continually zoom in on the chart, which changes the axes data accordingly. In the bottom left corner, a blue box is highlighting an axis label that reads 'Year: 1988.2027845' (fails)." src="./assets/plotting-interface_human-readable_1.png">
-    <figcaption>A line chart is shown. A 'Wheel Zoom' tool has been used to continually zoom in on the chart, which changes the axes data accordingly. In the bottom left corner, a blue box is highlighting an axis label that reads 'Year: 1988.2027845' (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_human-readable_1.png
+:width: 100%
+:alt: A line chart is shown. A 'Wheel Zoom' tool has been used to continually zoom in on the chart, which changes the axes data accordingly. In the bottom left corner, a blue box is highlighting an axis label that reads 'Year: 1988.2027845' (fails).
+
+A line chart is shown. A 'Wheel Zoom' tool has been used to continually zoom in on the chart, which changes the axes data accordingly. In the bottom left corner, a blue box is highlighting an axis label that reads 'Year: 1988.2027845' (fails).
+```
 
 Figure 2
 
-<figure>
-    <img width="803" alt="A line chart is shown. A 'Wheel Zoom' tool has been used to continually zoom in on the chart, which changes the axes data accordingly. On the bottom of the chart, the axis labels have overlapped one another into one long text strand and become unreadable (fails)." src="./assets/plotting-interface_human-readable_2.png">
-    <figcaption>A line chart is shown. A 'Wheel Zoom' tool has been used to continually zoom in on the chart, which changes the axes data accordingly. On the bottom of the chart, the axis labels have overlapped one another into one long text strand and become unreadable (fails).</figcaption>
-</figure>
+```{figure} ./assets/plotting-interface_human-readable_2.png
+:width: 100%
+:alt: A line chart is shown. A 'Wheel Zoom' tool has been used to continually zoom in on the chart, which changes the axes data accordingly. On the bottom of the chart, the axis labels have overlapped one another into one long text strand and become unreadable (fails).
+
+A line chart is shown. A 'Wheel Zoom' tool has been used to continually zoom in on the chart, which changes the axes data accordingly. On the bottom of the chart, the axis labels have overlapped one another into one long text strand and become unreadable (fails).
+```
 
 ## Steps to Reproduce
 
