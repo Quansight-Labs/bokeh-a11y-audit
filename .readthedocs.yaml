@@ -1,0 +1,12 @@
+version: 2
+
+build:
+  os: "ubuntu-24.04"
+  tools:
+    python: "mambaforge-22.9"
+
+conda:
+  environment: environment-docs.yml
+
+sphinx:
+  configuration: source/conf.py

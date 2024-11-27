@@ -1,0 +1,14 @@
+name: bokeh-a11y-docs
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - sphinx
+  - pydata-sphinx-theme
+  - myst-parser
+  - pip:
+    - sphinx-autobuild
+    - sphinxcontrib-video
+    - pre-commit
