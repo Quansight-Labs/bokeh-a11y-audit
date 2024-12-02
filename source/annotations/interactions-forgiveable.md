@@ -38,7 +38,8 @@ Using a mouse, hover over the line or dashed line on the double line chart. Move
 Interactions are not forgivable [https://chartability.github.io/POUR-CAF/#**interactionsarenotforgiveable**](https://chartability.github.io/POUR-CAF/#__interactionsarenotforgiveable__)
 
 ### Related Evidence
-See "Plot tools: Interactions are unforgivable" evidence. 
+
+See "Plot tools: Interactions are unforgivable" evidence.
 
 <!-- ### Known or Documented Issues
 (If there is already a github issue created for this test or a related test, it will be listed here.) -->
