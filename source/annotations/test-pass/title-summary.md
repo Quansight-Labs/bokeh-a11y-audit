@@ -12,7 +12,7 @@ Annotations pass for providing titles. Note: All these components are visual onl
 
 ### Expected Behavior (Pass/Fail)
 
-- *Pass* - We expect a title, summary, context, or caption must be provided in any modality used.
+- _Pass_ - We expect a title, summary, context, or caption must be provided in any modality used.
 
 <!-- ### Image or Video of Failure
 
@@ -36,10 +36,11 @@ See "Content is only visual" evidence.
 "Plot tools: Content is only visual" evidence forms. -->
 
 ### Technical Details
+
 - Chrome Version 130.0.6723.59 (64-bit)
 - Windows 11 Build 22631.4317
 
-*Updated as of: October 22nd, 2024*
+_Updated as of: October 22nd, 2024_
 
 <!-- ### Notes
 

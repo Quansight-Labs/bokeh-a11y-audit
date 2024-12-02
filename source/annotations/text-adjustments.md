@@ -8,7 +8,7 @@ User's text adjustments are respected.
 
 ### Results Summary
 
-Annotations fails to allow users to adjust text, like text stroke, font, and/or font size. Only the hover tooltip respects the changes. 
+Annotations fails to allow users to adjust text, like text stroke, font, and/or font size. Only the hover tooltip respects the changes.
 
 ### Expected Behavior (Pass/Fail)
 
@@ -39,11 +39,12 @@ See "User style change not respected (critical)" evidence.
 (If there is already a github issue created for this test or a related test, it will be listed here.) -->
 
 ### Technical Details
+
 - Dark Reader extension
 - Chrome Version 130.0.6723.59 (64-bit)
 - Windows 11 Build 22631.4317
 
-*Updated as of: October 22nd, 2024*
+_Updated as of: October 22nd, 2024_
 
 <!-- ### Notes
 .. -->

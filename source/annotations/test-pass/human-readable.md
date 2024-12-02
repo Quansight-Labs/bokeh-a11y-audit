@@ -3,6 +3,7 @@
 Data in text is not human-readable.
 
 ### Artifact Evaluated
+
 [Annotations](https://docs.bokeh.org/en/latest/docs/user_guide/interaction.html): which include titles, axes labels, legends and their labels, colorbar, span (i.e, line), text, and arrows.
 
 ### Results Summary
@@ -11,7 +12,7 @@ Annotations pass for human-readability with the legends, axes labels, labels, an
 
 ### Expected Behavior (Pass/Fail)
 
-- *Pass* - Data must be formatted to be human-readable. All textual information displayed (in data labels, annotations, axes, tables, legends, etc) must be formatted to an understandable level of content (ie “human readable”). These formats must also be made into versions that can be read and parsed comfortably by screen readers. (For example: 6500000000 should be formatted to 6.5b visually and to “six point five billion” when used in screen reader labels and alt text.)
+- _Pass_ - Data must be formatted to be human-readable. All textual information displayed (in data labels, annotations, axes, tables, legends, etc) must be formatted to an understandable level of content (ie “human readable”). These formats must also be made into versions that can be read and parsed comfortably by screen readers. (For example: 6500000000 should be formatted to 6.5b visually and to “six point five billion” when used in screen reader labels and alt text.)
 
 <!-- ### Image or Video of Failure
 
@@ -48,7 +49,7 @@ Data in text is not human-readable [https://chartability.github.io/POUR-CAF/#**d
 - Chrome Version 130.0.6723.59 (64-bit)
 - Windows 11 Build 22631.4317
 
-*Updated as of: October 22nd, 2024*
+_Updated as of: October 22nd, 2024_
 
 <!-- ### Notes
 .. -->

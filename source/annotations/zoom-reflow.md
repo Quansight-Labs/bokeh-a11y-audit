@@ -25,8 +25,10 @@ On mobile: The hover tooltip is not usable and cannot be accessed at all.
   :playsinline:
   ```
 ````
+
 <!-- <video controls src="./assets/annotations_zoom-reflow.mp4" title="Annotations: Zoom and Reflow test"></video> -->
-A desktop web browser is shown with five different charts. The user clicks an option in the command console called "Toggle deivce toolbar". This changes the browser to a moblie view. A gray circle is shown on screen to simulate the "touch" of a finger on a mobile device. When the user hovers over the second line chart, nothing happens. They move to the tool bar and toggle the "Hover" tool off and on, then attempt to hover over the line in the chart again. As before, nothing happens: no tooltip pops up. 
+
+A desktop web browser is shown with five different charts. The user clicks an option in the command console called "Toggle deivce toolbar". This changes the browser to a moblie view. A gray circle is shown on screen to simulate the "touch" of a finger on a mobile device. When the user hovers over the second line chart, nothing happens. They move to the tool bar and toggle the "Hover" tool off and on, then attempt to hover over the line in the chart again. As before, nothing happens: no tooltip pops up.
 
 ### Steps to Reproduce
 
@@ -58,4 +60,5 @@ See "User style change not respected (critical)" evidence.
 _Updated as of: October 22nd, 2024_
 
 ### Notes
-I only tested the hover tooltip for this test because the results are the same as the "Plotting Interface" evidence forms. The hover was the only thing not tested previously. 
+
+I only tested the hover tooltip for this test because the results are the same as the "Plotting Interface" evidence forms. The hover was the only thing not tested previously.

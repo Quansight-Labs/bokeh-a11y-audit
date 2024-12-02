@@ -1,16 +1,19 @@
 ### Test Type Performed
-No default "build-your-own" provided. 
+
+No default "build-your-own" provided.
 
 ### Artifact Evaluated
+
 [Annotations](https://docs.bokeh.org/en/latest/docs/user_guide/interaction.html): which include titles, axes labels, legends and their labels, colorbar, span (i.e, line), text, and arrows.
 
 ### Results Summary
+
 Test is not applicable.
 
 <!-- ### Expected Behavior (Pass/Fail)
-- *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px. 
+- *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.
 
-### Image or Video of Failure 
+### Image or Video of Failure
 <figure>
     <img width="803" alt="A browser Command Console window is open. A red line is highlighting the font size '12px' (passes)" src="./assets/plot-tools_text-size.png">
     <figcaption>A browser Command Console window is open. A red line is highlighting the font size '12px' (passes).</figcaption>
@@ -31,7 +34,7 @@ Data in text is not human-readable [https://chartability.github.io/POUR-CAF/#__d
 
 ### Technical Details
 - Chrome Version 129.0.6668.59 (64-bit)
-- JAWS 2023.2402.1 
+- JAWS 2023.2402.1
 - Windows 11 Build 22631.3958
 
 *Updated as of: September 18th, 2024*
