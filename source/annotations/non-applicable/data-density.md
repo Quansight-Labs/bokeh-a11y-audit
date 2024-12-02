@@ -1,16 +1,19 @@
 ### Test Type Performed
-Data density is inappropriate (critical). 
+
+Data density is inappropriate (critical).
 
 ### Artifact Evaluated
+
 [Annotations](https://docs.bokeh.org/en/latest/docs/user_guide/interaction.html): which include titles, axes labels, legends and their labels, colorbar, span (i.e, line), text, and arrows.
 
 ### Results Summary
+
 Test is not applicable.
 
 <!-- ### Expected Behavior (Pass/Fail)
 - *FAIL* - Data must be presented at an appropriate density. If more too many elements are competing for the same space (approximate limit is based on cognitive load): clustering or patterns (or lack of) must be explained, chart must be aggregated to a higher level with less elements, or chart must be divided into smaller charts with less data. Visual density should serve a purpose, such as retaining the data's signal (when appropriate).
 
-### Image or Video of Failure 
+### Image or Video of Failure
 <figure>
     <img width="803" alt="A scatter plot is shown. A red circle is highlighting an area with three data sets differentiated by squares, circles, and triangles. From this view, it is hard to tell the patterns apart - they all look similar (fails)." src="./assets/plotting-interface_meaningful-elements_2.png">
     <figcaption>A scatter plot is shown. A red circle is highlighting an area with three data sets differentiated by squares, circles, and triangles. From this view, it is hard to tell the patterns apart - they all look similar (fails).</figcaption>
@@ -20,7 +23,8 @@ Test is not applicable.
 Use Inspect on the plot tool icon to open Console Command. Find the "style" section for the selected button then locate the font size. -->
 
 ### Guidelines and Standards Used
-Data density is inappropriate (critical) [https://chartability.github.io/POUR-CAF/#__datadensityisinappropriate___critical_](https://chartability.github.io/POUR-CAF/#__datadensityisinappropriate___critical_)
+
+Data density is inappropriate (critical) [https://chartability.github.io/POUR-CAF/#**datadensityisinappropriate\_**critical\_](https://chartability.github.io/POUR-CAF/#__datadensityisinappropriate___critical_)
 
 <!-- ### Related Evidence
 See "Meaningful elements can be distinguished from each other" evidence.  -->

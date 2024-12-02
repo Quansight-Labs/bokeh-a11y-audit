@@ -1,16 +1,19 @@
 ### Test Type Performed
-Long animations cannot be controlled. 
+
+Long animations cannot be controlled.
 
 ### Artifact Evaluated
+
 [Annotations](https://docs.bokeh.org/en/latest/docs/user_guide/interaction.html): which include titles, axes labels, legends and their labels, colorbar, span (i.e, line), text, and arrows.
 
 ### Results Summary
+
 Test is not applicable.
 
 <!-- ### Expected Behavior (Pass/Fail)
-- *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px. 
+- *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.
 
-### Image or Video of Failure 
+### Image or Video of Failure
 <figure>
     <img width="803" alt="A browser Command Console window is open. A red line is highlighting the font size '12px' (passes)" src="./assets/plot-tools_text-size.png">
     <figcaption>A browser Command Console window is open. A red line is highlighting the font size '12px' (passes).</figcaption>

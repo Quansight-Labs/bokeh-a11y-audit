@@ -1,17 +1,20 @@
 ### Test Type Performed
-Space does not handle extremes.  
+
+Space does not handle extremes.
 
 ### Artifact Evaluated
+
 [Annotations](https://docs.bokeh.org/en/latest/docs/user_guide/interaction.html): which include titles, axes labels, legends and their labels, colorbar, span (i.e, line), text, and arrows.
 
 ### Results Summary
+
 Test is not applicable.
 
 <!-- ### Expected Behavior (Pass/Fail)
-- *FAIL* - Use of space should appropriately handle extreme difference or similarity in the data. Both extreme quantitative differences and similarities can produce unreadable charts. If chart elements are squished into margins due to outliers or together by too much similarity, this fails. 
+- *FAIL* - Use of space should appropriately handle extreme difference or similarity in the data. Both extreme quantitative differences and similarities can produce unreadable charts. If chart elements are squished into margins due to outliers or together by too much similarity, this fails.
 - Chart must automatically handle these issues or else it must be made clear to the user through annotations what is happening. If data is dynamic or producing automatic annotations is not possible, then chart must provide a way for the user to sort, divide, or filter the chart space on their own.
 
-### Image or Video of Failure 
+### Image or Video of Failure
 <figure>
     <img width="803" alt="A browser Command Console window is open. A red line is highlighting the font size '12px' (passes)" src="./assets/plot-tools_text-size.png">
     <figcaption>A browser Command Console window is open. A red line is highlighting the font size '12px' (passes).</figcaption>
@@ -31,7 +34,7 @@ Space does not handle extremes [https://chartability.github.io/POUR-CAF/#__space
 
 <!-- ### Technical Details
 - Chrome Version 129.0.6668.59 (64-bit)
-- JAWS 2023.2402.1 
+- JAWS 2023.2402.1
 - Windows 11 Build 22631.3958
 
 *Updated as of: September 18th, 2024* -->
