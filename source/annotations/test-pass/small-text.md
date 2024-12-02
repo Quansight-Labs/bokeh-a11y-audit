@@ -43,4 +43,4 @@ Small text size [https://chartability.github.io/POUR-CAF/#__smalltextsize___crit
 *Updated as of: October 22nd, 2024*
 
 ### Notes
-I wasn't sure what all was part of the plotting interface when I began that previous testing, so some of these Annotation tests may be redudant. I'm still adding them to this audit branch for the sake of being thorough and consolidating information.
+I wasn't sure what all was part of the plotting interface when I began that previous testing, so some of these Annotation tests may be redundant. I'm still adding them to this audit branch for the sake of being thorough and consolidating information.

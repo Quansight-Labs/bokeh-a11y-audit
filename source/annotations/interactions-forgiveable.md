@@ -1,5 +1,5 @@
 ### Test Type Performed
-Interactions are forgiveable.
+Interactions are forgivable.
 
 ### Artifact Evaluated
 [Annotations](https://docs.bokeh.org/en/latest/docs/user_guide/interaction.html): which include titles, axes labels, legends and their labels, colorbar, span (i.e, line), text, and arrows.
@@ -26,10 +26,10 @@ A line chart is shown. A mouse cursor hovers over a plot tool called "Hover." Us
 Using a mouse, hover over the line or dashed line on the double line chart. Move your mouse away and try to find the same data point again. 
 
 ### Guidelines and Standards Used
-Interactions are not forgiveable [https://chartability.github.io/POUR-CAF/#__interactionsarenotforgiveable__](https://chartability.github.io/POUR-CAF/#__interactionsarenotforgiveable__)
+Interactions are not forgivable [https://chartability.github.io/POUR-CAF/#__interactionsarenotforgiveable__](https://chartability.github.io/POUR-CAF/#__interactionsarenotforgiveable__)
 
 ### Related Evidence
-See "Plot tools: Interactions are unforgiveable" evidence. 
+See "Plot tools: Interactions are unforgivable" evidence. 
 
 <!-- ### Known or Documented Issues
 (If there is already a github issue created for this test or a related test, it will be listed here.) -->

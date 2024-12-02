@@ -12,16 +12,16 @@ Annotations pass for appropriate controls.
 
 <!-- ### Image or Video of Failure 
 <video controls src="./assets/plot-tools_controls-inappropriate.mp4" title="Plot-tools_controls-inappropriate"></video>
-A scatter plot is shown. The mouse cursor hovers over a plot tool called "Pan." Using the mouse, a user pans to the left of the chart (away from the visable data points) into an empty space. They pan to the right until the data points appear again. The user then uses the "Wheel  zoom" tool to zoom out until the data points become a small cluster, indistinguishable from one another before zooming in to where the data points disappear once again.
+A scatter plot is shown. The mouse cursor hovers over a plot tool called "Pan." Using the mouse, a user pans to the left of the chart (away from the visible data points) into an empty space. They pan to the right until the data points appear again. The user then uses the "Wheel  zoom" tool to zoom out until the data points become a small cluster, indistinguishable from one another before zooming in to where the data points disappear once again.
 
 ### Steps to Reproduce
-Try to understand what the overall purpose of the visualization is, and then try to determine if the interactivity of the tools helps or assits with that purpose in any way. -->
+Try to understand what the overall purpose of the visualization is, and then try to determine if the interactivity of the tools helps or assists with that purpose in any way. -->
 
 ### Guidelines and Standards Used
 Controls are inappropriate [https://chartability.github.io/POUR-CAF/#__controlsareinappropriate__](https://chartability.github.io/POUR-CAF/#__controlsareinappropriate__)
 
 <!-- ### Related Evidence
-See "Interactions are not unforgiveable."
+See "Interactions are not unforgivable."
 
 ### Known or Documented Issues
 See "Plot tools: Controls are inapproriate" as well.  -->
