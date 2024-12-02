@@ -1,8 +1,8 @@
-# Human Readable
+# Share Reproduce
 
 ## Test Type Performed
 
-Data in text is not human-readable.
+State is not easy to share and reproduce.
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Data in text is not human-readable.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

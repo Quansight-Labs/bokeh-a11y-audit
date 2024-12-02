@@ -1,8 +1,8 @@
-# Build Your Own
+# Conform to Standards
 
 ## Test Type Performed
 
-No default "build-your-own" provided.
+Does not conform to standards.
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ No default "build-your-own" provided.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

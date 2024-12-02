@@ -1,8 +1,8 @@
-# Single Process
+# Info Complexity
 
 ## Test Type Performed
 
-Information can only be reached through single process.
+Information complexity is inappropriate.
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Information can only be reached through single process.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

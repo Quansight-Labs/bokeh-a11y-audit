@@ -1,8 +1,8 @@
-# Title Summary
+# Narrative Structure
 
 ## Test Type Performed
 
-No title, summary, or caption (critical)
+Information cannot be navigated according to narrative or structure.
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ No title, summary, or caption (critical)
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

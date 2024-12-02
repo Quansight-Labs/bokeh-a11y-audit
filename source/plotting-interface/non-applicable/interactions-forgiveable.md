@@ -10,7 +10,7 @@ Interactions are forgiveable.
 
 ## Results Summary
 
-Redundant test, not applicable here (plot tools fail to allow the user to undo or redo any actions taken but plotting interface tests are not additionally affected).
+Test is not applicable, this is redundant (plot tools fail to allow the user to undo or redo any actions taken but plotting interface tests are not additionally affected).
 
 ## Expected Behavior (Pass/Fail)
 

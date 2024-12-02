@@ -1,8 +1,8 @@
-# Difficulty Chart
+# Scrolling
 
 ## Test Type Performed
 
-Difficult chart type has no alternative.
+Scrolling experiences cannot be altered.
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Difficult chart type has no alternative.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

@@ -1,8 +1,8 @@
-# Metrics Variables
+# Data Density
 
 ## Test Type Performed
 
-Metrics and variables are undefined.
+Data density is inappropriate (critical).
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Metrics and variables are undefined.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

@@ -1,8 +1,8 @@
-# Narrative Structure
+# Statistical Uncertainty
 
 ## Test Type Performed
 
-Information cannot be navigated according to narrative or structure.
+Statistical uncertainty isn't clearly communicated.
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Information cannot be navigated according to narrative or structure.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

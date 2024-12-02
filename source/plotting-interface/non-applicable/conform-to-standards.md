@@ -12,7 +12,7 @@ The chart must conform to appropriate compliance standards. The chart must pass 
 
 ## Results Summary
 
-Test not applicable for this audit scope.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *FAIL* - Plotting interface should  -->

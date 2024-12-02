@@ -1,8 +1,8 @@
-# Long Animations
+# No Table
 
 ## Test Type Performed
 
-Long animations cannot be controlled.
+No table (critical).
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Long animations cannot be controlled.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

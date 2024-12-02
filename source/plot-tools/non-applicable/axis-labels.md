@@ -1,8 +1,8 @@
-# Info Complexity
+# Axis Labels
 
 ## Test Type Performed
 
-Information complexity is inappropriate.
+Axis labels are unclear or missing.
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Information complexity is inappropriate.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

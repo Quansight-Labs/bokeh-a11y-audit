@@ -1,8 +1,8 @@
-# Reading Level
+# Build Your Own
 
 ## Test Type Performed
 
-Reading level inappropriate (critical)
+No default "build-your-own" provided.
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Reading level inappropriate (critical)
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

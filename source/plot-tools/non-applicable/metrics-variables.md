@@ -1,8 +1,8 @@
-# Static Table
+# Metrics Variables
 
 ## Test Type Performed
 
-Table/data is static.
+Metrics and variables are undefined.
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Table/data is static.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

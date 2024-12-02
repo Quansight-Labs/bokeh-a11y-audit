@@ -1,8 +1,8 @@
-# Conform to Standards
+# Static Table
 
 ## Test Type Performed
 
-Does not conform to standards.
+Table/data is static.
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Does not conform to standards.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

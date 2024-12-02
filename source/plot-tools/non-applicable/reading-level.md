@@ -1,8 +1,8 @@
-# Share Reproduce
+# Reading Level
 
 ## Test Type Performed
 
-State is not easy to share and reproduce.
+Reading level inappropriate (critical)
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ State is not easy to share and reproduce.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

@@ -1,8 +1,8 @@
-# Scrolling
+# Title Summary
 
 ## Test Type Performed
 
-Scrolling experiences cannot be altered.
+No title, summary, or caption (critical)
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Scrolling experiences cannot be altered.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.

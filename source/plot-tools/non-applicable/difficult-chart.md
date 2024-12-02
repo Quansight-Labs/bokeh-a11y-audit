@@ -1,8 +1,8 @@
-# Extremes
+# Difficulty Chart
 
 ## Test Type Performed
 
-Space does not handle extremes.
+Difficult chart type has no alternative.
 
 ## Artifact Evaluated
 
@@ -10,7 +10,7 @@ Space does not handle extremes.
 
 ## Results Summary
 
-Test not applicable.
+Test is not applicable.
 
 <!-- ## Expected Behavior (Pass/Fail)
 - *Pass* - Plot tools tooltip text meets minimum requirement of 9pt/12px.
