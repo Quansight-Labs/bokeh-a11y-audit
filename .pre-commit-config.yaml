@@ -21,7 +21,7 @@ repos:
 
   # Misc hooks: https://github.com/pre-commit/pre-commit-hooks#hooks-available
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       # Autoformat: Makes sure files end in a newline and only a newline
       - id: end-of-file-fixer
