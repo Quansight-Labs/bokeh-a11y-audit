@@ -15,11 +15,12 @@ Annotations do not respect a user's custom styling changes when trying to use a 
 - _FAIL_ - Styling changed by the user must be respected. Chart must not interfere with or override styling changes made by the user (such as importing a custom style sheet for use in an HTML application or web site).
 
 ### Image or Video of Failure
+```{figure} ./assets/annotations_contrast-texture-adjustments.png
+    :width: 100%
+    :alt: A line chart is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails). Only the hover tooltip has respected the contrast change.
 
-<figure>
-    <img width="803" alt="A line chart is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails). Only the hover tooltip has respected the contrast change." src="./assets/annotations_contrast-texture-adjustments.png">
-    <figcaption>A line chart is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails). Only the hover tooltip has respected the contrast change.</figcaption>
-</figure>
+    A line chart is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails). Only the hover tooltip has respected the contrast change.
+```
 
 ### Steps to Reproduce
 

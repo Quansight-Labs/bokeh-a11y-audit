@@ -19,8 +19,13 @@ On mobile: The hover tooltip is not usable and cannot be accessed at all.
 
 ### Image or Video of Failure
 
-<video controls src="./assets/annotations_zoom-reflow.mp4" title="Annotations: Zoom and Reflow test"></video>
-
+````
+  ```{video} ./assets/annotations_zoom-reflow.mp4
+  :width: 100%
+  :playsinline:
+  ```
+````
+<!-- <video controls src="./assets/annotations_zoom-reflow.mp4" title="Annotations: Zoom and Reflow test"></video> -->
 A desktop web browser is shown with five different charts. The user clicks an option in the command console called "Toggle deivce toolbar". This changes the browser to a moblie view. A gray circle is shown on screen to simulate the "touch" of a finger on a mobile device. When the user hovers over the second line chart, nothing happens. They move to the tool bar and toggle the "Hover" tool off and on, then attempt to hover over the line in the chart again. As before, nothing happens: no tooltip pops up. 
 
 ### Steps to Reproduce

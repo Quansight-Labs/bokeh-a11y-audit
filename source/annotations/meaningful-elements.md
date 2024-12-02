@@ -14,22 +14,28 @@ The black span line and arrow overlap colored bars on the bar chart. In this spe
 
 ### Image or Video of Failure 
 Figure 1: Bar chart - Colorbar
-<figure>
-    <img width="803" alt="A color gradient for values of a bar chart is shown. A red circle is highlighting a pair of lemon-yellow and a lime-green squares. There is no border or space between the two colored squares (fails)." src="./assets/annotations_meaningful-elements_1.png">
-    <figcaption>"A color gradient for values of a bar chart is shown. A red circle is highlighting a pair of lemon-yellow and a lime-green squares. There is no border or space between the two colored squares (fails).</figcaption>
-<figure>
+```{figure} ./assets/annotations_meaningful-elements_1.png
+    :width: 100%
+    :alt: A color gradient for values of a bar chart is shown. A red circle is highlighting a pair of lemon-yellow and a lime-green squares. There is no border or space between the two colored squares (fails).
+
+    A color gradient for values of a bar chart is shown. A red circle is highlighting a pair of lemon-yellow and a lime-green squares. There is no border or space between the two colored squares (fails).
+```
 
 Figure 2: Bar chart - Span
-<figure>
-    <img width="803" alt="A bar chart is shown. A red box is highlighting a black line that is overlapping a green colored bar. There is no border around the line to separate it from the bars (fails)." src="./assets/annotations_meaningful-elements_2.png">
-    <figcaption>A bar chart is shown. A red box is highlighting a black line that is overlapping a green colored bar. There is no border around the line to separate it from the bars (fails).</figcaption>
-</figure>
+```{figure} ./assets/annotations_meaningful-elements_2.png
+    :width: 100%
+    :alt: A bar chart is shown. A red box is highlighting a black line that is overlapping a green colored bar. There is no border around the line to separate it from the bars (fails).
+
+    A bar chart is shown. A red box is highlighting a black line that is overlapping a green colored bar. There is no border around the line to separate it from the bars (fails).
+```
 
 Figure 3: Bar chart - Arrow
-<figure>
-    <img width="803" alt="A bar chart is shown. A red box is highlighting a black arrow that is pointing to a black line, both overlapping a green colored bar. There is no border around the arrow to separate it from the bars (fails)." src="./assets/annotations_meaningful-elements_3.png">
-    <figcaption>A bar chart is shown. A red box is highlighting a black arrow that is pointing to a black line, both overlapping a green colored bar. There is no border around the arrow to separate it from the bars (fails).</figcaption>
-</figure>
+```{figure} ./assets/annotations_meaningful-elements_3.png
+    :width: 100%
+    :alt: A bar chart is shown. A red box is highlighting a black arrow that is pointing to a black line, both overlapping a green colored bar. There is no border around the arrow to separate it from the bars (fails).
+
+    A bar chart is shown. A red box is highlighting a black arrow that is pointing to a black line, both overlapping a green colored bar. There is no border around the arrow to separate it from the bars (fails).
+```
 
 ### Steps to Reproduce
 - Determine which elements are meaningful.

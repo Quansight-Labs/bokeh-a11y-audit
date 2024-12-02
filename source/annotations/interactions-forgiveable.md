@@ -14,7 +14,12 @@ The interactive legend does pass. It can be easily toggled in a single process a
 
 ### Image or Video of Failure 
 (similar test provided by plot tools, see below:)
-<video controls src="./assets/annotations_interactions-forgivable .mp4_interactions-forgiveable.mp4" title="Plot-tools_Interactions-Forgiveable"></video>
+````
+  ```{video} ./assets/annotations_interactions-forgivable.mp4
+  :width: 100%
+  :playsinline:
+  ```
+````
 A line chart is shown. A mouse cursor hovers over a plot tool called "Hover." Using the mouse, a user moves to a dashed line in the chart space. The user then hovers over a line (showing a number 47.218) then moves away. They try to hover over the same point again an cannot easily find the same data value.
 
 ### Steps to Reproduce

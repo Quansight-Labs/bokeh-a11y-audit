@@ -21,7 +21,7 @@ Test is not applicable.
 Use Inspect on the plot tool icon to open Console Command. Find the "style" section for the selected button then locate the font size. -->
 
 ### Guidelines and Standards Used
-Table/data is statis [https://chartability.github.io/POUR-CAF/#__tabledataisstatic__](https://chartability.github.io/POUR-CAF/#__tabledataisstatic__)
+Table/data is static [https://chartability.github.io/POUR-CAF/#__tabledataisstatic__](https://chartability.github.io/POUR-CAF/#__tabledataisstatic__)
 
 <!-- ### Related Evidence
 (Added if additional evidence has already been gathered for related elements. This will not be edited retroactively, however, due to scope creep. This means that the latest issues will have the most Related Evidence listed.) -->

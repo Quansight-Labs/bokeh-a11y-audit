@@ -13,10 +13,12 @@ The hover tooltip, however, does respect user changes.
 - *FAIL* - Contrast or textures must provide a way to be adjusted as-needed. Chart must not interfere with or override user’s independent contrast adjustments and chart must adjust accordingly to new settings. Chart textures (such as those used on fills) must be able to be turned on or off according to user preference.
 
 ### Image or Video of Failure 
-<figure>
-    <img width="803" alt="A line chart is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails). Only the hover tooltip has respected the contrast change." src="./assets/annotations_contrast-texture-adjustments.png">
-    <figcaption>A line chart is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails). Only the hover tooltip has respected the contrast change.</figcaption>
-</figure>
+```{figure} ./assets/annotations_contrast-texture-adjustments.png
+    :width: 100%
+    :alt: A line chart is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails). Only the hover tooltip has respected the contrast change.
+
+    A line chart is shown. A high contrast filter has been implemented, and the web browser background is black with yellow font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails). Only the hover tooltip has respected the contrast change.
+```
 
 ### Steps to Reproduce
 Using Windows contrast themes, choose Night Sky (high contrast) option and apply.

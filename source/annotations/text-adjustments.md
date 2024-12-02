@@ -16,10 +16,12 @@ Annotations fails to allow users to adjust text, like text stroke, font, and/or 
 
 ### Image or Video of Failure
 
-<figure>
-    <img width="803" alt="A line chart is shown. A text stroke filter has been implemented to +1. The text on the web page has adjusted to an increased text stroke, but the chart space retains it's default settings -- no adjustments have been made. Only the hover tooltip respects the stroke change (fails)." src="./assets/annotations_text-adjustments.png">
-    <figcaption>A line chart is shown. A text stroke filter has been implemented to +1. The text on the web page has adjusted to an increased text stroke, but the chart space retains it's default settings -- no adjustments have been made. Only the hover tooltip respects the stroke change (fails).</figcaption>
-</figure>
+```{figure} ./assets/annotations_text-adjustments.png
+    :width: 100%
+    :alt: A line chart is shown. A text stroke filter has been implemented to +1. The text on the web page has adjusted to an increased text stroke, but the chart space retains it's default settings -- no adjustments have been made. Only the hover tooltip respects the stroke change (fails).
+
+    A line chart is shown. A text stroke filter has been implemented to +1. The text on the web page has adjusted to an increased text stroke, but the chart space retains it's default settings -- no adjustments have been made. Only the hover tooltip respects the stroke change (fails).
+```
 
 ### Steps to Reproduce
 
