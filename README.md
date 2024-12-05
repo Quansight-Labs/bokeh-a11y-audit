@@ -9,8 +9,8 @@ This repository is a place to track the findings and progress of the Bokeh acces
 
 ## Contents 🗃️
 
-- [Bokeh dashboard for accessibility audit](./dashboard/README.md): contains the assets and components for focused accessibility audits
-- [Accessibility audit findings](./source/): note the audits are organised in subdirectories according to the scope of the audit
+- [Bokeh dashboard for accessibility audit](./dashboard/README.md): contains the assets and components for focused accessibility audits.
+- [Accessibility audit findings](./source/): note the audits are organised in subdirectories according to the scope of the audit. The findings can also be accessed at [bokeh-a11y-audit.readthedocs.io](https://bokeh-a11y-audit.readthedocs.io/en/latest/).
 
 ## License 📃
 

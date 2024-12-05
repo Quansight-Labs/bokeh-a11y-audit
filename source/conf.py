@@ -32,5 +32,13 @@ html_static_path = ['_static']
 html_theme_options = {
   "show_toc_level": 2,
   "use_edit_page_button": True,
-  "secondary_sidebar_items": ["page-toc"]
+}
+
+html_show_sourcelink = False
+
+html_context = {
+    "github_user": "Quansight-Labs",
+    "github_repo": "bokeh-a11y-audit",
+    "github_version": "main",
+    "doc_path": "source",
 }
