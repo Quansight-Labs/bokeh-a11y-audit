@@ -1,4 +1,4 @@
-# Plotting interface
+# Annotations
 
 ```{toctree}
 :caption: Unclear and failing tests
