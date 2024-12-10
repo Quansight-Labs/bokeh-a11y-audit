@@ -9,6 +9,14 @@
 ```
 
 ```{toctree}
+:caption: Non-applicable tests
+:glob:
+:maxdepth: 1
+
+non-applicable/*
+```
+
+```{toctree}
 :caption: Passing tests
 :glob:
 :maxdepth: 1
