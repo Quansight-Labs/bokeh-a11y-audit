@@ -8,14 +8,15 @@ Keyboard focus indicator.
 
 ### Results Summary
 
-Annotations fail for providing focus indicators on interactable elements, which is related to other technical limitations. Since the interactive legend is a div and can be interacted with like a button there should be a keyboard indicator. However, in the chart's current state this can't happen. 
+Annotations fail for providing focus indicators on interactable elements, which is related to other technical limitations. Since the interactive legend is a div and can be interacted with like a button there should be a keyboard indicator. However, in the chart's current state this can't happen.
 
 ### Expected Behavior (Pass/Fail)
 
 - _FAIL_ - Visual keyboard focus indication must be present and easy to see. Focus indicator must have 4.5:1 contrast against background, must not be fully obscured, and must have at least a 2px border.
 
 ### Image or Video of Failure
-From 00:00-00:05s, a double line chart is shown. A user moves their cursor over an interactive legend and presses each label like a button. This toggles each line "on/off", respectively. 
+
+From 00:00-00:05s, a double line chart is shown. A user moves their cursor over an interactive legend and presses each label like a button. This toggles each line "on/off", respectively.
 From 00:05-00:18s
 The user changes to keyboard-only interactions. They use TAB to navigate to the correct chart, then continue to press TAB to try and access the interactive. They cannot.
 
@@ -47,7 +48,7 @@ See "Plot tools: Keyboard focus indicator" evidence.
 - Chrome Version 130.0.6723.59 (64-bit)
 - Windows 11 Build 22631.4317
 
-*Updated as of: October 22nd, 2024*
+_Updated as of: October 22nd, 2024_
 
 <!-- ### Notes
 

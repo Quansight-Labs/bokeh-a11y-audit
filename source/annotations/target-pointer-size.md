@@ -19,6 +19,7 @@ Hover tooltip: Fails to meet minimum.
 - _FAIL_ - We would expect interaction elements to have a minimum target size of 24 x 24px for mouse or touch modalities. We expect that elements with a visual space of less than 24 x 24px in size are still centered within a non-overlapping 24 x 24px interaction target area (even if invisible).
 
 ### Image or Video of Failure
+
 ```{figure} ./assets/annotations_target-pointer-size.png
     :width: 100%
     :alt: A chart's legend is shown with two labels: Engineering and Business. A black border outlines the approximate dimensions for each toggleable button, reading 98x19 pixels. To the left of them is a pixel block that is 24 x 24 for comparison.
@@ -45,7 +46,7 @@ N/A
 - Chrome Version 130.0.6723.59 (64-bit)
 - Windows 11 Build 22631.4317
 
-*Updated as of: October 22nd, 2024*
+_Updated as of: October 22nd, 2024_
 
 ### Notes
 

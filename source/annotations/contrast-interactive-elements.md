@@ -19,7 +19,9 @@ Hover tooltip: Fails. Results are 2.54:1.
 - _FAIL_ - We would expect interactive elements to pass a contrast ratio of 3:1 for the new state change against its previous state.
 
 ### Image or Video of Failure
+
 Figure 1: Interactive legend "muted" against "unmuted" lines.
+
 ```{figure} ./assets/annotations_interactive-contrast-elements_1.png
     :width: 100%
     :alt: A line chart is shown. The legends blue color is highlighted. The contrast checking score is shown on the bottom left corner at 2.7:1 (fails).
@@ -28,6 +30,7 @@ Figure 1: Interactive legend "muted" against "unmuted" lines.
 ```
 
 Figure 2: Hover tooltip.
+
 ```{figure} ./assets/annotations_contrast-interactive-elements_2.png
     :width: 100%
     :alt: A line chart is shown. The hover tooltip's blue color is highlighted. The contrast checking score is shown on the bottom left corner at 2.54:1 (fails).
@@ -53,11 +56,12 @@ See "Low contrast (critical)" evidence as well as "Keyboard focus."
 ... -->
 
 ### Technical Details
+
 - JAWS 2023.2402.1
 - Chrome Version 130.0.6723.59 (64-bit)
 - Windows 11 Build 22631.4317
 
-*Updated as of: October 22nd, 2024*
+_Updated as of: October 22nd, 2024_
 
 <!-- ### Notes
 A seasoned SR (screen reader) user could have the knowledge to navigate and explore webpages and graphs with more nuance, whether through manual mode switching, certain key shortcuts, etc. These tests are done by a sighted user with the SR’s default options and performed as if a new or beginner user is interacting with these elements. We would expect that all users could be able to navigate smoothly, regardless of experience levels.  -->

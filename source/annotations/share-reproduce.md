@@ -10,7 +10,7 @@ State is not easy to share and reproduce.
 
 Annotations fail for being able to share and reproduce custom edits to the charts. Complete fail if the user attempts to share via URL (charts retain their default settings).
 
-Legend: Limited - able to mute and unmute labels and have those edits remain ONLY if the chart's own share button is used. 
+Legend: Limited - able to mute and unmute labels and have those edits remain ONLY if the chart's own share button is used.
 
 Hover tooltip: Fails - cannot be saved or "selected" to stay on screen.
 
@@ -19,7 +19,9 @@ Hover tooltip: Fails - cannot be saved or "selected" to stay on screen.
 - _FAIL_ - Chart state must be easy to share and reproduce. If an analysis or complex interaction can produce a customized view, this view must be easy to share (such as with a single link, file, or saved state).
 
 ### Image or Video of Failure
+
 Figure 1: Using the chart's filtering function
+
 ```{figure} ./assets/annotations_share-reproduce_1.png
     :width: 100%
     :alt: A line chart is shown. A blue dashed line labeled 'Business' is the main focus, while the 'Engineering' line has been toggled off (it is faded and grayed).
@@ -28,15 +30,18 @@ Figure 1: Using the chart's filtering function
 ```
 
 Figure 2: Video sharing URL
+
 ````
   ```{video} ./assets/annotations_share-reproduce_2.mp4
   :width: 100%
   :playsinline:
   ```
-````  
-The user makes custom  edits to a line chart (deselecting a filled line in the interactive legend and zooming in). They then copy and paste the URL into a new window. None of their changes to the chart transfer over to the new window. Refreshing the page, the changes are also lost.
+````
+
+The user makes custom edits to a line chart (deselecting a filled line in the interactive legend and zooming in). They then copy and paste the URL into a new window. None of their changes to the chart transfer over to the new window. Refreshing the page, the changes are also lost.
 
 ### Steps to Reproduce
+
 1. Interact and change the state of the chart (toggle the legend labels on or off.)
 2. Locate any way that enables sharing this state (such as via a URL, button, state export file, etc).
 3. Locate how to import or load this changed state upon page or application refresh.
@@ -50,14 +55,16 @@ State is not easy to share and reproduce [https://chartability.github.io/POUR-CA
 See "Plotting interface: State is not easy to share and reproduce" evidence.  -->
 
 ### Known or Documented Issues
+
 See "Plotting interface: State is not easy to share and reproduce" evidence.
 
- ### Technical Details
+### Technical Details
+
 - JAWS 2023.2402.1
 - Chrome Version 130.0.6723.59 (64-bit)
 - Windows 11 Build 22631.4317
 
-*Updated as of: October 22nd, 2024*
+_Updated as of: October 22nd, 2024_
 
 <!-- ### Notes
 
