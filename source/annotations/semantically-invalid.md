@@ -1,42 +1,44 @@
-### Test Type Performed
+# Semantically Invalid
+
+## Test Type Performed
 
 Semantically valid.
 
-### Artifact Evaluated
+## Artifact Evaluated
 
 [Annotations](https://docs.bokeh.org/en/latest/docs/user_guide/interaction.html): which include titles, axes labels, legends and their labels, color bar, span (i.e, line), text, and arrows.
 
-### Results Summary
+## Results Summary
 
 Annotations fail to follow correct standards for not providing a heading for chart titles. It also fails to provide a button heading for the interactive legend. (Elements are generally categorized as divs.)
 
-### Expected Behavior (Pass/Fail)
+## Expected Behavior (Pass/Fail)
 
 - _FAIL_ - Semantically invalid use of document elements (if it functions like a button, but it is semantically other than a button, etc). Chart must be semantically valid according to modern standards. Initial testing (on the web) may be automated using any combination of: Axe-core, Wave, HTML Codesniffer, Accessibility Insights, or W3C Markup Validation but may only pass once a screen reader test has also verified the experience (see: Perceivable Failures for screen reader info).
 
 The charts need to be given roles and put a system in place. Divs and canvas are meaningless for SRs.
 
-### Image or Video of Failure
+## Image or Video of Failure
 
 Figure 1: Chart title
 
 ```{figure} ./assets/annotations_semantically-invalid_1.png
-    :width: 100%
-    :alt: The element inspector pane of a web browser is opened. A yellow arrow is highlighting a section of code that reads 'div class= bk-Title'.
+:width: 100%
+:alt: The element inspector pane of a web browser is opened. A yellow arrow is highlighting a section of code that reads 'div class= bk-Title'.
 
-    The element inspector pane of a web browser is opened. A yellow arrow is highlighting a section of code that reads 'div class= bk-Title'.
+The element inspector pane of a web browser is opened. A yellow arrow is highlighting a section of code that reads 'div class= bk-Title'.
 ```
 
 Figure 2: Interactive legend
 
 ```{figure} ./assets/annotations_semantically-invalid_2.png
-    :width: 100%
-    :alt: The element inspector pane of a web browser is opened. A yellow arrow is highlighting a section of code that reads "div class= bk-Legend".
+:width: 100%
+:alt: The element inspector pane of a web browser is opened. A yellow arrow is highlighting a section of code that reads "div class= bk-Legend".
 
-    The element inspector pane of a web browser is opened. A yellow arrow is highlighting a section of code that reads "div class= bk-Legend".
+The element inspector pane of a web browser is opened. A yellow arrow is highlighting a section of code that reads "div class= bk-Legend".
 ```
 
-### Steps to Reproduce
+## Steps to Reproduce
 
 1. Understand intended semantics.
    1.a) are semantics functional? (buttons, toggle buttons, etc.)
@@ -45,19 +47,19 @@ Figure 2: Interactive legend
    2b) If not, is there something that could have been used?
 3. If there is no valid possible semantics that they could rely on, did they construct semantics themselves? (Typically done by adding to the end of an `aria-label` or `alt` description or by adding to `aria-roledescription`)
 
-### Guidelines and Standards Used
+## Guidelines and Standards Used
 
 Semantically invalid [https://chartability.github.io/POUR-CAF/#**semanticallyinvalid**](https://chartability.github.io/POUR-CAF/#__semanticallyinvalid__)
 
-### Related Evidence
+## Related Evidence
 
 See "Content is only visual (critical)" and "Interaction modality has only one input type (critical)".
 
-### Known or Documented Issues
+## Known or Documented Issues
 
 See "Plot tools: Semantically invalid" evidence.
 
-### Technical Details
+## Technical Details
 
 - JAWS 2023.2402.1
 - Chrome Version 130.0.6723.59 (64-bit)
@@ -65,7 +67,7 @@ See "Plot tools: Semantically invalid" evidence.
 
 _Updated as of: October 22nd, 2024_
 
-### Notes
+## Notes
 
 As a note, if you test using WAVE or another equivalent tool, it won't won't be able to detect problems with divs and canvas elements because they are semanticless. Their assumed use is unknown.
 
