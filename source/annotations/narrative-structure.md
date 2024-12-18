@@ -1,36 +1,36 @@
-### Test Type Performed
+# Narrative Structure
+
+## Test Type Performed
 
 Information cannot be navigated according to narrative or structure.
 
-### Artifact Evaluated
+## Artifact Evaluated
 
 [Annotations](https://docs.bokeh.org/en/latest/docs/user_guide/interaction.html): which include titles, axes labels, legends and their labels, color bar, span (i.e, line), text, and arrows.
 
-### Results Summary
+## Results Summary
 
 Annotations do not follow a narrative structure that allows navigation or interaction into annotation elements for keyboard and SR modalities. All "navigation" takes users straight to the plot tools.
 
 Ideally, keyboard-only users are "guided" through the important interactive pieces of annotations using just the TAB key. I would expect that TAB goes to the tools, then to interactive legend elements, and then into the chart space. From there, a keyboard-only user could experience the narrative at a granular level (across chart elements) via the tooltips, continuing to use TAB or (more ideally) now using arrow keys. Currently, there is no intelligent flow (largely due to lack of access overall, see Related Evidence.)
 
-### Expected Behavior (Pass/Fail)
+## Expected Behavior (Pass/Fail)
 
 - _FAIL_ - Chart must provide a way to be navigated according to its data or narrative structure. The title, description, annotations, and then lower level data structures should be navigable and in that order.
   Chart data that contains sub-grouping (like a stacked bar chart) or nesting (like a tree map or hierarchy) must provide keyboard navigation that can navigate between levels and/or laterally across levels (in a non-linear fashion). Keyboard navigation must be comparable to the data structure (including cases where the data structure is novel) as well as provide linear or tabular navigation (like in a table or list).
 
-### Image or Video of Failure
+## Image or Video of Failure
 
 (Previous recordings show similar/related evidence)
 
-````
-  ```{video} ./assets/annotations_visual-only.mp4
-  :width: 100%
-  :playsinline:
-  ```
-````
+```{video} ./assets/annotations_visual-only.mp4
+:width: 100%
+:playsinline:
+```
 
 A video shows a web browser with multiple charts. A screen reader navigates through the page and through multiple charts, but very limited information is given as they do so. The user (a sighted tester, in this case) navigates to the "Hover" tool on the toolbar and presses enter to interact with it, but this opens a link to a new webpage (fails).
 
-### Steps to Reproduce
+## Steps to Reproduce
 
 Using a screen reader, navigate as normal. Pass through all content related to the visualization and data: is there a meaningful story constructed? Is the data+information flowing from high-level to lower level? Are important interactive elements presented in order of their importance (IE filtering/searching/arranging first, then subfiltering/selecting/etc later)?
 
@@ -40,19 +40,19 @@ Using a screen reader _or_ a keyboard: if granular chart elements provide additi
 
 After or before chart-element navigation, it may be appropriate to also experience a data table.
 
-### Guidelines and Standards Used
+## Guidelines and Standards Used
 
 Information cannot be navigated according to narrative or structure [https://chartability.github.io/POUR-CAF/#**informationcannotbenavigatedaccordingtonarrativeorstructure**](https://chartability.github.io/POUR-CAF/#__informationcannotbenavigatedaccordingtonarrativeorstructure__)
 
-### Related Evidence
+## Related Evidence
 
 See "Content is visual only," "Fragile support," "Tedious," and "Tab stops" evidence.
 
-### Known or Documented Issues
+## Known or Documented Issues
 
 See "Information cannot be navigated according to narrative or structure" from other test environments.
 
-### Technical Details
+## Technical Details
 
 - JAWS 2023.2402.1
 - Chrome Version 130.0.6723.59 (64-bit)
@@ -60,5 +60,5 @@ See "Information cannot be navigated according to narrative or structure" from o
 
 _Updated as of: October 22nd, 2024_
 
-<!-- ### Notes
+<!-- ## Notes
 A seasoned SR (screen reader) user could have the knowledge to navigate and explore webpages and graphs with more nuance, whether through manual mode switching, certain key shortcuts, etc. These tests are done by a sighted user with the SR’s default options and performed as if a new or beginner user is interacting with these elements. We would expect that all users could be able to navigate smoothly, regardless of experience levels. -->

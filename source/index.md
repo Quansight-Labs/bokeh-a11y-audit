@@ -7,4 +7,5 @@ This website documents finding from the initial accessibility audit.
 
 plot-tools/index
 plotting-interface/index
+annotations/index
 ```

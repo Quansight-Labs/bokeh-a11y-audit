@@ -1,3 +1,5 @@
+# Share Reproduce
+
 ### Test Type Performed
 
 State is not easy to share and reproduce.
@@ -23,20 +25,18 @@ Hover tooltip: Fails - cannot be saved or "selected" to stay on screen.
 Figure 1: Using the chart's filtering function
 
 ```{figure} ./assets/annotations_share-reproduce_1.png
-    :width: 100%
-    :alt: A line chart is shown. A blue dashed line labeled 'Business' is the main focus, while the 'Engineering' line has been toggled off (it is faded and grayed).
+:width: 100%
+:alt: A line chart is shown. A blue dashed line labeled 'Business' is the main focus, while the 'Engineering' line has been toggled off (it is faded and grayed).
 
-    A line chart is shown. A blue dashed line labeled 'Business' is the main focus, while the 'Engineering' line has been toggled off (it is faded and grayed).
+A line chart is shown. A blue dashed line labeled 'Business' is the main focus, while the 'Engineering' line has been toggled off (it is faded and grayed).
 ```
 
 Figure 2: Video sharing URL
 
-````
-  ```{video} ./assets/annotations_share-reproduce_2.mp4
-  :width: 100%
-  :playsinline:
-  ```
-````
+```{video} ./assets/annotations_share-reproduce_2.mp4
+:width: 100%
+:playsinline:
+```
 
 The user makes custom edits to a line chart (deselecting a filled line in the interactive legend and zooming in). They then copy and paste the URL into a new window. None of their changes to the chart transfer over to the new window. Refreshing the page, the changes are also lost.
 
