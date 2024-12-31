@@ -6,7 +6,7 @@ This page is being developed.
 
 This summary document serves 2 purposes and is organized into 2 major subheadings, below.
 
-The first section focuses on providing an overview of problems and themes present in the evidence gathered from our audit of Bokeh's [plotting interface](https://bokeh-a11y-audit.readthedocs.io/plotting-interface/index.html), [plot tools](https://bokeh-a11y-audit.readthedocs.io/plot-tools/index.html), and [annotations](https://bokeh-a11y-audit.readthedocs.io/annotations/index.html) artifacts. These are our *findings*.
+The first section focuses on providing an overview of problems and themes present in the evidence gathered from our audit of Bokeh's [plotting interface](https://bokeh-a11y-audit.readthedocs.io/plotting-interface/index.html), [plot tools](https://bokeh-a11y-audit.readthedocs.io/plot-tools/index.html), and [annotations](https://bokeh-a11y-audit.readthedocs.io/annotations/index.html) artifacts. These are our _findings_.
 
 The second section focuses on suggestions for remediation based on the connectedness of various issues, prioritization of critical failures, and (in some cases) the ease of the fix involved. The remediation process should be negotiated and discussed broadly, broken into an actionable plan, and then enacted. My suggestions should not serve as an end to this discussion, but just a way to get it started.
 
@@ -16,7 +16,7 @@ This section will break down the major themes related to problems or meta-issues
 
 What separates an audit from the typical atomic or incremental approach used in open source software (aka "opening an issue") is that audits are a chance to systematically evaluate and analyze an entire ecosystem and synthesize all possible related problems at once. As an example, it is common to see an issue on an open source repo that asks for "alt text capabilities." While this might be great to add on, sometimes a library or tool needs several larger refactors or overhauls to really reach ideals/goals and uphold principles of good design. In order to do this (and even know what the larger issues are), having a procedure for taking a step back, finding the biggest gaps, and setting goalposts is vital. Consider the following subheadings as those big gaps.
 
-### <a id="finding-1" href="#finding-1" aria-label="Finding 1"><span aria-hidden="true">#</span></a> 1. Finding: Lacks *foundational* accessibility
+### <a id="finding-1" href="#finding-1" aria-label="Finding 1"><span aria-hidden="true">#</span></a> 1. Finding: Lacks _foundational_ accessibility
 
 I don't think this will come as a surprise to the Bokeh team, but it is quite clear that Bokeh has substantial gaps for basic text and interaction accessibility.
 
@@ -25,13 +25,14 @@ Providing alternative text will not be enough for Bokeh to become accessible, ei
 Many, many tests failed because of this. Our 2 focus areas:
 
 #### <a id="finding-1A" href="#finding-1A" aria-label="Finding 1A"><span aria-hidden="true">#</span></a> A. Has little textual accessibility
+
 Across our tests, this was the most consistent finding and also the type of failure that intersects with the most evidence.
 
 Both screen reader accessibility and cognitive accessibility require good text design, which means this is fundamental to include in order to support assistive technologies. Text should be a deeply embedded part of any interface but especially one that relies heavily on visuals, data, and complex interactivity.
 
-Note that *only* alt text (and aria-labels) are hidden visually. But overall, the accessibility of a textual experience that accompanies an analytical dashboard, visualization, or interface, is the cornerstone contributor to the overall accessibility of that artifact. Text accessibility is paramount.
+Note that _only_ alt text (and aria-labels) are hidden visually. But overall, the accessibility of a textual experience that accompanies an analytical dashboard, visualization, or interface, is the cornerstone contributor to the overall accessibility of that artifact. Text accessibility is paramount.
 
-Not only should screen readers be provided descriptions so that screen reader users can perceive *what* content is (at both a high level through alt but also a low level via tables and elements with aria labels), but descriptions should be provided for *how* to interact, *why* things are the way they are, and more. Making these additional textual descriptions and experiences visually available has a broad impact on who gets included, how much work an interface is asking its users to do, and ultimately how successful the usability of that interface is. Better text makes for a better experience for everyone.
+Not only should screen readers be provided descriptions so that screen reader users can perceive _what_ content is (at both a high level through alt but also a low level via tables and elements with aria labels), but descriptions should be provided for _how_ to interact, _why_ things are the way they are, and more. Making these additional textual descriptions and experiences visually available has a broad impact on who gets included, how much work an interface is asking its users to do, and ultimately how successful the usability of that interface is. Better text makes for a better experience for everyone.
 
 Busy executives can look at an interface and make faster decisions. Scientists can share their work more clearly and succinctly with their peers. Novices can learn more quickly. And of course, people with disabilities can be included.
 
@@ -40,6 +41,7 @@ Text design must consider all possible text in an interface and includes: titles
 This finding is primarily about the fact that a significant amount of text that should be present in the interface (and under the hood) simply isn't.
 
 ##### Evidence of this finding
+
 <ul>
     <li>Elements are visual only [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plot tools" title="Visual only evidence in plot tools">1</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">2</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/visual-only.html" aria-label="Visual only evidence in annotations" title="Visual only evidence in annotations">3</a>].</li>
     <li>Only one modality/input is provided [].</li>
@@ -53,6 +55,7 @@ This finding is primarily about the fact that a significant amount of text that 
 This issue is closely related to both [functional semantics](#finding-3A) and [explanations and descriptions](finding-2B), below. (These sections focus on how text can be present but still done incorrectly.)
 
 ##### Example
+
 <p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">2</a>].</i> Below demonstrates that the lack of textual information excludes screen reader users from participation.</p>
 <video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plotting-interface_visual-only.mp4" type="video/mp4"></video>
 <p>A web browser is shown with multiple charts. A screen reader navigates through the page and through multiple charts, but very limited information is given as they do so (fails).</p>
@@ -61,24 +64,23 @@ This issue is closely related to both [functional semantics](#finding-3A) and [e
     <figcaption>
 </figure> -->
 
-
 #### <a id="finding-1B" href="#finding-1B" aria-label="Finding 1B"><span aria-hidden="true">#</span></a> B. Foundational navigation design and interactivity is poor
 
 This particular issue tends to be the most difficult part of remediating a data visualization system like Bokeh, but also any interactive interface that has been built without using the correct building materials.
 
-Most major assistive technologies *navigate* content and in order to make this possible, the correct substrate must be in place. We generally divide navigational assistive technologies into two types: screen readers and "keyboard-only" types. Navigation must be possible with *both* methods.
+Most major assistive technologies _navigate_ content and in order to make this possible, the correct substrate must be in place. We generally divide navigational assistive technologies into two types: screen readers and "keyboard-only" types. Navigation must be possible with _both_ methods.
 
 Screen readers that are used on desktop devices use a keyboard, so you might think that testing with a keyboard alone should be sufficient. But testing mobile screen reader access is necessary.
 
-In addition, screen readers read *all* content on a screen, one element at a time as well as have a plethora of navigational shortcuts available (navigation via headings, regions, tabbing, etc). An interface should first be tested with a screen reader: can everything be accessed? Check *literally everything*.
+In addition, screen readers read _all_ content on a screen, one element at a time as well as have a plethora of navigational shortcuts available (navigation via headings, regions, tabbing, etc). An interface should first be tested with a screen reader: can everything be accessed? Check _literally everything_.
 
-The basic navigation pattern of a screen reader *must* be supported and includes: On a desktop, NVDA and JAWS navigate forward using <kbd aria-label="down arrow">↓</kbd> and backward <kbd aria-label="up arrow">↑</kbd>. VoiceOver and Narrator use a key shortcut plus <kbd aria-label="right arrow">→</kbd> to navigate forward <kbd aria-label="left arrow">←</kbd> to navigate backward (see [Deque's survival guide for more](https://dequeuniversity.com/screenreaders/survival-guide)).
+The basic navigation pattern of a screen reader _must_ be supported and includes: On a desktop, NVDA and JAWS navigate forward using <kbd aria-label="down arrow">↓</kbd> and backward <kbd aria-label="up arrow">↑</kbd>. VoiceOver and Narrator use a key shortcut plus <kbd aria-label="right arrow">→</kbd> to navigate forward <kbd aria-label="left arrow">←</kbd> to navigate backward (see [Deque's survival guide for more](https://dequeuniversity.com/screenreaders/survival-guide)).
 
-But keyboard-only based assistive technologies (sip-and-puffs, single button switches, foot boards/switches, tongue switches, and of course *keyboards* themselves) all rely on the "keyboard api" to get around. What matters for this type of navigation is primarily that interactive elements can be navigated to using <kbd aria-label="tab key">TAB</kbd>. This means that only elements that are meaningfully interactive should be tab-navigable, otherwise these technologies don't need to navigate to them.
+But keyboard-only based assistive technologies (sip-and-puffs, single button switches, foot boards/switches, tongue switches, and of course _keyboards_ themselves) all rely on the "keyboard api" to get around. What matters for this type of navigation is primarily that interactive elements can be navigated to using <kbd aria-label="tab key">TAB</kbd>. This means that only elements that are meaningfully interactive should be tab-navigable, otherwise these technologies don't need to navigate to them.
 
 However, in order for sighted users of screen readers and keyboard navigation technologies to know where they are at, a focus indicator must always be visible when `:focus` is detected on an element.
 
-And of course: elements that are interactive with a mouse need more than just *navigation* to be possible for assistive technologies, but assistive technologies need to be able to *interact* with them as well. Buttons should be clickable, toggles toggleable, etc. And when an HTML `<div>` element is used in place of something like a `<button>`, then downstream navigation and interaction problems exacerbate quickly.
+And of course: elements that are interactive with a mouse need more than just _navigation_ to be possible for assistive technologies, but assistive technologies need to be able to _interact_ with them as well. Buttons should be clickable, toggles toggleable, etc. And when an HTML `<div>` element is used in place of something like a `<button>`, then downstream navigation and interaction problems exacerbate quickly.
 
 When elements are interactive and they can do something to some other part of a page or application (such as filtering a chart using the legend), then feedback needs to be provided to the user. We check for this in 2 ways: first, feedback must be programmatically provided for screen reader users (such as a valid state change using `aria-pressed` or equivalent on a semantically rich `<button>` element or via a console area that emits `aria-live` events). Secondly, sighted users need to be able to see the change with enough contrast difference between states. If something is highlighted or emphasized, that emphasis needs to be strong enough. If something is hidden, it needs to have already started with decent contrast before disappearing.
 
@@ -86,9 +88,10 @@ Lastly, providing basic navigational access can actually cause unintended access
 
 Smart navigational design then becomes much more complex: how do you prepare a visualization, especially an interactive one, to progressively show or hide sets and subsets of elements at a time? How do you allow users to search, filter, and sort elements for faster navigation?
 
-Testing for *intelligent* navigation wasn't even possible, since even basic navigation wasn't provided.
+Testing for _intelligent_ navigation wasn't even possible, since even basic navigation wasn't provided.
 
 ##### Evidence of this finding
+
 <ul>
     <li>Only one modality/input is provided [].</li>
     <li>Cannot be navigated according to narrative/structure [].</li>
@@ -112,9 +115,10 @@ Testing for *intelligent* navigation wasn't even possible, since even basic navi
 <p>A color scatter plot is shown. A screen reader focus indicator moves across the plot tool icons, but when a tool is selected it opens a previously visited link instead of toggling the tool that corresponds to the visual focus indication (fails).</p>
 
 ### <a id="finding-2" href="#finding-2" aria-label="Finding 2"><span aria-hidden="true">#</span></a> 2. Finding: Minimal cognitive support exists
+
 Cognitive support can be a difficult thing to ask a visualization library to provide. In general, the application and use of the library (the contexts where Bokeh are used) is responsible for explaining things, making stuff easy, and general cognitive accessibility.
 
-However, there are some areas that a visualization library *should* be responsible for. And of course, there are many things that a visualization library can assist developer-users and designer-users with. Below we are focusing on issues that either fall under the purview of Bokeh or are things that Bokeh can do to assist their users with.
+However, there are some areas that a visualization library _should_ be responsible for. And of course, there are many things that a visualization library can assist developer-users and designer-users with. Below we are focusing on issues that either fall under the purview of Bokeh or are things that Bokeh can do to assist their users with.
 
 #### <a id="finding-2A" href="#finding-2A" aria-label="Finding 2A"><span aria-hidden="true">#</span></a> A. Findability has problems
 
@@ -125,6 +129,7 @@ Explanation and citations pending.
 Lack of button labels, difficulty of finding out tooltips exist
 
 #### <a id="finding-2B" href="#finding-2B" aria-label="Finding 2B"><span aria-hidden="true">#</span></a> B. Understanding is not easy
+
 Explanations and descriptions, human readible, reading level, Complexity of interactions
 
 ```{note}
@@ -218,7 +223,9 @@ Explanation pending.
 ```
 
 ### Build a flexible system
+
 softerware?? >:)
+
 ```{note}
 Explanation pending.
 ```
@@ -231,7 +238,7 @@ utilities, validation, smart defaults, and guardrails
 Explanation pending.
 ```
 
-### Consider *end*-user documentation
+### Consider _end_-user documentation
 
 ```{note}
 Explanation pending.
