@@ -9,6 +9,7 @@ The audit is based on the [Chartability heuristics](https://chartability.fizz.st
 ```{toctree}
 :hidden:
 
+summary
 plot-tools/index
 plotting-interface/index
 annotations/index
