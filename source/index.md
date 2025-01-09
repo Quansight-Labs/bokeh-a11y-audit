@@ -11,4 +11,5 @@ The audit is based on the [Chartability heuristics](https://chartability.fizz.st
 
 plot-tools/index
 plotting-interface/index
+annotations/index
 ```

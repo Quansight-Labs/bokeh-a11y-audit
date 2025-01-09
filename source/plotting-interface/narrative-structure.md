@@ -27,7 +27,13 @@ A web browser is shown with multiple charts. A screen reader navigates through t
 
 ## Steps to Reproduce
 
-Using a SR or keyboard, press TAB to begin navigating to the chart.
+Using a screen reader, navigate as normal. Pass through all content related to the visualization and data: is there a meaningful story constructed? Is the data+information flowing from high-level to lower level? Are important interactive elements presented in order of their importance (IE filtering/searching/arranging first, then subfiltering/selecting/etc later)?
+
+Using a keyboard-only, press TAB to begin navigating to the chart. Continue using TAB to experience the high-level interactive element order. TAB should only reveal interactive elements, but visually, there should be exposure to titles, subtitles, axes, legends, annotations, and more as TAB progresses. Note: these elements should simply be in sight but only receive keyboard focus if they are interactive.
+
+Using a screen reader _or_ a keyboard: if granular chart elements provide additional context or information (to a sighted user, such as via a tooltip), then this should also be tested as part of the flow. This is usually one of the last things that should be exposed to users (after title, subtitle, axes, legends, annotations). Within chart navigation, higher level groupings in the data should be navigable before lower level children elements (if groupings exist in the data). Examples of this are lines -> line data points, stacks in a stacked bar -> stacked bars, clusters in a scatter -> individual points, color-encoded groups in chart -> elements within that encoding, etc. Sometimes these groupings can be nested under the axes or legends provided, when appropriate.
+
+After or before chart-element navigation, it may be appropriate to also experience a data table.
 
 ## Guidelines and Standards Used
 
