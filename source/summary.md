@@ -112,17 +112,34 @@ Testing for *intelligent* navigation wasn't even possible, since even basic navi
 <p>A color scatter plot is shown. A screen reader focus indicator moves across the plot tool icons, but when a tool is selected it opens a previously visited link instead of toggling the tool that corresponds to the visual focus indication (fails).</p>
 
 ### <a id="finding-2" href="#finding-2" aria-label="Finding 2"><span aria-hidden="true">#</span></a> 2. Finding: Minimal cognitive support exists
-Cognitive support can be a difficult thing to ask a visualization library to provide. In general, the application and use of the library (the contexts where Bokeh are used) is responsible for explaining things, making stuff easy, and general cognitive accessibility.
+Cognitive support can be a difficult thing to ask a visualization library to provide because it isn't always the responsibility of a tool but the implementer of the tool to provide end users with cognitive support. In general, the application and use of the library (the contexts where Bokeh is used) should explain, describe, make outcomes easy, and provide robust alternative ways to reach those outcomes.
 
 However, there are some areas that a visualization library *should* be responsible for. And of course, there are many things that a visualization library can assist developer-users and designer-users with. Below we are focusing on issues that either fall under the purview of Bokeh or are things that Bokeh can do to assist their users with.
 
 #### <a id="finding-2A" href="#finding-2A" aria-label="Finding 2A"><span aria-hidden="true">#</span></a> A. Findability has problems
 
-```{note}
-Explanation and citations pending.
-```
+Users need to be able to find things. And unfortunately, there are some elements that become essentially invisible or hidden. This can add difficulty or even make certain things impossible.
 
-Lack of button labels, difficulty of finding out tooltips exist
+For screen reader users, semantic labels need to exist for interactive elements so that they know what a particular button or input does and its current state. And without proper labels on elements, they are virtually invisible to screen reader users.
+
+For low vision users, contrast must be sufficiently strong on interactive elements and especially elements that display a change of state (from off to on) where the "off" state should still be interactable.
+
+For sighted mouse users with motor and dexterity impairents, tooltips can be helpful on chart elements but the target size of elements (such as in the line chart) are far too small. Discovering that tooltips exist on an element using pixel-perfect strategies actually creates accessibility barriers for all kinds of folks (but especially those with dexterity disabilities such as tremors or upper-body motor impairments).
+
+##### Evidence of this finding
+<ul>
+    <li>Visual only [].</li>
+    <li>Semantically invalid [].</li>
+    <li>Color contrast [].</li>
+    <li>Contrast of interactive elements [].</li>
+    <li>Target pointer size [].</li>
+</ul>
+
+##### Example
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+
+<p>.</p>
 
 #### <a id="finding-2B" href="#finding-2B" aria-label="Finding 2B"><span aria-hidden="true">#</span></a> B. Understanding is not easy
 Explanations and descriptions, human readible, reading level, Complexity of interactions
@@ -133,17 +150,33 @@ Explanation and citations pending.
 
 don't forget the decimal points from annotations
 
+##### Evidence of this finding
+<ul>
+    <li>a [].</li>
+</ul>
+
+##### Example
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+
+<p>.</p>
+
 #### <a id="finding-2C" href="#finding-2C" aria-label="Finding 2C"><span aria-hidden="true">#</span></a> C. Cues, callouts, and feedback are missing
 
 ```{note}
 Explanation and citations pending.
 ```
 
-<!-- #### <a id="finding-2D" href="#finding-2D" aria-label="Finding 2D"><span aria-hidden="true">#</span></a> D. System feedback is lacking
+##### Evidence of this finding
+<ul>
+    <li>a [].</li>
+</ul>
 
-```{note}
-Explanation and citations pending.
-``` -->
+##### Example
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+
+<p>.</p>
 
 ### <a id="finding-3" href="#finding-3" aria-label="Finding 3"><span aria-hidden="true">#</span></a> 3. Finding: System and experience is fragile
 
@@ -156,42 +189,112 @@ Explanation and citations pending.
 ```{note}
 Explanation and citations pending.
 ```
+##### Evidence of this finding
+<ul>
+    <li>a [].</li>
+</ul>
+
+##### Example
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+
+<p>.</p>
 
 #### <a id="finding-3B" href="#finding-3B" aria-label="Finding 3B"><span aria-hidden="true">#</span></a> B. Is not contextually robust
 
 ```{note}
 Explanation and citations pending.
 ```
+##### Evidence of this finding
+<ul>
+    <li>a [].</li>
+</ul>
+
+##### Example
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+
+<p>.</p>
 
 #### <a id="finding-3C" href="#finding-3C" aria-label="Finding 3C"><span aria-hidden="true">#</span></a> C. Lacks multiple paths to the same goal
 
 ```{note}
 Explanation and citations pending.
 ```
+##### Evidence of this finding
+<ul>
+    <li>a [].</li>
+</ul>
+
+##### Example
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+
+<p>.</p>
 
 #### <a id="finding-3D" href="#finding-3D" aria-label="Finding 3D"><span aria-hidden="true">#</span></a> D. Has little to no respect for user preferences
 
 ```{note}
 Explanation and citations pending.
 ```
+##### Evidence of this finding
+<ul>
+    <li>a [].</li>
+</ul>
+
+##### Example
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+
+<p>.</p>
 
 ### <a id="finding-4" href="#finding-4" aria-label="Finding 4"><span aria-hidden="true">#</span></a> 4. Finding: Perception can be difficult
 
 ```{note}
 Explanation and citations pending.
 ```
+##### Evidence of this finding
+<ul>
+    <li>a [].</li>
+</ul>
+
+##### Example
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+
+<p>.</p>
 
 #### <a id="finding-4A" href="#finding-4A" aria-label="Finding 4A"><span aria-hidden="true">#</span></a> A. Low contrast and discriminability
 
 ```{note}
 Explanation and citations pending.
 ```
+##### Evidence of this finding
+<ul>
+    <li>a [].</li>
+</ul>
+
+##### Example
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+
+<p>.</p>
 
 #### <a id="finding-4B" href="#finding-4B" aria-label="Finding 4B"><span aria-hidden="true">#</span></a> B. Small things, hidden things, silent things
 
 ```{note}
 Explanation and citations pending.
 ```
+##### Evidence of this finding
+<ul>
+    <li>a [].</li>
+</ul>
+
+##### Example
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+
+<p>.</p>
 
 ## <a id="suggestions" href="#suggestions" aria-label="Suggestions"><span aria-hidden="true">#</span></a> Suggested directions for remediation
 
