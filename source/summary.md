@@ -57,12 +57,12 @@ This issue is closely related to both [functional semantics](#finding-3A) and [e
 ##### Example
 
 <p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">2</a>].</i> Below demonstrates that the lack of textual information excludes screen reader users from participation.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plotting-interface_visual-only.mp4" type="video/mp4"></video>
+
+```{video} ./plot-tools/assets/plotting-interface_visual-only.mp4
+:width: 100%
+:playsinline:
+```
 <p>A web browser is shown with multiple charts. A screen reader navigates through the page and through multiple charts, but very limited information is given as they do so (fails).</p>
-<!-- <figure>
-    <img></img>
-    <figcaption>
-</figure> -->
 
 #### <a id="finding-1B" href="#finding-1B" aria-label="Finding 1B"><span aria-hidden="true">#</span></a> B. Foundational navigation design and interactivity is poor
 
@@ -110,24 +110,31 @@ Testing for _intelligent_ navigation wasn't even possible, since even basic navi
 ##### Example
 
 <p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+
+```{video} ./plot-tools/assets/plot-tools_visual-only.mp4
+:width: 100%
+:playsinline:
+```
 
 <p>A color scatter plot is shown. A screen reader focus indicator moves across the plot tool icons, but when a tool is selected it opens a previously visited link instead of toggling the tool that corresponds to the visual focus indication (fails).</p>
 
-### <a id="finding-2" href="#finding-2" aria-label="Finding 2"><span aria-hidden="true">#</span></a> 2. Finding: Minimal cognitive support exists
-Cognitive support can be a difficult thing to ask a visualization library to provide because it isn't always the responsibility of a tool but the implementer of the tool to provide end users with cognitive support. In general, the application and use of the library (the contexts where Bokeh is used) should explain, describe, make outcomes easy, and provide robust alternative ways to reach those outcomes.
+### <a id="finding-2" href="#finding-2" aria-label="Finding 2"><span aria-hidden="true">#</span></a> 2. Finding: Perceivability and understandability have barriers
 
-However, there are some areas that a visualization library _should_ be responsible for. And of course, there are many things that a visualization library can assist developer-users and designer-users with. Below we are focusing on issues that either fall under the purview of Bokeh or are things that Bokeh can do to assist their users with.
+Understandability (and cognitive support) can be a difficult thing to ask a visualization library/tool to provide. It is *always* ultimately the responsibility of the implementer of a tool to provide end users with cognitive access. The application and use of a library (E.g. the contexts where Bokeh is used) should explain, describe, make outcomes easy, and provide robust alternative ways to reach those outcomes.
 
-#### <a id="finding-2A" href="#finding-2A" aria-label="Finding 2A"><span aria-hidden="true">#</span></a> A. Findability has problems
+However, there are some cognitive support areas that a visualization library _should_ be responsible for. And of course, there are many things that a visualization library can assist developer-users and designer-users with. Below we are focusing on issues that either fall under the purview of Bokeh or are things that Bokeh can do to assist their users with.
 
-Users need to be able to find things. And unfortunately, there are some elements that become essentially invisible or hidden. This can add difficulty or even make certain things impossible.
+As for perceivability (perceptual accessibility), ultimately being able to find things intersects strongly with cognitive issues. If users can't perceive elements (whether they are buried/hidden, left out, or hard to perceive), then they will have to mentally fill gaps, perform additional labor, or might even be excluded from using the interface altogether.
+
+#### <a id="finding-2A" href="#finding-2A" aria-label="Finding 2A"><span aria-hidden="true">#</span></a> A. Findability and perceivability has problems
+
+Users need to be able to find things. *Perception* and *discovery* should be easy tasks. And unfortunately, there are some elements that are essentially invisible or hidden in our testing environment. Hard-to-see and hard-to-find elements can add difficulty or even make certain things impossible about Bokeh's usage.
 
 For screen reader users, semantic labels need to exist for interactive elements so that they know what a particular button or input does and its current state. And without proper labels on elements, they are virtually invisible to screen reader users.
 
-For low vision users, contrast must be sufficiently strong on interactive elements and especially elements that display a change of state (from off to on) where the "off" state should still be interactable.
+For low vision users, high contrast is paramount. Contrast is the difference or "discriminability" between two things. High contrast means that things can easily be distinguished or discriminated from one another. In accessibility, we test the color of foreground elements against the color of adjacent elements and background elements. Color contrast must be high enough on anything that is meaningful, provide information, helps the user understand what something is, and is capable of performing some sort of interaction. In particular, contrast must be especially strong and well-designed on interactive elements. Elements that display a change of state (from off to on) need to be perceivable in the "off" state if it is still interactive. And elements with a change of state need to have a minimum contrast between the previous state and new state after interaction.
 
-For sighted mouse users with motor and dexterity impairents, tooltips can be helpful on chart elements but the target size of elements (such as in the line chart) are far too small. Discovering that tooltips exist on an element using pixel-perfect strategies actually creates accessibility barriers for all kinds of folks (but especially those with dexterity disabilities such as tremors or upper-body motor impairments).
+For sighted mouse users with motor and dexterity impairents, tooltips can be helpful on chart elements but the target size of elements (such as in the line chart) are far too small. Discovering that tooltips exist on an element using pixel-perfect strategies actually creates accessibility barriers for all kinds of folks (but especially those with dexterity disabilities such as tremors or upper-body motor impairments). Being honest, I didn't even notice the line chart had tooltips enabled until I found them by accident testing for contrast
 
 ##### Evidence of this finding
 <ul>
@@ -136,36 +143,60 @@ For sighted mouse users with motor and dexterity impairents, tooltips can be hel
     <li>Color contrast [].</li>
     <li>Contrast of interactive elements [].</li>
     <li>Target pointer size [].</li>
+    <li>Tedious [].</li>
+    <li>Data density [].</li>
+    <li>Spacing [].</li>
 </ul>
 
 ##### Example
-<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
+<p><i>Example taken from annotations [<a href="" aria-label="Contrast evidence in annotation" title="Contrast evidence in annotation">23</a>].</i> Below demonstrates the near-invisibility of the interactive annotation element used to toggle a line chart on and off.</p>
 
-<p>.</p>
+```{figure} ./annotations/assets/annotations_contrast_1.png
+:width: 100%
+:alt: A double line chart is shown. A color selection dropper is highlighting a selected 'muted', grayed out line. The contrast checking score of 1.27 is shown on the bottom left corner (fails).
+
+A double line chart is shown. A color selection dropper is highlighting a selected 'muted', grayed out line. The contrast checking score of 1.27 is shown on the bottom left corner (fails).
+```
 
 #### <a id="finding-2B" href="#finding-2B" aria-label="Finding 2B"><span aria-hidden="true">#</span></a> B. Understanding is not easy
 
-Explanations and descriptions, human readible, reading level, Complexity of interactions
+In general, everything should be easy to understand for folks who have never before encountered a Bokeh chart, its interactive capabilities, and its annotations.
 
-```{note}
-Explanation and citations pending.
-```
+*What* a chart shows should be described. *Why* some information has been visualized should be explained. *How* a user can interact should be clearly explained, including with instructions provided for more complex interactions (like lasso, etc). All text and labels should be made legible and presented at a reasonable reading level.
 
-don't forget the decimal points from annotations
+Bokeh's cognitive support overall seems to be geared toward supporting software developers who are using the library while generally leaving end-user understandability up to the user's own ability to poke around with interactivity, grok context/use, and self-interpret.
+
+In general, Bokeh doesn't appear to provide *any* assistance to developers in authoring textual descriptions, providing end-user oriented instructions/explanations, and also appears to have minimal support for automatically simplifying/formatting data-oriented numerical values (such as using too many decimal points of precision in a label).
+
+Also, Bokeh is a library grounded on *interaction* with data and data visualizations. One important area of cognitive accessibility to consider is that there are many valid ways to interact with data. But by providing only one narrow path to reach a particular piece of information or outcome is a cognitive accessibility barrier as it assumes that users will always understand, remember, and correctly execute that given path of interaction.
 
 ##### Evidence of this finding
 <ul>
-    <li>a [].</li>
+    <li>No title, summary, or caption provided [].</li>
+    <li>Explanation or purpose [].</li>
+    <li>No table [].</li>
+    <li>Visually apparent features are not described [].</li>
+    <li>No interaction cues or instructions [].</li>
+    <li>Not human-readable [].</li>
+    <li>Narrative or structure. [].</li>
+    <li>One modality or input. [].</li>
+    <li>Single process. [].</li>
+    <li>Complex actions have no alternatives [].</li>
+    <li>Information complexity. [].</li>
 </ul>
 
 ##### Example
 <p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
 
-<p>.</p>
+```{figure} ./assets/plotting-interface_information-complexity_1.png
+:width: 100%
+:alt: A scatter plot is shown. In the chart's upper tab, 'All Species' is selected. Three categories are shown, but are hard to differentiate from one another based on their color and patterns.
+
+A scatter plot is shown. Three categories are shown, but are hard to differentiate from one another based on their color and patterns.
+```
 
 #### <a id="finding-2C" href="#finding-2C" aria-label="Finding 2C"><span aria-hidden="true">#</span></a> C. Cues, callouts, and feedback are missing
+changes easy to follow, cues, complex actions, interactive context
 
 ```{note}
 Explanation and citations pending.
@@ -173,14 +204,19 @@ Explanation and citations pending.
 
 ##### Evidence of this finding
 <ul>
-    <li>a [].</li>
+    <li>Explanation or purpose [].</li>
+    <li>No interaction cues or instructions [].</li>
+    <li>Changes are easy to follow [].</li>
+    <li>Complex actions have no alternatives [].</li>
 </ul>
 
 ##### Example
 <p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
 
-<p>.</p>
+```{video} ./plot-tools/assets/plot-tools_visual-only.mp4
+:width: 100%
+:playsinline:
+```
 
 ### <a id="finding-3" href="#finding-3" aria-label="Finding 3"><span aria-hidden="true">#</span></a> 3. Finding: System and experience is fragile
 
@@ -200,11 +236,15 @@ Explanation and citations pending.
 
 ##### Example
 <p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
 
-<p>.</p>
+```{video} ./plot-tools/assets/plot-tools_visual-only.mp4
+:width: 100%
+:playsinline:
+```
 
-#### <a id="finding-3B" href="#finding-3B" aria-label="Finding 3B"><span aria-hidden="true">#</span></a> B. Is not contextually robust
+#### <a id="finding-3B" href="#finding-3B" aria-label="Finding 3B"><span aria-hidden="true">#</span></a> B. Is not robust
+
+history, single process, forgiveable, modality/input, zoom/reflow, fragile support, scrolling (plotting)
 
 ```{note}
 Explanation and citations pending.
@@ -216,11 +256,13 @@ Explanation and citations pending.
 
 ##### Example
 <p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
 
-<p>.</p>
+```{video} ./plot-tools/assets/plot-tools_visual-only.mp4
+:width: 100%
+:playsinline:
+```
 
-#### <a id="finding-3C" href="#finding-3C" aria-label="Finding 3C"><span aria-hidden="true">#</span></a> C. Lacks multiple paths to the same goal
+#### <a id="finding-3C" href="#finding-3C" aria-label="Finding 3C"><span aria-hidden="true">#</span></a> C. Has little to no respect for user preferences
 
 ```{note}
 Explanation and citations pending.
@@ -232,73 +274,11 @@ Explanation and citations pending.
 
 ##### Example
 <p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
 
-<p>.</p>
-
-#### <a id="finding-3D" href="#finding-3D" aria-label="Finding 3D"><span aria-hidden="true">#</span></a> D. Has little to no respect for user preferences
-
-```{note}
-Explanation and citations pending.
+```{video} ./plot-tools/assets/plot-tools_visual-only.mp4
+:width: 100%
+:playsinline:
 ```
-##### Evidence of this finding
-<ul>
-    <li>a [].</li>
-</ul>
-
-##### Example
-<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
-
-<p>.</p>
-
-### <a id="finding-4" href="#finding-4" aria-label="Finding 4"><span aria-hidden="true">#</span></a> 4. Finding: Perception can be difficult
-
-```{note}
-Explanation and citations pending.
-```
-##### Evidence of this finding
-<ul>
-    <li>a [].</li>
-</ul>
-
-##### Example
-<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
-
-<p>.</p>
-
-#### <a id="finding-4A" href="#finding-4A" aria-label="Finding 4A"><span aria-hidden="true">#</span></a> A. Low contrast and discriminability
-
-```{note}
-Explanation and citations pending.
-```
-##### Evidence of this finding
-<ul>
-    <li>a [].</li>
-</ul>
-
-##### Example
-<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
-
-<p>.</p>
-
-#### <a id="finding-4B" href="#finding-4B" aria-label="Finding 4B"><span aria-hidden="true">#</span></a> B. Small things, hidden things, silent things
-
-```{note}
-Explanation and citations pending.
-```
-##### Evidence of this finding
-<ul>
-    <li>a [].</li>
-</ul>
-
-##### Example
-<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-<video controls="True" preload="auto" width="100%"><source src="https://bokeh-a11y-audit.readthedocs.io/_images/plot-tools_visual-only.mp4" type="video/mp4"></video>
-
-<p>.</p>
 
 ## <a id="suggestions" href="#suggestions" aria-label="Suggestions"><span aria-hidden="true">#</span></a> Suggested directions for remediation
 
@@ -334,13 +314,15 @@ Explanation pending.
 
 ### Help developers succeed
 
+Whenever possible, the library should be designed to assume that software-users are not the end users, but rather building interfaces for users who are not necessarily skilled at visualizing and interacting with data.
+
 utilities, validation, smart defaults, and guardrails
 
 ```{note}
 Explanation pending.
 ```
 
-### Consider _end_-user documentation
+### Consider end-user documentation
 
 ```{note}
 Explanation pending.
