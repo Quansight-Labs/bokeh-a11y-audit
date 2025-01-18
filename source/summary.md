@@ -45,14 +45,14 @@ This finding is primarily about the fact that a significant amount of text that 
 <ul>
     <li>Elements are visual only [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plot tools" title="Visual only evidence in plot tools">1</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">2</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/visual-only.html" aria-label="Visual only evidence in annotations" title="Visual only evidence in annotations">3</a>].</li>
     <li>Only one modality/input is provided [].</li>
+    <li>Metrics and variables are not defined [].</li>
     <li>Cannot be navigated according to narrative/structure [].</li>
     <li>Semantically invalid [].</li>
     <li>No title, summary, or caption provided [].</li>
+    <li>Axis labels are not clear or present [].</li>
     <li>No table [].</li>
     <li>Visually apparent features are not described [].</li>
 </ul>
-
-This issue is closely related to both [functional semantics](#finding-3A) and [explanations and descriptions](finding-2B), below. (These sections focus on how text can be present but still done incorrectly.)
 
 ##### Example
 
@@ -142,10 +142,11 @@ For sighted mouse users with motor and dexterity impairents, tooltips can be hel
     <li>Semantically invalid [].</li>
     <li>Color contrast [].</li>
     <li>Contrast of interactive elements [].</li>
-    <li>Target pointer size [].</li>
-    <li>Tedious [].</li>
+    <li>Target pointer size is too small [].</li>
+    <li>Interaction is tedious [].</li>
     <li>Data density [].</li>
     <li>Spacing [].</li>
+    <li>Keyboard focus indicator is missing, obscured, or low contrast [].</li>
 </ul>
 
 ##### Example
@@ -178,11 +179,11 @@ Also, Bokeh is a library grounded on *interaction* with data and data visualizat
     <li>Visually apparent features are not described [].</li>
     <li>No interaction cues or instructions [].</li>
     <li>Not human-readable [].</li>
-    <li>Narrative or structure. [].</li>
-    <li>One modality or input. [].</li>
-    <li>Single process. [].</li>
+    <li>Narrative or structure [].</li>
+    <li>Only one modality/input is provided [].</li>
+    <li>Single process [].</li>
     <li>Complex actions have no alternatives [].</li>
-    <li>Information complexity. [].</li>
+    <li>Information complexity [].</li>
 </ul>
 
 ##### Example
@@ -195,36 +196,82 @@ Also, Bokeh is a library grounded on *interaction* with data and data visualizat
 A scatter plot is shown. Three categories are shown, but are hard to differentiate from one another based on their color and patterns.
 ```
 
-#### <a id="finding-2C" href="#finding-2C" aria-label="Finding 2C"><span aria-hidden="true">#</span></a> C. Cues, callouts, and feedback are missing
-changes easy to follow, cues, complex actions, interactive context
+#### <a id="finding-2C" href="#finding-2C" aria-label="Finding 2C"><span aria-hidden="true">#</span></a> C. Interactive capabilities and system state are not clear
+Interactive data visualization comes with an additional layer of cognitive accessibility issues: keeping track of what could happen, is happening, and has happened in a system.
 
-```{note}
-Explanation and citations pending.
-```
+Initially, users will need to know what interactions are possible. Without cues that invite/demonstrate interaction or easily discoverable instructions, users will likely not even use the interactive features of a visualization.
+
+Additionally, when change takes place in a system, it should be easy to both anticipate or know the context of what will change as well as follow the change as it happens. During interaction, users should have a clear sense of where change takes place if it isn't in the same location where their focus currently is (this applies to sighted as well as blind users). In addition, once change takes place, it should be clear that the action has taken place and completed. Systems must provide rich, multimodal channels of feedback in response to user input.
+
+Lastly, after change has taken place, users should be able to easily undo their actions, know their current location within an interaction process, have a sense of their interaction history, and be able to share and reproduce the current state of their interactive work. Presently, the general design pattern assumes that users will come to a visualization, interact, and then if they leave the page or wish to share their work with someone else, the work must be completely reconstructed from scratch.
+
+Again, as mentioned previously in this audit summary: it is difficult to expect a visualization library to handle *everything* that would make an interactive application experience more accessible. The burden of higher-level system accessibility (such as history, sharing, reproducibility, saving, loading, etc) often falls to systems that implement interactive charts. However, the fact that Bokeh fails should be noted as an area of potential improvement. Systems and utilities could be in place to facilitate these functionalities more easily.
 
 ##### Evidence of this finding
 <ul>
-    <li>Explanation or purpose [].</li>
+    <li>No explanation or purpose for how to read [].</li>
     <li>No interaction cues or instructions [].</li>
     <li>Changes are easy to follow [].</li>
-    <li>Complex actions have no alternatives [].</li>
+    <li>Interactive context is not clear [].</li>
+    <li>Interactions are not forgivable [].</li>
+    <li>State is not easy to share or reproduce [].</li>
+    <li>Location and history is not clear [].</li>
 </ul>
 
 ##### Example
-<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/share-reproduce.html" aria-label="Share and reproduce evidence in plot tools" title="Share and reproduce evidence in plot tools">1</a>].</i> Below demonstrates how a screen reader user interacts with an input and then loses their location and focus, in addition to receiving no system feedback about their original input.</p>
 
-```{video} ./plot-tools/assets/plot-tools_visual-only.mp4
+```{video} ./plot-tools/assets/plot-tools_changes-easy-to-follow.mp4
 :width: 100%
 :playsinline:
 ```
 
-### <a id="finding-3" href="#finding-3" aria-label="Finding 3"><span aria-hidden="true">#</span></a> 3. Finding: System and experience is fragile
+<p>A scatter plot is shown. A screen reader is navigating through the chart's dropdown menu, but when an option is selected, the user is forced back to the top of the webpage.</p>
 
-```{note}
-Explanation and citations pending.
+### <a id="finding-3" href="#finding-3" aria-label="Finding 3"><span aria-hidden="true">#</span></a> 3. Finding: System is fragile
+This part in an audit can be difficult because it can feel like asking a distinct tool like a hammer to be transformed into a rocket ship. This part of an audit is when the shortcomings of older, smaller, or just-emerging technologies come to light. Systems, especially ones that are tools, can often be built as a response to the needs of a specific community. Bokeh, in that sense, emerged to provide a better way to visualize data in Python for a web context. But the community that uses and consumes Bokeh is broader than the underlying system was originally designed for.
+
+Tools and systems should not be fragile. They should be able to withstand different environments, used by different people in different ways, and allow for end-user personalization, customization, and adaptation.
+
+Systems engineering is always held in tension: good engineering is built to do specific tasks very effectively for years and years. But at the same time, user needs and behaviors, contexts of use, and surrounding technologies all change over time. So good systems engineering does at times require revisiting, updating, and maintenance.
+
+That being said, Bokeh has catching up to do.
+
+#### <a id="finding-3A" href="#finding-3A" aria-label="Finding 3A"><span aria-hidden="true">#</span></a> A. System's capabilities are not robust
+
+Sometimes a system is built using the wrong materials or with the wrong substrate, which ultimately limits how robust that system is. In this case, Bokeh uses non-standard interactive elements, such as `<div>`s and also does not provide adequate descriptions and attributes on elements that enable assistive technologies. This limits which devices are capable of interaction and input, as well as which ways a user is able to perceive the contents of that system.
+
+But more than using the correct materials, sometimes systems should also be encouraged to grow in order to handle new devices, interaction patterns, and uses. And in this sense, Bokeh does not handle zoom/reflow well, which is difficult especially for mobile users. Many users who have disabilities actually use mobile or tablet devices *more* than desktop devices. Some screen reader users, for example, love VoiceOver on iOS much more than a desktop experience.
+
+Bokeh should be built in a way that enables a myriad of current technologies to interact with it. In particular, what makes Bokeh awesome are the interactive capabilities that it offers end users. But care should be taken to design how different users with different assistive technologies and input devices and interaction patterns will want to accomplish similar goals. Pairity in the quality of experience should be provided for all users. Sighted, mouse users shouldn't not have an easier and better time than everyone else.
+
+##### Evidence of this finding
+<ul>
+    <li>Content is visual only [].</li>
+    <li>Semantically invalid [].</li>
+    <li>Fragile support [].</li>
+    <li>Only one modality/input is provided [].</li>
+    <li>Zoom and reflow are not supported [].</li>
+    <li>Scrolling experiences cannot be altered [].</li>
+    <li>Complex interactions have no alternatives [].</li>
+    <li>Interactive context is not clear [].</li>
+    <li>Interactions are not forgivable [].</li>
+    <li>State is not easy to share or reproduce [].</li>
+    <li>Location and history is not clear [].</li>
+    <li>Keyboard focus indicator is missing, obscured, or low contrast [].</li>
+</ul>
+
+##### Example
+<p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/zoom-reflow.html" aria-label="Zoom and reflow evidence in plotting interface" title="Zoom and reflow evidence in plotting interface">1</a>].</i> Below demonstrates how a high-zoom user will have a worse experience reading Bokeh's text than someone who uses Bokeh at 100% zoom.</p>
+
+```{figure} ./assets/plotting-interface_zoom-reflow_6.png
+:width: 100%
+:alt: Viewport is zoomed in to 400% showing the canvas-based text from the bar chart labels being highly aliased and fuzzy, compared to the text for the Scatter plot beneath (circled in red) which is high fidelity and readable (fails).
+
+Viewport is zoomed in to 400% showing the canvas-based text from the bar chart labels being highly aliased and fuzzy, compared to the text for the Scatter plot beneath (circled in red) which is high fidelity and readable (fails).
 ```
 
-#### <a id="finding-3A" href="#finding-3A" aria-label="Finding 3A"><span aria-hidden="true">#</span></a> A. Functional semantics are very poor
+#### <a id="finding-3B" href="#finding-3B" aria-label="Finding 3B"><span aria-hidden="true">#</span></a> B. System's presentation is not flexible
 
 ```{note}
 Explanation and citations pending.
@@ -242,9 +289,7 @@ Explanation and citations pending.
 :playsinline:
 ```
 
-#### <a id="finding-3B" href="#finding-3B" aria-label="Finding 3B"><span aria-hidden="true">#</span></a> B. Is not robust
-
-history, single process, forgiveable, modality/input, zoom/reflow, fragile support, scrolling (plotting)
+<!-- #### <a id="finding-3C" href="#finding-3C" aria-label="Finding 3C"><span aria-hidden="true">#</span></a> C. Has little to no respect for user preferences
 
 ```{note}
 Explanation and citations pending.
@@ -252,25 +297,7 @@ Explanation and citations pending.
 ##### Evidence of this finding
 <ul>
     <li>a [].</li>
-</ul>
-
-##### Example
-<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
-
-```{video} ./plot-tools/assets/plot-tools_visual-only.mp4
-:width: 100%
-:playsinline:
-```
-
-#### <a id="finding-3C" href="#finding-3C" aria-label="Finding 3C"><span aria-hidden="true">#</span></a> C. Has little to no respect for user preferences
-
-```{note}
-Explanation and citations pending.
-```
-##### Evidence of this finding
-<ul>
-    <li>a [].</li>
-</ul>
+</ul> -->
 
 ##### Example
 <p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
