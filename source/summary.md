@@ -62,6 +62,7 @@ This finding is primarily about the fact that a significant amount of text that 
 :width: 100%
 :playsinline:
 ```
+
 <p>A web browser is shown with multiple charts. A screen reader navigates through the page and through multiple charts, but very limited information is given as they do so (fails).</p>
 
 #### <a id="finding-1B" href="#finding-1B" aria-label="Finding 1B"><span aria-hidden="true">#</span></a> B. Foundational navigation design and interactivity is poor
@@ -120,7 +121,7 @@ Testing for _intelligent_ navigation wasn't even possible, since even basic navi
 
 ### <a id="finding-2" href="#finding-2" aria-label="Finding 2"><span aria-hidden="true">#</span></a> 2. Finding: Perceivability and understandability have barriers
 
-Understandability (and cognitive support) can be a difficult thing to ask a visualization library/tool to provide. It is *always* ultimately the responsibility of the implementer of a tool to provide end users with cognitive access. The application and use of a library (E.g. the contexts where Bokeh is used) should explain, describe, make outcomes easy, and provide robust alternative ways to reach those outcomes.
+Understandability (and cognitive support) can be a difficult thing to ask a visualization library/tool to provide. It is _always_ ultimately the responsibility of the implementer of a tool to provide end users with cognitive access. The application and use of a library (E.g. the contexts where Bokeh is used) should explain, describe, make outcomes easy, and provide robust alternative ways to reach those outcomes.
 
 However, there are some cognitive support areas that a visualization library _should_ be responsible for. And of course, there are many things that a visualization library can assist developer-users and designer-users with. Below we are focusing on issues that either fall under the purview of Bokeh or are things that Bokeh can do to assist their users with.
 
@@ -128,7 +129,7 @@ As for perceivability (perceptual accessibility), ultimately being able to find 
 
 #### <a id="finding-2A" href="#finding-2A" aria-label="Finding 2A"><span aria-hidden="true">#</span></a> A. Findability and perceivability has problems
 
-Users need to be able to find things. *Perception* and *discovery* should be easy tasks. And unfortunately, there are some elements that are essentially invisible or hidden in our testing environment. Hard-to-see and hard-to-find elements can add difficulty or even make certain things impossible about Bokeh's usage.
+Users need to be able to find things. _Perception_ and _discovery_ should be easy tasks. And unfortunately, there are some elements that are essentially invisible or hidden in our testing environment. Hard-to-see and hard-to-find elements can add difficulty or even make certain things impossible about Bokeh's usage.
 
 For screen reader users, semantic labels need to exist for interactive elements so that they know what a particular button or input does and its current state. And without proper labels on elements, they are virtually invisible to screen reader users.
 
@@ -137,6 +138,7 @@ For low vision users, high contrast is paramount. Contrast is the difference or 
 For sighted mouse users with motor and dexterity impairents, tooltips can be helpful on chart elements but the target size of elements (such as in the line chart) are far too small. Discovering that tooltips exist on an element using pixel-perfect strategies actually creates accessibility barriers for all kinds of folks (but especially those with dexterity disabilities such as tremors or upper-body motor impairments). Being honest, I didn't even notice the line chart had tooltips enabled until I found them by accident testing for contrast
 
 ##### Evidence of this finding
+
 <ul>
     <li>Visual only [].</li>
     <li>Semantically invalid [].</li>
@@ -150,6 +152,7 @@ For sighted mouse users with motor and dexterity impairents, tooltips can be hel
 </ul>
 
 ##### Example
+
 <p><i>Example taken from annotations [<a href="" aria-label="Contrast evidence in annotation" title="Contrast evidence in annotation">23</a>].</i> Below demonstrates the near-invisibility of the interactive annotation element used to toggle a line chart on and off.</p>
 
 ```{figure} ./annotations/assets/annotations_contrast_1.png
@@ -163,15 +166,16 @@ A double line chart is shown. A color selection dropper is highlighting a select
 
 In general, everything should be easy to understand for folks who have never before encountered a Bokeh chart, its interactive capabilities, and its annotations.
 
-*What* a chart shows should be described. *Why* some information has been visualized should be explained. *How* a user can interact should be clearly explained, including with instructions provided for more complex interactions (like lasso, etc). All text and labels should be made legible and presented at a reasonable reading level.
+_What_ a chart shows should be described. _Why_ some information has been visualized should be explained. _How_ a user can interact should be clearly explained, including with instructions provided for more complex interactions (like lasso, etc). All text and labels should be made legible and presented at a reasonable reading level.
 
 Bokeh's cognitive support overall seems to be geared toward supporting software developers who are using the library while generally leaving end-user understandability up to the user's own ability to poke around with interactivity, grok context/use, and self-interpret.
 
-In general, Bokeh doesn't appear to provide *any* assistance to developers in authoring textual descriptions, providing end-user oriented instructions/explanations, and also appears to have minimal support for automatically simplifying/formatting data-oriented numerical values (such as using too many decimal points of precision in a label).
+In general, Bokeh doesn't appear to provide _any_ assistance to developers in authoring textual descriptions, providing end-user oriented instructions/explanations, and also appears to have minimal support for automatically simplifying/formatting data-oriented numerical values (such as using too many decimal points of precision in a label).
 
-Also, Bokeh is a library grounded on *interaction* with data and data visualizations. One important area of cognitive accessibility to consider is that there are many valid ways to interact with data. But by providing only one narrow path to reach a particular piece of information or outcome is a cognitive accessibility barrier as it assumes that users will always understand, remember, and correctly execute that given path of interaction.
+Also, Bokeh is a library grounded on _interaction_ with data and data visualizations. One important area of cognitive accessibility to consider is that there are many valid ways to interact with data. But by providing only one narrow path to reach a particular piece of information or outcome is a cognitive accessibility barrier as it assumes that users will always understand, remember, and correctly execute that given path of interaction.
 
 ##### Evidence of this finding
+
 <ul>
     <li>No title, summary, or caption provided [].</li>
     <li>Explanation or purpose [].</li>
@@ -187,6 +191,7 @@ Also, Bokeh is a library grounded on *interaction* with data and data visualizat
 </ul>
 
 ##### Example
+
 <p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
 
 ```{figure} ./assets/plotting-interface_information-complexity_1.png
@@ -197,6 +202,7 @@ A scatter plot is shown. Three categories are shown, but are hard to differentia
 ```
 
 #### <a id="finding-2C" href="#finding-2C" aria-label="Finding 2C"><span aria-hidden="true">#</span></a> C. Interactive capabilities and system state are not clear
+
 Interactive data visualization comes with an additional layer of cognitive accessibility issues: keeping track of what could happen, is happening, and has happened in a system.
 
 Initially, users will need to know what interactions are possible. Without cues that invite/demonstrate interaction or easily discoverable instructions, users will likely not even use the interactive features of a visualization.
@@ -205,9 +211,10 @@ Additionally, when change takes place in a system, it should be easy to both ant
 
 Lastly, after change has taken place, users should be able to easily undo their actions, know their current location within an interaction process, have a sense of their interaction history, and be able to share and reproduce the current state of their interactive work. Presently, the general design pattern assumes that users will come to a visualization, interact, and then if they leave the page or wish to share their work with someone else, the work must be completely reconstructed from scratch.
 
-Again, as mentioned previously in this audit summary: it is difficult to expect a visualization library to handle *everything* that would make an interactive application experience more accessible. The burden of higher-level system accessibility (such as history, sharing, reproducibility, saving, loading, etc) often falls to systems that implement interactive charts. However, the fact that Bokeh fails should be noted as an area of potential improvement. Systems and utilities could be in place to facilitate these functionalities more easily.
+Again, as mentioned previously in this audit summary: it is difficult to expect a visualization library to handle _everything_ that would make an interactive application experience more accessible. The burden of higher-level system accessibility (such as history, sharing, reproducibility, saving, loading, etc) often falls to systems that implement interactive charts. However, the fact that Bokeh fails should be noted as an area of potential improvement. Systems and utilities could be in place to facilitate these functionalities more easily.
 
 ##### Evidence of this finding
+
 <ul>
     <li>No explanation or purpose for how to read [].</li>
     <li>No interaction cues or instructions [].</li>
@@ -219,6 +226,7 @@ Again, as mentioned previously in this audit summary: it is difficult to expect 
 </ul>
 
 ##### Example
+
 <p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/share-reproduce.html" aria-label="Share and reproduce evidence in plot tools" title="Share and reproduce evidence in plot tools">1</a>].</i> Below demonstrates how a screen reader user interacts with an input and then loses their location and focus, in addition to receiving no system feedback about their original input.</p>
 
 ```{video} ./plot-tools/assets/plot-tools_changes-easy-to-follow.mp4
@@ -229,6 +237,7 @@ Again, as mentioned previously in this audit summary: it is difficult to expect 
 <p>A scatter plot is shown. A screen reader is navigating through the chart's dropdown menu, but when an option is selected, the user is forced back to the top of the webpage.</p>
 
 ### <a id="finding-3" href="#finding-3" aria-label="Finding 3"><span aria-hidden="true">#</span></a> 3. Finding: System is fragile
+
 This part in an audit can be difficult because it can feel like asking a distinct tool like a hammer to be transformed into a rocket ship. This part of an audit is when the shortcomings of older, smaller, or just-emerging technologies come to light. Systems, especially ones that are tools, can often be built as a response to the needs of a specific community. Bokeh, in that sense, emerged to provide a better way to visualize data in Python for a web context. But the community that uses and consumes Bokeh is broader than the underlying system was originally designed for.
 
 Tools and systems should not be fragile. They should be able to withstand different environments, used by different people in different ways, and allow for end-user personalization, customization, and adaptation.
@@ -241,11 +250,12 @@ That being said, Bokeh has catching up to do.
 
 Sometimes a system is built using the wrong materials or with the wrong substrate, which ultimately limits how robust that system is. In this case, Bokeh uses non-standard interactive elements, such as `<div>`s and also does not provide adequate descriptions and attributes on elements that enable assistive technologies. This limits which devices are capable of interaction and input, as well as which ways a user is able to perceive the contents of that system.
 
-But more than using the correct materials, sometimes systems should also be encouraged to grow in order to handle new devices, interaction patterns, and uses. And in this sense, Bokeh does not handle zoom/reflow well, which is difficult especially for mobile users. Many users who have disabilities actually use mobile or tablet devices *more* than desktop devices. Some screen reader users, for example, love VoiceOver on iOS much more than a desktop experience.
+But more than using the correct materials, sometimes systems should also be encouraged to grow in order to handle new devices, interaction patterns, and uses. And in this sense, Bokeh does not handle zoom/reflow well, which is difficult especially for mobile users. Many users who have disabilities actually use mobile or tablet devices _more_ than desktop devices. Some screen reader users, for example, love VoiceOver on iOS much more than a desktop experience.
 
 Bokeh should be built in a way that enables a myriad of current technologies to interact with it. In particular, what makes Bokeh awesome are the interactive capabilities that it offers end users. But care should be taken to design how different users with different assistive technologies and input devices and interaction patterns will want to accomplish similar goals. Pairity in the quality of experience should be provided for all users. Sighted, mouse users shouldn't not have an easier and better time than everyone else.
 
 ##### Evidence of this finding
+
 <ul>
     <li>Content is visual only [].</li>
     <li>Semantically invalid [].</li>
@@ -281,6 +291,7 @@ Foundationally, many users leverage browser extensions that automatically try to
 Ideally, all content on the web is flexible enough to handle these variations that facilitate an end-user's "fit."
 
 ##### Evidence of this finding
+
 <ul>
     <li>User's style changes are not respected [].</li>
     <li>Contrast and texture cannot be adjusted [].</li>
