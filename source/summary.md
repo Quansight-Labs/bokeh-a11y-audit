@@ -272,6 +272,7 @@ Bokeh should be built in a way that enables a myriad of current technologies to 
 </ul>
 
 ##### Example
+
 <p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/zoom-reflow.html" aria-label="Zoom and reflow evidence in plotting interface" title="Zoom and reflow evidence in plotting interface">1</a>].</i> Below demonstrates how a high-zoom user will have a worse experience reading Bokeh's text than someone who uses Bokeh at 100% zoom. Because Bokeh renders with canvas, text becomes rasterized and does not scale well compared to HTML or SVG elements when zoomed.</p>
 
 ```{figure} ./assets/plotting-interface_zoom-reflow_6.png
@@ -282,9 +283,10 @@ Viewport is zoomed in to 400% showing the canvas-based text from the bar chart l
 ```
 
 #### <a id="finding-3B" href="#finding-3B" aria-label="Finding 3B"><span aria-hidden="true">#</span></a> B. System's presentation is not flexible
+
 Many users, especially those with disabilities, customize their technology experiences. This is called "fitting" in some spaces, but generally is part of "personalization" and "customization." In order for an end user to be able to make these changes to an interface, it must be built on a relatively flexible system. Rigid systems will try to enforce their own rules for syling, animation and more. But flexible systems are built with an assumption that end users may override things.
 
-There is a massive array of different things that end users might want to be able to do and building a system that could allow them to do whatever they wanted might be impossible. However, there are a few things that should *always* work as-expected out of the box, which we check for: detecting and adapting to changes in system-set high contrast mode, if textures/patterns are on can they be turned off, whether animations can be disabled, zoom/reflow support, ability to adjust scrolling experiences, whether obscure chart types have alternatives for viewing the same data, and whether text can be manipulated using css.
+There is a massive array of different things that end users might want to be able to do and building a system that could allow them to do whatever they wanted might be impossible. However, there are a few things that should _always_ work as-expected out of the box, which we check for: detecting and adapting to changes in system-set high contrast mode, if textures/patterns are on can they be turned off, whether animations can be disabled, zoom/reflow support, ability to adjust scrolling experiences, whether obscure chart types have alternatives for viewing the same data, and whether text can be manipulated using css.
 
 Foundationally, many users leverage browser extensions that automatically try to update every webpage they visit to suit their preferred minimum font size, text spacing, color choices, and more. A library's inability to respond to simple CSS-based changes can produce pretty harsh barriers for some end users (and also can look clunky too). Responding to an end-user's personal CSS as-expected is easily the most important first thing we check. Then we test different devices and assistive tech (mobile devices, magnifiers). After that, we work through system settings (contrast, animations, textures, etc) and lastly we check certain visualization-specific things.
 
@@ -302,6 +304,7 @@ Ideally, all content on the web is flexible enough to handle these variations th
 </ul>
 
 ##### Example
+
 <p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/contrast-texture-adjustments.html" aria-label="Contrast and texture evidence in plotting interface" title="Contrast and texture evidence in plotting interface">1</a>].</i> Below demonstrates how an inflexible visualization is incapable of correctly responding to an operating system's *High Contrast* mode.</p>
 
 ```{figure} ./assets/plotting-interface_style-change-respected.png
