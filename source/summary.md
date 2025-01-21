@@ -316,27 +316,31 @@ A scatter plot is shown. A high contrast filter has been implemented, and the we
 
 ## <a id="suggestions" href="#suggestions" aria-label="Suggestions"><span aria-hidden="true">#</span></a> Suggested directions for remediation
 
-```{note}
-Explanation pending.
-```
+The following suggestions are primarily intended as high-level goals, spelled out as imperatives. The lower-level details for how to accomplish each of these should be sorted out in our actual roadmap and eventual issues on github.
+
+Ideally, the following are written as *invitations* for the Bokeh community to get involved. There's a lot to do!
 
 ### Focus on text experiences: explanations, descriptions, and labels
+Charts need to be described. A designer or developer should, at the very least, have a way to easily provide descriptions for their visualizations. This should be done before anything else. Bokeh needs to give them a way to add descriptions for screen reader users. (Note: this is not the same as a caption.)
 
-```{note}
-Explanation pending.
-```
+Common practice in other libraries (see Highcharts, Visa Chart Components, Vega Lite, Olli, etc) is to automatically describe parts of the chart that can be automatically parsed, like the axes, legends, data ranges, data types, etc. This should be provided to users in alt text (at minimum) or at best via an alternative document. This is typically *after* the designer-provided descriptions.
+
+The final part of descriptions is that many major visualization libraries also add navigable labels for rendered elements within the chart. This can be quite a lot of work to do well, especially if interactivity (and not just screen reader navigation) is part of the equation. I break this down a little bit more in the "support assitive technology interaction" section, below.
+
+In addition, all of the major text elements in a chart (title, subtitle, captions, annotations, etc) need to be exposed to screen reader users somehow. Rendering text in a raster format (like `<canvas>`) puts pressure on the system: either you completely recreate the major text elements in HTML (but hide them visually in a way that still allows screen reader access) or you may need to move text rendering off of canvas. Coordinating either of these can be a bit of work.
+
+More care should also be taken for describing what various things and explaining how to use and interpret the things they do (for example, the interactive annotations and all of the plot tools). New users need cues to know what is interactive, especially like the subtle examples of the tooltips and selectable legend in our [line chart](https://quansight-labs.github.io/bokeh-a11y-audit/). I would go so far as recommending adding end-user how-to guides. I highly suggest adding documentation that is focused on helping Bokeh's end-users get the most out of their interactive experience, especially those who are new. By now, Bokeh's community has likely established enough interaction patterns that could be written up.
 
 ### Use better building materials
+The next most important thing, after locking in text-related accessibility, is to use the correct building materials.
 
-```{note}
-Explanation pending.
-```
+As already hinted, `<canvas>` can have some limitations for accessibility. It's great for high-performance rendering, but that performance is directly related to a lack of markup + DOM overhead that comes with more accessible materials, like HTML (or even SVG).
 
-### Support assistive technology interaction
+As for virtually everything that is interactive, from annotations, tooltip-triggering elements, to the buttons in the plot tools, natively semantic HTML elements will be far better for accessibility than the elements that they currently are. As an example: a `<div>` isn't natively semantic at all, but a `<button>` is. Adding on-click event listeners to a div would make it listen to mouse events, but keyboard-driven assistive technologies can't reach those elements natively, like they do with a button. The general philosophy here in accessibility communities online is that if a native element can do what you're trying to do, you should use that element.
 
-```{note}
-Explanation pending.
-```
+[Sarah Higley writes](https://sarahmhigley.com/writing/tooltips-in-wcag-21/) about how "a major pitfall of approaching web design as a visual medium is conflating visual patterns with functional or interaction patterns." Her point is that thinking in terms of a visual language can sometimes bias web developers and designers into trying to solve all interactive problems using visual means. HTML has a [massive array](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements) of elements with functional semantics and they should be used whenever possible. Not only will assistive technologies have a better time, but so will automatic agents when parsing a website (like crawlers for search engines and foundational models).
+
+Plus, it is easier for someone else to interpret code that uses semantic markup. This will certainly have a downstream effect on future community contributions and new projects.
 
 ### Build a flexible system
 
@@ -351,12 +355,6 @@ Explanation pending.
 Whenever possible, the library should be designed to assume that software-users are not the end users, but rather building interfaces for users who are not necessarily skilled at visualizing and interacting with data.
 
 utilities, validation, smart defaults, and guardrails
-
-```{note}
-Explanation pending.
-```
-
-### Add end-user documentation and guides
 
 ```{note}
 Explanation pending.
