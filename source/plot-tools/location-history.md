@@ -17,7 +17,7 @@ Plot tools fail to provide any information about what actions have been taken af
 :width: 100%
 :playsinline:
 ```
-A scatter plot is shown. The mouse cursor hovers over a plot tool called "Wheel Zoom." Using a mouse, a user zooms in and out on the chart space before clicking and panning away from the visable data points into an empty space. There is nothing on the screen that states any action history.
+A scatter plot is shown. The mouse cursor hovers over a plot tool called "Wheel Zoom." Using a mouse, a user zooms in and out on the chart space before clicking and panning away from the visible data points into an empty space. There is nothing on the screen that states any action history.
 
 ## Steps to Reproduce
 Use any plot tools to interact with the chart to change it's view or state. 
