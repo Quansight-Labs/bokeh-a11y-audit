@@ -22,7 +22,7 @@ Try to understand what the overall purpose of the visualization is, and then try
 Controls are inappropriate [https://chartability.github.io/POUR-CAF/#__controlsareinappropriate__](https://chartability.github.io/POUR-CAF/#__controlsareinappropriate__)
 
 ### Related Evidence
-See "Interactions are not unforgiveable."
+See "Interactions are not forgivable."
 
 ### Known or Documented Issues
 (If there is already a github issue created for this test or a related test, it will be listed here.)

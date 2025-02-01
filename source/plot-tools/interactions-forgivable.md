@@ -1,5 +1,5 @@
 ### Test Type Performed
-Interactions are forgiveable.
+Interactions are forgivable.
 
 ### Artifact Evaluated
 [Plot tools](https://docs.bokeh.org/en/latest/docs/user_guide/interaction/tools.html#ug-interaction-tools). Specifically, evaluating the interface icons that are used to access the tools that are in the [scatter plot](https://quansight-labs.github.io/bokeh-a11y-audit/#_ts1723552414769).
@@ -11,14 +11,14 @@ Plot tools fail to allow the user to undo or redo any actions taken.
 - *FAIL* - We would expect the plot tools to allow for the ability to undo or redo single actions at a time while interacting with the chart space. Although there is a "Reset" tool, this returns the chart to it's default state and erases all actions a user had previously taken.
 
 ### Image or Video of Failure 
-<video controls src="../assets/plot-tools_interactions-forgiveable.mp4" title="Plot-tools_Interactions-Forgiveable"></video>
+<video controls src="../assets/plot-tools_interactions-forgivable.mp4" title="Plot-tools_Interactions-Forgivable"></video>
 A scatter plot is shown. A mouse cursor hovers over a plot tool called "Wheel Zoom." Using the mouse, a user zooms in on the chart space. The user then hovers over each chart plot tool until it comes to "Reset." They press it and the chart returns to it's default display.
 
 ### Steps to Reproduce
 Use any plot tool to interact with the chart to change it's view or state. 
 
 ### Guidelines and Standards Used
-Interactions are not forgiveable [https://chartability.github.io/POUR-CAF/#__interactionsarenotforgiveable__](https://chartability.github.io/POUR-CAF/#__interactionsarenotforgiveable__)
+Interactions are not forgivable [https://chartability.github.io/POUR-CAF/#__interactionsarenotforgivable__](https://chartability.github.io/POUR-CAF/#__interactionsarenotforgivable__)
 
 ### Related Evidence
 No related evidence currently.
