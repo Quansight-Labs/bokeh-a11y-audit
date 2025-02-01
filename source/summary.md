@@ -193,7 +193,7 @@ Also, Bokeh is a library grounded on _interaction_ with data and data visualizat
     <li>Complex actions have alternatives [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/complex-actions.html" aria-label="Complex Actions evidence in plot tools" title="Complex Actions evidence in plot tools">PT-2</a>].</li>
     <li>Information complexity [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/information-complexity.html" aria-label="Information Complexity evidence in plotting interface" title="Information Complexity evidence in plotting interface">PI-12</a>].</li>
 </ul>
-    
+
 
 ##### Example
 
