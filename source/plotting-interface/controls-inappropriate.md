@@ -1,4 +1,4 @@
-# Contrast Inappropriate
+# Controls Inappropriate
 
 ## Test Type Performed
 
