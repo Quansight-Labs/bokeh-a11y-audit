@@ -43,22 +43,22 @@ This finding is primarily about the fact that a significant amount of text that 
 ##### Evidence of this finding
 
 <ul>
-    <li>Elements are visual only [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plot tools" title="Visual only evidence in plot tools">1</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">2</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/visual-only.html" aria-label="Visual only evidence in annotations" title="Visual only evidence in annotations">3</a>].</li>
-    <li>Only one modality/input is provided [].</li>
-    <li>Metrics and variables are not defined [].</li>
-    <li>Cannot be navigated according to narrative/structure [].</li>
-    <li>Semantically invalid [].</li>
-    <li>No title, summary, or caption provided [].</li>
-    <li>Axis labels are not clear or present [].</li>
-    <li>No table [].</li>
-    <li>Visually apparent features are not described [].</li>
+    <li>Elements are visual only [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plot tools" title="Visual only evidence in plot tools">PT-12</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">PI-28</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/visual-only.html" aria-label="Visual only evidence in annotations" title="Visual only evidence in annotations">A-24</a>].</li>
+    <li>Only one modality/input is provided [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/modality-input.html" aria-label="Modality Input evidence in plot tools" title="Modality Input evidence in plot tools">PT-9</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/modality-input.html" aria-label="Modality Input evidence in plotting interface" title="Modality Input evidence in plotting interface">PI-17</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/modality-input.html" aria-label="Modality Input evidence in annotations" title="Modality Input evidence in annotations">A-13</a>].</li>
+    <li>Metrics and variables are not defined [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/metrics-variables.html" aria-label="Metrics Variables evidence in plotting interface" title="Metrics Variables evidence in plotting interface">PI-16</a>].</li>
+    <li>Cannot be navigated according to narrative/structure [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/narrative-structure.html" aria-label="Narrative Structure evidence in plotting interface" title="Narrative Structure evidence in plotting interface">PI-18</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/narrative-structure.html" aria-label="Narrative Structure evidence in annotations" title="Narrative Structure evidence in annotations">A-14</a>].</li>
+    <li>Semantically invalid [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/semantically-invalid.html" aria-label="Semantically Invalid evidence in plotting interface" title="Semantically Invalid evidence in plotting interface">PI-20</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/semantically-invalid.html" aria-label="Semantically Invalid evidence in annotations" title="Semantically Invalid evidence in annotations">A-15</a>].</li>
+    <li>No title, summary, or caption provided [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/title-summary.html" aria-label="Title Summary evidence in plotting interface" title="Title Summary evidence in plotting interface">PI-27</a>].</li>
+    <li>Axis labels are not clear or present [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/axis-labels.html" aria-label="Axis Labels evidence in plotting interface" title="Axis Labels evidence in plotting interface">PI-1</a>].</li>
+    <li>No table [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/no-table.html" aria-label="No Table evidence in plotting interface" title="No Table evidence in plotting interface">PI-23</a>].</li>
+    <li>Visually apparent features are not described [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visually-apparent-features.html" aria-label="Visually Apparent Features evidence in plotting interface" title="Visually Apparent Features evidence in plotting interface">PI-29</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/visually-apparent-features.html" aria-label="Visually Apparent Features evidence in annotations" title="Visually Apparent Features evidence in annotations">A-25</a>].</li>
 </ul>
 
 ##### Example
 
 <p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">2</a>].</i> Below demonstrates that the lack of textual information excludes screen reader users from participation.</p>
 
-```{video} ./plot-tools/assets/plotting-interface_visual-only.mp4
+```{video} ./plotting-interface/assets/plotting-interface_visual-only.mp4
 :width: 100%
 :playsinline:
 ```
@@ -94,18 +94,18 @@ Testing for _intelligent_ navigation wasn't even possible, since even basic navi
 ##### Evidence of this finding
 
 <ul>
-    <li>Only one modality/input is provided [].</li>
-    <li>Cannot be navigated according to narrative/structure [].</li>
-    <li>Semantically invalid [].</li>
-    <li>Focus indicator not perceivable [].</li>
-    <li>Single process [].</li>
-    <li>Fragile support [].</li>
-    <li>Controls inappropriate [].</li>
-    <li>Tab stops inappropriate [].</li>
-    <li>Navigation is tedious [].</li>
-    <li>Interactive context is not clear [].</li>
-    <li>Complex actions have alternatives [].</li>
-    <li>Low contrast for interactive elements [].</li>
+    <li>Only one modality/input is provided [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/modality-input.html" aria-label="Modality Input evidence in plot tools" title="Modality Input evidence in plot tools">PT-9</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/modality-input.html" aria-label="Modality Input evidence in plotting interface" title="Modality Input evidence in plotting interface">PI-17</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/modality-input.html" aria-label="Modality Input evidence in annotations" title="Modality Input evidence in annotations">A-13</a>].</li>
+    <li>Cannot be navigated according to narrative/structure [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/narrative-structure.html" aria-label="Narrative Structure evidence in plotting interface" title="Narrative Structure evidence in plotting interface">PI-18</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/narrative-structure.html" aria-label="Narrative Structure evidence in annotations" title="Narrative Structure evidence in annotations">A-14</a>].</li>
+    <li>Semantically invalid [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/semantically-invalid.html" aria-label="Semantically Invalid evidence in plotting interface" title="Semantically Invalid evidence in plotting interface">PI-20</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/semantically-invalid.html" aria-label="Semantically Invalid evidence in annotations" title="Semantically Invalid evidence in annotations">A-15</a>].</li>
+    <li>Focus indicator not perceivable [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/keyboard-focus.html" aria-label="Keyboard Focus evidence in plot tools" title="Keyboard Focus evidence in plot tools">PT-8</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/keyboard-focus.html" aria-label="Keyboard Focus evidence in plotting interface" title="Keyboard Focus evidence in plotting interface">PI-13</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/keyboard-focus.html" aria-label="Keyboard Focus evidence in annotations" title="Keyboard Focus evidence in annotations">A-11</a>].</li>
+    <li>Single process [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/single-process.html" aria-label="Single Process evidence in plotting interface" title="Single Process evidence in plotting interface">PI-21</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/single-process.html" aria-label="Single Process evidence in annotations" title="Single Process evidence in annotations">A-17</a>].</li>
+    <li>Fragile support [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/fragile-support.html" aria-label="Fragile Support evidence in plotting interface" title="Fragile Support evidence in plotting interface">PI-10</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/fragile-support.html" aria-label="Fragile Support evidence in annotations" title="Fragile Support evidence in annotations">A-7</a>].</li>
+    <li>Controls inappropriate [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/controls-inappropriate.html" aria-label="Controls Inappropriate evidence in plotting interface" title="Controls Inappropriate evidence in plotting interface">PI-6</a>].</li>
+    <li>Tab stops inappropriate [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/tab-stops.html" aria-label="Tab Stops evidence in annotations" title="Tab Stops evidence in annotations">A-20</a>].</li>
+    <li>Interaction is tedious [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/tedious.html" aria-label="Tedious evidence in annotations" title="Tedious evidence in annotations">A-22</a>].</li>
+    <li>Interactive context is not clear [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/interactive-context.html" aria-label="Interactive Context evidence in plot tools" title="Interactive Context evidence in plot tools">PT-7</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/interactive-context.html" aria-label="Interactive Context evidence in annotations" title="Interactive Context evidence in annotations">A-10</a>].</li>
+    <li>Complex actions have alternatives [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/complex-actions.html" aria-label="Complex Actions evidence in plot tools" title="Complex Actions evidence in plot tools">PT-2</a>].</li>
+    <li>Low contrast for interactive elements [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/contrast-interactive-elements.html" aria-label="Contrast Interactive Elements evidence in plot tools" title="Contrast Interactive Elements evidence in plot tools">PT-4</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/contrast-interactive-elements.html" aria-label="Contrast Interactive Elements evidence in plotting interface" title="Contrast Interactive Elements evidence in plotting interface">PI-4</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/contrast-interactive-elements.html" aria-label="Contrast Interactive Elements evidence in annotations" title="Contrast Interactive Elements evidence in annotations">A-3</a>].</li>
 </ul>
 
 ##### Example
@@ -140,15 +140,16 @@ For sighted mouse users with motor and dexterity impairents, tooltips can be hel
 ##### Evidence of this finding
 
 <ul>
-    <li>Visual only [].</li>
-    <li>Semantically invalid [].</li>
-    <li>Color contrast [].</li>
-    <li>Contrast of interactive elements [].</li>
-    <li>Target pointer size is too small [].</li>
-    <li>Interaction is tedious [].</li>
-    <li>Data density [].</li>
-    <li>Spacing [].</li>
-    <li>Keyboard focus indicator is missing, obscured, or low contrast [].</li>
+    <li>Elements are visual only [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plot tools" title="Visual only evidence in plot tools">PT-12</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">PI-28</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/visual-only.html" aria-label="Visual only evidence in annotations" title="Visual only evidence in annotations">A-24</a>].</li>
+    <li>Semantically invalid [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/semantically-invalid.html" aria-label="Semantically Invalid evidence in plotting interface" title="Semantically Invalid evidence in plotting interface">PI-20</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/semantically-invalid.html" aria-label="Semantically Invalid evidence in annotations" title="Semantically Invalid evidence in annotations">A-15</a>].</li>
+    <li>Color contrast [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/contrast.html" aria-label="Color Contrast evidence in plot tools" title="Color Contrast evidence in plot tools">PT-3</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/contrast.html" aria-label="Color Contrast evidence in plotting interface" title="Color Contrast evidence in plotting interface">PI-3</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/contrast.html" aria-label="Color Contrast evidence in annotations" title="Color Contrast evidence in annotations">A-2</a>].</li>
+    <li>Low contrast for interactive elements [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/contrast-interactive-elements.html" aria-label="Contrast Interactive Elements evidence in plot tools" title="Contrast Interactive Elements evidence in plot tools">PT-4</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/contrast-interactive-elements.html" aria-label="Contrast Interactive Elements evidence in plotting interface" title="Contrast Interactive Elements evidence in plotting interface">PI-4</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/contrast-interactive-elements.html" aria-label="Contrast Interactive Elements evidence in annotations" title="Contrast Interactive Elements evidence in annotations">A-3</a>].</li>
+    <li>Target pointer size is too small [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/target-pointer-size.html" aria-label="Target Pointer Size evidence in plot tools" title="Target Pointer Size evidence in plot tools">PT-11</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/target-pointer-size.html" aria-label="Target Pointer Size evidence in plotting interface" title="Target Pointer Size evidence in plotting interface">PI-25</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/target-pointer-size.html" aria-label="Target Pointer Size evidence in annotations" title="Target Pointer Size evidence in annotations">A-21</a>].</li>
+    <li>Interaction is tedious [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/tedious.html" aria-label="Tedious evidence in annotations" title="Tedious evidence in annotations">A-22</a>].</li>
+    <li>Data density [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/data-density.html" aria-label="Data Density evidence in plotting interface" title="Data Density evidence in plotting interface">PI-25</a>].</li>
+    <li>Spacing [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/spacing.html" aria-label="Spacing evidence in plot tools" title="Spacing evidence in plot tools">PT-10</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/spacing.html" aria-label="Spacing evidence in plotting interface" title="Spacing evidence in plotting interface">PI-22</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/spacing.html" aria-label="Spacing evidence in annotations" title="Spacing evidence in annotations">A-18</a>].</li>
+    <li>Focus indicator not perceivable [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/keyboard-focus.html" aria-label="Keyboard Focus evidence in plot tools" title="Keyboard Focus evidence in plot tools">PT-8</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/keyboard-focus.html" aria-label="Keyboard Focus evidence in plotting interface" title="Keyboard Focus evidence in plotting interface">PI-13</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/keyboard-focus.html" aria-label="Keyboard Focus evidence in annotations" title="Keyboard Focus evidence in annotations">A-11</a>].</li>
+    <li>Meaningful elements can be distinguished [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/meaningful-elements.html" aria-label="Meaningful Elements evidence in plotting interface" title="Meaningful Elements evidence in plotting interface">PI-15</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/meaningful-elements.html" aria-label="Meaningful Elements evidence in annotations" title="Meaningful Elements evidence in annotations">A-12</a>].</li>
 </ul>
 
 ##### Example
@@ -177,24 +178,28 @@ Also, Bokeh is a library grounded on _interaction_ with data and data visualizat
 ##### Evidence of this finding
 
 <ul>
-    <li>No title, summary, or caption provided [].</li>
-    <li>Explanation or purpose [].</li>
-    <li>No table [].</li>
-    <li>Visually apparent features are not described [].</li>
-    <li>No interaction cues or instructions [].</li>
-    <li>Not human-readable [].</li>
-    <li>Narrative or structure [].</li>
-    <li>Only one modality/input is provided [].</li>
-    <li>Single process [].</li>
-    <li>Complex actions have no alternatives [].</li>
-    <li>Information complexity [].</li>
+    <li>No title, summary, or caption provided [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/title-summary.html" aria-label="Title Summary evidence in plotting interface" title="Title Summary evidence in plotting interface">PI-27</a>].</li>
+    <li>Axis labels are not clear or present [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/axis-labels.html" aria-label="Axis Labels evidence in plotting interface" title="Axis Labels evidence in plotting interface">PI-1</a>].</li>
+    <li>No table [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/no-table.html" aria-label="No Table evidence in plotting interface" title="No Table evidence in plotting interface">PI-23</a>].</li>
+    <li>Visually apparent features are not described [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visually-apparent-features.html" aria-label="Visually Apparent Features evidence in plotting interface" title="Visually Apparent Features evidence in plotting interface">PI-29</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/visually-apparent-features.html" aria-label="Visually Apparent Features evidence in annotations" title="Visually Apparent Features evidence in annotations">A-25</a>].</li>
+    <li>Explanation or purpose [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/explanation-purpose.html" aria-label="Explanation Purpose evidence in plot tools" title="Explanation Purpose evidence in plot tools">PT-6</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/explanation-purpose.html" aria-label="Explanation Purpose evidence in plotting interface" title="Explanation Purpose evidence in plotting interface">PI-9</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/explanation-purpose.html" aria-label="Explanation Purpose evidence in annotations" title="Explanation Purpose evidence in annotations">A-6</a>].</li>
+    <li>No interaction cues or instructions [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/cues-instructions.html" aria-label="Cues Instructions evidence in plot tools" title="Cues Instructions evidence in plot tools">PT-5</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/cues-instructions.html" aria-label="Cues Instructions evidence in plotting interface" title="Cues Instructions evidence in plotting interface">PI-7</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/cues-instructions.html" aria-label="Cues Instructions evidence in annotations" title="Cues Instructions evidence in annotations">A-5</a>].</li>
+    <li>Not human-readable [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/human-readable.html" aria-label="Human Readable evidence in plotting interface" title="Human Readable evidence in plotting interface">PI-11</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/human-readable.html" aria-label="Human Readable evidence in annotations" title="Human Readable evidence in annotations">A-8</a>].</li>
+    <li>Only one modality/input is provided [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/modality-input.html" aria-label="Modality Input evidence in plot tools" title="Modality Input evidence in plot tools">PT-9</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/modality-input.html" aria-label="Modality Input evidence in plotting interface" title="Modality Input evidence in plotting interface">PI-17</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/modality-input.html" aria-label="Modality Input evidence in annotations" title="Modality Input evidence in annotations">A-13</a>].</li>
+    <li>Metrics and variables are not defined [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/metrics-variables.html" aria-label="Metrics Variables evidence in plotting interface" title="Metrics Variables evidence in plotting interface">PI-16</a>].</li>
+    <li>Cannot be navigated according to narrative/structure [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/narrative-structure.html" aria-label="Narrative Structure evidence in plotting interface" title="Narrative Structure evidence in plotting interface">PI-18</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/narrative-structure.html" aria-label="Narrative Structure evidence in annotations" title="Narrative Structure evidence in annotations">A-14</a>].</li>
+    <li>Single process [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/single-process.html" aria-label="Single Process evidence in plotting interface" title="Single Process evidence in plotting interface">PI-21</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/single-process.html" aria-label="Single Process evidence in annotations" title="Single Process evidence in annotations">A-17</a>].</li>
+    <li>Interactive context is not clear [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/interactive-contrast.html" aria-label="Interactive Context evidence in plot tools" title="Interactive Context evidence in plot tools">PT-7</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/interactive-contrast.html" aria-label="Interactive Context evidence in annotations" title="Interactive Context evidence in annotations">A-10</a>].</li>
+    <li>Complex actions have alternatives [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/complex-actions.html" aria-label="Complex Actions evidence in plot tools" title="Complex Actions evidence in plot tools">PT-2</a>].</li>
+    <li>Information complexity [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/information-complexity.html" aria-label="Visually Apparent Features evidence in plotting interface" title="Visually Apparent Features evidence in plotting interface">PI-12</a>].</li>
 </ul>
+    
 
 ##### Example
 
 <p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
 
-```{figure} ./assets/plotting-interface_information-complexity_1.png
+```{figure} ./plotting-interface/assets/plotting-interface_information-complexity_1.png
 :width: 100%
 :alt: A scatter plot is shown. In the chart's upper tab, 'All Species' is selected. Three categories are shown, but are hard to differentiate from one another based on their color and patterns.
 
@@ -216,13 +221,13 @@ Again, as mentioned previously in this audit summary: it is difficult to expect 
 ##### Evidence of this finding
 
 <ul>
-    <li>No explanation or purpose for how to read [].</li>
-    <li>No interaction cues or instructions [].</li>
-    <li>Changes are easy to follow [].</li>
-    <li>Interactive context is not clear [].</li>
-    <li>Interactions are not forgivable [].</li>
-    <li>State is not easy to share or reproduce [].</li>
-    <li>Location and history is not clear [].</li>
+    <li>Explanation or purpose [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/explanation-purpose.html" aria-label="Explanation Purpose evidence in plot tools" title="Explanation Purpose evidence in plot tools">PT-6</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/explanation-purpose.html" aria-label="Explanation Purpose evidence in plotting interface" title="Explanation Purpose evidence in plotting interface">PI-9</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/explanation-purpose.html" aria-label="Explanation Purpose evidence in annotations" title="Explanation Purpose evidence in annotations">A-6</a>].</li>
+    <li>No interaction cues or instructions [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/cues-instructions.html" aria-label="Cues Instructions evidence in plot tools" title="Cues Instructions evidence in plot tools">PT-5</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/cues-instructions.html" aria-label="Cues Instructions evidence in plotting interface" title="Cues Instructions evidence in plotting interface">PI-7</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/cues-instructions.html" aria-label="Cues Instructions evidence in annotations" title="Cues Instructions evidence in annotations">A-5</a>].</li>
+    <li>Interactive context is not clear [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/interactive-context.html" aria-label="Interactive Context evidence in plot tools" title="Interactive Context evidence in plot tools">PT-7</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/interactive-context.html" aria-label="Interactive Context evidence in annotations" title="Interactive Context evidence in annotations">A-10</a>].</li>
+    <li>Changes are not easy to follow [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/changes-easy-to-follow.html" aria-label="Changes Easy to Follow evidence in plot tools" title="Changes Easy to Follow evidence in plot tools">PT-1</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/changes-easy-to-follow.html" aria-label="Changes Easy to Follow evidence in plotting interface" title="Changes Easy to Follow evidence in plotting interface">PI-2</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/changes-easy-to-follow.html" aria-label="Changes Easy to Follow evidence in annotations" title="Changes Easy to Follow evidence in annotations">A-1</a>].</li>
+    <li>Interactions are not forgivable [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/interactions-forgivable.html" aria-label="Cues Instructions evidence in annotations" title="Cues Instructions evidence in annotations">A-9</a>].</li>
+    <li>State is not easy to share or reproduce [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/share-reproduce.html" aria-label="Share Reproduce evidence in annotations" title="Share Reproduce evidence in annotations">A-16</a>].</li>
+    <li>Location and history is not clear [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/location-history.html" aria-label="Location History evidence in plotting interface" title="Location History evidence in plotting interface">PI-14</a>].</li>
 </ul>
 
 ##### Example
@@ -257,25 +262,25 @@ Bokeh should be built in a way that enables a myriad of current technologies to 
 ##### Evidence of this finding
 
 <ul>
-    <li>Content is visual only [].</li>
-    <li>Semantically invalid [].</li>
-    <li>Fragile support [].</li>
-    <li>Only one modality/input is provided [].</li>
-    <li>Zoom and reflow are not supported [].</li>
-    <li>Scrolling experiences cannot be altered [].</li>
-    <li>Complex interactions have no alternatives [].</li>
-    <li>Interactive context is not clear [].</li>
-    <li>Interactions are not forgivable [].</li>
-    <li>State is not easy to share or reproduce [].</li>
-    <li>Location and history is not clear [].</li>
-    <li>Keyboard focus indicator is missing, obscured, or low contrast [].</li>
+    <li>Elements are visual only [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plot tools" title="Visual only evidence in plot tools">PT-12</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">PI-28</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/visual-only.html" aria-label="Visual only evidence in annotations" title="Visual only evidence in annotations">A-24</a>].</li>
+    <li>Only one modality/input is provided [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/modality-input.html" aria-label="Modality Input evidence in plot tools" title="Modality Input evidence in plot tools">PT-9</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/modality-input.html" aria-label="Modality Input evidence in plotting interface" title="Modality Input evidence in plotting interface">PI-17</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/modality-input.html" aria-label="Modality Input evidence in annotations" title="Modality Input evidence in annotations">A-13</a>].</li>
+    <li>Semantically invalid [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/semantically-invalid.html" aria-label="Semantically Invalid evidence in plotting interface" title="Semantically Invalid evidence in plotting interface">PI-20</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/semantically-invalid.html" aria-label="Semantically Invalid evidence in annotations" title="Semantically Invalid evidence in annotations">A-15</a>].</li>
+    <li>Fragile support [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/fragile-support.html" aria-label="Fragile Support evidence in plotting interface" title="Fragile Support evidence in plotting interface">PI-10</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/fragile-support.html" aria-label="Fragile Support evidence in annotations" title="Fragile Support evidence in annotations">A-7</a>].</li>
+    <li>Interactive context is not clear [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/interactive-context.html" aria-label="Interactive Context evidence in plot tools" title="Interactive Context evidence in plot tools">PT-7</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/interactive-context.html" aria-label="Interactive Context evidence in annotations" title="Interactive Context evidence in annotations">A-10</a>].</li>
+    <li>Complex actions have alternatives [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/complex-actions.html" aria-label="Complex Actions evidence in plot tools" title="Complex Actions evidence in plot tools">PT-2</a>].</li>
+    <li>Interactions are not forgivable [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/interactions-forgivable.html" aria-label="Cues Instructions evidence in annotations" title="Cues Instructions evidence in annotations">A-9</a>].</li>
+    <li>State is not easy to share or reproduce [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/share-reproduce.html" aria-label="Share Reproduce evidence in annotations" title="Share Reproduce evidence in annotations">A-16</a>].</li>
+    <li>Location and history is not clear [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/location-history.html" aria-label="Location History evidence in plotting interface" title="Location History evidence in plotting interface">PI-14</a>].</li>
+    <li>Focus indicator not perceivable [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/keyboard-focus.html" aria-label="Keyboard Focus evidence in plot tools" title="Keyboard Focus evidence in plot tools">PT-8</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/keyboard-focus.html" aria-label="Keyboard Focus evidence in plotting interface" title="Keyboard Focus evidence in plotting interface">PI-13</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/keyboard-focus.html" aria-label="Keyboard Focus evidence in annotations" title="Keyboard Focus evidence in annotations">A-11</a>].</li>
+    <li>Zoom and reflow are not supported [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/zoom-reflow.html" aria-label="Zoom Reflow evidence in plotting interface" title="Zoom Reflow evidence in plotting interface">PI-30</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/zoom-reflow.html" aria-label="Zoom Reflow evidence in annotations" title="Zoom Reflow evidence in annotations">A-26</a>].</li>
+    <li>Scrolling experiences cannot be altered [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/scrolling.html" aria-label="Scrolling evidence in plotting interface" title="Scrolling evidence in plotting interface">PI-19</a>].</li>
 </ul>
 
 ##### Example
 
 <p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/zoom-reflow.html" aria-label="Zoom and reflow evidence in plotting interface" title="Zoom and reflow evidence in plotting interface">1</a>].</i> Below demonstrates how a high-zoom user will have a worse experience reading Bokeh's text than someone who uses Bokeh at 100% zoom. Because Bokeh renders with canvas, text becomes rasterized and does not scale well compared to HTML or SVG elements when zoomed.</p>
 
-```{figure} ./assets/plotting-interface_zoom-reflow_6.png
+```{figure} ./plotting-interface/assets/plotting-interface_zoom-reflow_6.png
 :width: 100%
 :alt: Viewport is zoomed in to 400% showing the canvas-based text from the bar chart labels being highly aliased and fuzzy, compared to the text for the Scatter plot beneath (circled in red) which is high fidelity and readable (fails).
 
@@ -295,19 +300,19 @@ Ideally, all content on the web is flexible enough to handle these variations th
 ##### Evidence of this finding
 
 <ul>
-    <li>User's style changes are not respected [].</li>
-    <li>Contrast and texture cannot be adjusted [].</li>
-    <li>User's text adjustments are not respected [].</li>
-    <li>Zoom and reflow are not supported [].</li>
-    <li>Scrolling experiences cannot be altered [].</li>
-    <li>Complex interactions have no alternatives [].</li>
+    <li>Complex actions have alternatives [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/complex-actions.html" aria-label="Complex Actions evidence in plot tools" title="Complex Actions evidence in plot tools">PT-2</a>].</li>
+    <li>Zoom and reflow are not supported [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/zoom-reflow.html" aria-label="Zoom Reflow evidence in plotting interface" title="Zoom Reflow evidence in plotting interface">PI-30</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/zoom-reflow.html" aria-label="Zoom Reflow evidence in annotations" title="Zoom Reflow evidence in annotations">A-26</a>].</li>
+    <li>Scrolling experiences cannot be altered [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/scrolling.html" aria-label="Scrolling evidence in plotting interface" title="Scrolling evidence in plotting interface">PI-19</a>].</li>
+    <li>User's style changes are not respected [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/style-change-respected.html" aria-label="Style Change Respected evidence in plotting interface" title="Style Change Respected evidence in plotting interface">PI-24</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/style-change-respected.html" aria-label="Style Change Respected evidence in annotations" title="Style Change Respected evidence in annotations">A-19</a>].</li>
+    <li>Contrast and texture cannot be adjusted [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/contrast-texture-adjustments.html" aria-label="Contrast Texture Adjustments evidence in plotting interface" title="Contrast Texture Adjustments evidence in plotting interface">PI-5</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/contrast-texture-adjustments.html" aria-label="Contrast Texture Adjustments evidence in annotations" title="Contrast Texture Adjustments evidence in annotations">A-4</a>].</li>
+    <li>User's text adjustments are not respected [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/text-adjustments.html" aria-label="Text Adjustments evidence in plotting interface" title="Text Adjustments evidence in plotting interface">PI-26</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/text-adjustments.html" aria-label="Text Adjustments evidence in annotations" title="Text Adjustments evidence in annotations">A-23</a>].</li>
 </ul>
 
 ##### Example
 
 <p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/contrast-texture-adjustments.html" aria-label="Contrast and texture evidence in plotting interface" title="Contrast and texture evidence in plotting interface">1</a>].</i> Below demonstrates how an inflexible visualization is incapable of correctly responding to an operating system's *High Contrast* mode.</p>
 
-```{figure} ./assets/plotting-interface_style-change-respected.png
+```{figure} ./plotting-interface/assets/plotting-interface_style-change-respected.png
 :width: 100%
 :alt: A scatter plot is shown. A high contrast filter has been implemented, and the web browser background is black with white font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails).
 
