@@ -194,7 +194,6 @@ Also, Bokeh is a library grounded on _interaction_ with data and data visualizat
     <li>Information complexity [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/information-complexity.html" aria-label="Information Complexity evidence in plotting interface" title="Information Complexity evidence in plotting interface">PI-12</a>].</li>
 </ul>
 
-
 ##### Example
 
 <p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
