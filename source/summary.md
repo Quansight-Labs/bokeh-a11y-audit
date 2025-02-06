@@ -4,7 +4,7 @@ This summary document serves 2 purposes and is organized into 2 major subheading
 
 The first section focuses on providing an overview of problems and themes present in the evidence gathered from our audit of Bokeh's [plotting interface](https://bokeh-a11y-audit.readthedocs.io/plotting-interface/index.html), [plot tools](https://bokeh-a11y-audit.readthedocs.io/plot-tools/index.html), and [annotations](https://bokeh-a11y-audit.readthedocs.io/annotations/index.html) artifacts. These are our _findings_.
 
-The second section focuses on suggestions for remediation based on the connectedness of various issues, prioritization of critical failures, and (in some cases) the ease of the fix involved. The remediation process should be negotiated and discussed broadly, broken into an actionable plan, and then enacted. My suggestions should not serve as an end to this discussion, but just a way to get it started.
+The second section focuses on suggestions for remediation based on the connectedness of various issues, prioritization of critical failures, and (in some cases) the ease of the fix involved. The remediation process should be negotiated and discussed broadly, broken into an actionable plan, and then enacted. Our suggestions should not serve as an end to this discussion, but just a way to get it started.
 
 *Some context on audits*: It is important to note that audits, when performed true to their intent, are about focusing on gathering evidence of failures, issues, gaps, or problems. Then that evidence serves as a basis for an analysis of systemic and interconnected issues across a system.
 
@@ -352,7 +352,7 @@ People personalize their technology. And people also use software with a variety
 
 There are some existing, relatively ubiquitous UI customizations that people commonly do that Bokeh needs to "watch" for. People commonly use "high contrast" modes, increase font size/weight/spacing, turn off motion/animations, turn on redundant encodings, and zoom/magnify. Media queries and other strategies in CSS (and even JavaScript) can be used to look out for these user-determinations. But also, an API should be implemented that allow someone to programmatically override the design of a visualization on their own (in cases when it might be hard to automatically determine what the user's needs).
 
-In my latest project on what I call "[softerware](https://www.frank.computer/papers/2025-cga-softerware.pdf)," I actually explored what the future of accessibility customization could look like for data visualizations. But at large, the most accessible data visualization libraries (like Highcharts) only really implement a couple of automatically-adjusting characteristics. Bokeh's community has the opportunity to really lead (or co-lead) the development and implementation of what user personalizations every data visualization library should be flexibly designed to adapt to.
+*On a related note*: In my latest project on what I call "[softerware](https://www.frank.computer/papers/2025-cga-softerware.pdf)," I actually explored what the future of accessibility customization could look like for data visualizations. But at large, the most accessible data visualization libraries (like Highcharts) only really implement a couple of automatically-adjusting characteristics. Bokeh's community has the opportunity to really lead (or co-lead) the development and implementation of what user personalizations every data visualization library should be flexibly designed to adapt to.
 
 ### Help developers succeed
 
