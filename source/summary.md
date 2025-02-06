@@ -1,5 +1,7 @@
 # Audit Summary
 
+*Written by [Frank Elavsky](https://www.frank.computer/), [@frankelavsky](https://github.com/frankelavsky).*
+
 This summary document serves 2 purposes and is organized into 2 major subheadings, below.
 
 The first section focuses on providing an overview of problems and themes present in the evidence gathered from our audit of Bokeh's [plotting interface](https://bokeh-a11y-audit.readthedocs.io/plotting-interface/index.html), [plot tools](https://bokeh-a11y-audit.readthedocs.io/plot-tools/index.html), and [annotations](https://bokeh-a11y-audit.readthedocs.io/annotations/index.html) artifacts. These are our _findings_.
