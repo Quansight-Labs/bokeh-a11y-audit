@@ -254,7 +254,7 @@ Sometimes a system is built using the wrong materials or with the wrong substrat
 
 But more than using the correct materials, sometimes systems should also be encouraged to grow in order to handle new devices, interaction patterns, and uses. And in this sense, Bokeh does not handle zoom/reflow well, which is difficult especially for mobile users. Many users who have disabilities actually use mobile or tablet devices _more_ than desktop devices. Some screen reader users, for example, love VoiceOver on iOS much more than a desktop experience.
 
-Bokeh should be built in a way that enables a myriad of current technologies to interact with it. In particular, what makes Bokeh awesome are the interactive capabilities that it offers end users. But care should be taken to design how different users with different assistive technologies and input devices and interaction patterns will want to accomplish similar goals. Pairity in the quality of experience should be provided for all users. Sighted, mouse users shouldn't not have an easier and better time than everyone else.
+Bokeh should be built in a way that enables a myriad of current technologies to interact with it. In particular, what makes Bokeh awesome are the interactive capabilities that it offers end users. But care should be taken to design how different users with different assistive technologies and input devices and interaction patterns will want to accomplish similar goals. Pairity in the quality of experience should be provided for all users. Sighted, mouse users shouldn't have an easier and better time than everyone else.
 
 ##### Evidence of this finding
 
