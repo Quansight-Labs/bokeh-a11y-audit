@@ -1,6 +1,6 @@
 # Audit Summary
 
-*Written by [Frank Elavsky](https://www.frank.computer/), [@frankelavsky](https://github.com/frankelavsky).*
+_Written by [Frank Elavsky](https://www.frank.computer/), [@frankelavsky](https://github.com/frankelavsky)._
 
 This summary document serves 2 purposes and is organized into 2 major subheadings, below.
 
