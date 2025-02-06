@@ -133,7 +133,7 @@ For screen reader users, semantic labels need to exist for interactive elements 
 
 For low vision users, high contrast is paramount. Contrast is the difference or "discriminability" between two things. High contrast means that things can easily be distinguished or discriminated from one another. In accessibility, we test the color of foreground elements against the color of adjacent elements and background elements. Color contrast must be high enough on anything that is meaningful, provide information, helps the user understand what something is, and is capable of performing some sort of interaction. In particular, contrast must be especially strong and well-designed on interactive elements. Elements that display a change of state (from off to on) need to be perceivable in the "off" state if it is still interactive. And elements with a change of state need to have a minimum contrast between the previous state and new state after interaction.
 
-For sighted mouse users with motor and dexterity impairents, tooltips can be helpful on chart elements but the target size of elements (such as in the line chart) are far too small. Discovering that tooltips exist on an element using pixel-perfect strategies actually creates accessibility barriers for all kinds of folks (but especially those with dexterity disabilities such as tremors or upper-body motor impairments). Being honest, I didn't even notice the line chart had tooltips enabled until I found them by accident testing for contrast
+For sighted mouse users with motor and dexterity disabilities, tooltips can be helpful on chart elements but the target size of elements (such as in the line chart) are far too small. Discovering that tooltips exist on an element using pixel-perfect strategies actually creates accessibility barriers for all kinds of folks (but especially those with dexterity disabilities such as tremors or upper-body motor impairments). Being honest, I didn't even notice the line chart had tooltips enabled until I found them by accident testing for contrast
 
 ##### Evidence of this finding
 
@@ -254,7 +254,7 @@ Sometimes a system is built using the wrong materials or with the wrong substrat
 
 But more than using the correct materials, sometimes systems should also be encouraged to grow in order to handle new devices, interaction patterns, and uses. And in this sense, Bokeh does not handle zoom/reflow well, which is difficult especially for mobile users. Many users who have disabilities actually use mobile or tablet devices _more_ than desktop devices. Some screen reader users, for example, love VoiceOver on iOS much more than a desktop experience.
 
-Bokeh should be built in a way that enables a myriad of current technologies to interact with it. In particular, what makes Bokeh awesome are the interactive capabilities that it offers end users. But care should be taken to design how different users with different assistive technologies and input devices and interaction patterns will want to accomplish similar goals. Pairity in the quality of experience should be provided for all users. Sighted, mouse users shouldn't have an easier and better time than everyone else.
+Bokeh should be built in a way that enables a myriad of current technologies to interact with it. In particular, what makes Bokeh awesome are the interactive capabilities that it offers end users. But care should be taken to design how different users with different assistive technologies and input devices and interaction patterns will want to accomplish similar goals. Parity in the quality of experience should be provided for all users. Sighted, mouse users shouldn't have an easier and better time than everyone else.
 
 ##### Evidence of this finding
 
@@ -311,9 +311,9 @@ Ideally, all content on the web is flexible enough to handle these variations th
 
 ```{figure} ./plotting-interface/assets/plotting-interface_style-change-respected.png
 :width: 100%
-:alt: A scatter plot is shown. A high contrast filter has been implemented, and the web browser background is black with white font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails).
+:alt: A scatter plot is shown. A high contrast filter has been implemented, and the web browser background is black with white font. However, the chart space retains its default color scheme - the contrast change was not applied (fails).
 
-A scatter plot is shown. A high contrast filter has been implemented, and the web browser background is black with white font. However, the chart space retains it's default color scheme - the contrast change was not applied (fails).
+A scatter plot is shown. A high contrast filter has been implemented, and the web browser background is black with white font. However, the chart space retains its default color scheme - the contrast change was not applied (fails).
 ```
 
 ## <a id="suggestions" href="#suggestions" aria-label="Suggestions"><span aria-hidden="true">#</span></a> Suggested directions for remediation
@@ -350,7 +350,7 @@ Plus, it is easier for someone else to interpret code that uses semantic markup.
 
 People personalize their technology. And people also use software with a variety of different devices in different contexts. A flexible, compromising system is necessary for that software to be usable for all people in all places.
 
-There are some existing, relatively ubiquitous UI customizations that people commonly do that Bokeh needs to "watch" for. People commonly use "high contrast" modes, increase font size/weight/spacing, turn off motion/animations, turn on redundant encodings, and zoom/magnify. Media queries and other strategies in CSS (and even JavaScript) can be used to look out for these user-determinations. But also, an API should be implemented that allow someone to programmatically override the design of a visualization on their own (in cases when it might be hard to automatically determine what the user's needs).
+There are some existing, relatively ubiquitous UI customizations that people commonly do that Bokeh needs to "watch" for. People commonly use "high contrast" modes, increase font size/weight/spacing, turn off motion/animations, turn on redundant encodings, and zoom/magnify. Media queries and other strategies in CSS (and even JavaScript) can be used to look out for these user-determinations. But also, an API should be implemented that allows someone to programmatically override the design of a visualization on their own (in cases when it might be hard to automatically determine what the user's needs).
 
 *On a related note*: In my latest project on what I call "[softerware](https://www.frank.computer/papers/2025-cga-softerware.pdf)," I actually explored what the future of accessibility customization could look like for data visualizations. But at large, the most accessible data visualization libraries (like Highcharts) only really implement a couple of automatically-adjusting characteristics. Bokeh's community has the opportunity to really lead (or co-lead) the development and implementation of what user personalizations every data visualization library should be flexibly designed to adapt to.
 
@@ -364,7 +364,7 @@ In addition to **defaults**, we also should consider which **guardrails** to put
 
 After **defaults** and **guardrails**, developers will eventually want special control and modularity with accessibility too. Simple, powerful **utilities** are huge in the right hands. Your power-users who really know what they are doing will thank you. Defaults and guardrails are for your developers who aren't as familiar with accessibility. But you also want to maximize the productivity of the developers who _do_ know what they're doing. Give them more capabilities whenever possible. One good example of this that I recognized in past work was separating our [color contrast checking algorithms](https://github.com/visa/visa-chart-components/tree/main/packages/utils#colors) into modular functions. It not only helps power-users but even folks who might not be interested in the rest of the Bokeh ecosystem. Sometimes if the utilities are good enough, folks will come to Bokeh just for that.
 
-Lastly, for developers to succeed, they also need to develop a sense of language for accessibility. If you want people to _think_ in terms of accessibility, first you need to give them the right language. [Language is the pre-requisite to seeing and thinking about the world in a new way](https://en.wikipedia.org/wiki/Linguistic_relativity). And tools can help your practitioner-users develop a **design vocabulary** for how their decisions impact users with disabilities.
+Lastly, for developers to succeed, they also need to develop a sense of language for accessibility. If you want people to _think_ in terms of accessibility, first you need to give them the right language. [Language is the prerequisite to seeing and thinking about the world in a new way](https://en.wikipedia.org/wiki/Linguistic_relativity). And tools can help your practitioner-users develop a **design vocabulary** for how their decisions impact users with disabilities.
 
 To build a design vocabulary among our users, first we need strong examples and documentation. But also, the functions, utilities, and architecture of Bokeh should be designed in a way that helps developers understand the outcomes of their design decisions. There should be _vocabulary correspondance_ between the concepts we want people to envision and how the API is actually used.
 
