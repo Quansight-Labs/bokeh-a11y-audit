@@ -1,23 +1,41 @@
 # Audit Summary
 
-## <a id="credits" href="#credits" aria-label="Credits"><span aria-hidden="true">#</span></a> Credits
+## <a id="introduction" href="#introduction" aria-label="Introduction"><span aria-hidden="true">#</span></a> Introduction
+
+As a result of a signficant collaboration (perhaps the first of its kind to be publicly available at this scale) we have audited the accessibility of the python data visualization library, Bokeh.
+
+This summary document serves 2 major purposes and is organized into 2 major subheadings, <a href="#findings">Findings</a> and <a href="#suggestions">Suggestions</a> below.
+
+There are a total of 76 documents that contain evidence of different accessibility barriers in Bokeh's ecosystem.
+
+So in order to make sense of this volume of information, the first section of this summary focuses on providing an overview of problems and themes present in all of the evidence we gathered from Bokeh's [plotting interface](https://bokeh-a11y-audit.readthedocs.io/plotting-interface/index.html) (+30 tests with evidence of failure), [plot tools](https://bokeh-a11y-audit.readthedocs.io/plot-tools/index.html) (+20), and [annotations](https://bokeh-a11y-audit.readthedocs.io/annotations/index.html) (+26) artifacts.
+
+The second section of this summary focuses on suggestions for remediation based on the connectedness of various issues, prioritization of critical failures, and (in some cases) the ease of the fix involved. The remediation process should be negotiated and discussed broadly, broken into an actionable plan, and then enacted. Our suggestions should not serve as an end to this discussion, but just a way to get it started.
+
+### <a id="method" href="#method" aria-label="Method"><span aria-hidden="true">#</span></a> Methodolody
+
+Our evaluation methodology was primarily an application of [Chartability](https://chartability.fizz.studio/) on a [Bokeh dashboard](https://quansight-labs.github.io/bokeh-a11y-audit/).
+
+Chartability was chosen because it is a framework designed specifically for auditing the accessibility of interactive data visualizations. The [workbook for Chartability](https://chartability.github.io/POUR-CAF/) expands more on the practical method for using it, while [Chartability's research paper](https://www.frank.computer/chartability/) explains how it was designed and tested. Chartability is based primarily on applying accessibility standards to visualization and, where standards are insufficient, applying research and community practice.
+
+We built an [interactive data visualization dashboard environment](https://quansight-labs.github.io/bokeh-a11y-audit/) that was designed to showcase a specific breadth of Bokeh's plotting, tooling, and annotation capabilities. Charts (which include line, bar, and scatter) demonstrated tooltips, visual filtering via clicking elements, plot tools activated via icons (which included zooming, panning, and other features), as well as special marks and text added to the visual space of certain charts. A Bokeh table was provided, as well as a tab-based user interface that enabled additional interactive views of a particular dataset. Unless otherwise noted, our evidence gathered exclusively used this environment for evaluation.
+
+_Some context on auditing and systematic evaluation_: It is important to note that audits, when performed true to their intent, are about focusing on gathering evidence of failures, issues, gaps, or problems.
+
+While simply auditing can then establish a direct line between evidence of a failure and opening an issue on GitHub, we used auditing as an opportunity to take a step back. Our evidence serves as a basis for an analysis of systemic and interconnected issues across Bokeh's ecosystem.
+
+What separates this kind of high-level audit from the typical atomic or incremental approach most commonly used in open source software (which is often ad hoc) is that we have a chance to evaluate and analyze an entire ecosystem and synthesize all possible related problems at once.
+
+Addressing incremental problems as they arise can have limits, especially if there are signficantly interconnected issues. As an example, it is common to see an issue on an open source repo that asks for "alt text capabilities." While this might be great to add on, sometimes a library or tool needs several larger refactors or overhauls to really reach ideals/goals and uphold principles of good design. Data visualization libraries in particular have a habit of simply implementing ARIA directly on chart elements to address a problem like "alt text" but fail to recognize that this easily sets up new and more complex accessibility barriers down the road.
+
+In order to do a more systematic evaluation (and even know what the larger issues are), having a procedure for gathering evidence, taking a step back, finding similarities, connecting the biggest gaps, and setting goalposts is vital. Consider this document as a demonstration of this process.
+
+### <a id="credits" href="#credits" aria-label="Credits"><span aria-hidden="true">#</span></a> Credits
 - [Frank Elavsky](https://www.frank.computer/), CMU, [@frankelavsky](https://github.com/frankelavsky) (conducting the audit, writing this summary, discussion).
 - Tania Allard, Quansight, [@trallard](https://github.com/trallard) (planning, management, discussion, feedback)
 - Pavithra Eswaramoorthy, Quansight, [@pavithraes](https://github.com/pavithraes) (dashboard and docs development, discussion, feedback)
 - Gabriel Fouasnon, Quansight, [@gabalafou](https://github.com/gabalafou) (discussion, feedback)
 - Mateusz Paprocki, Anaconda, [@mattpap](https://github.com/mattpap) (discussion)
-
-## <a id="introduction" href="#introduction" aria-label="Introduction"><span aria-hidden="true">#</span></a> Introduction
-
-This summary document serves 2 purposes and is organized into 2 major subheadings, below.
-
-The first section focuses on providing an overview of problems and themes present in the evidence gathered from our audit of Bokeh's [plotting interface](https://bokeh-a11y-audit.readthedocs.io/plotting-interface/index.html), [plot tools](https://bokeh-a11y-audit.readthedocs.io/plot-tools/index.html), and [annotations](https://bokeh-a11y-audit.readthedocs.io/annotations/index.html) artifacts. These are our _findings_.
-
-The second section focuses on suggestions for remediation based on the connectedness of various issues, prioritization of critical failures, and (in some cases) the ease of the fix involved. The remediation process should be negotiated and discussed broadly, broken into an actionable plan, and then enacted. Our suggestions should not serve as an end to this discussion, but just a way to get it started.
-
-_Some context on audits_: It is important to note that audits, when performed true to their intent, are about focusing on gathering evidence of failures, issues, gaps, or problems. Then that evidence serves as a basis for an analysis of systemic and interconnected issues across a system.
-
-What separates an audit from the typical atomic or incremental approach used in open source software (aka "opening an issue") is that audits are a chance to systematically evaluate and analyze an entire ecosystem and synthesize all possible related problems at once. As an example, it is common to see an issue on an open source repo that asks for "alt text capabilities." While this might be great to add on, sometimes a library or tool needs several larger refactors or overhauls to really reach ideals/goals and uphold principles of good design. In order to do this (and even know what the larger issues are), having a procedure for taking a step back, finding the biggest gaps, and setting goalposts is vital. Consider the following subheadings as those big gaps.
 
 ## <a id="findings" href="#findings" aria-label="Findings"><span aria-hidden="true">#</span></a> Overview of findings: problems and themes
 
