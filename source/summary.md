@@ -320,7 +320,7 @@ A scatter plot is shown. A high contrast filter has been implemented, and the we
 
 ## <a id="suggestions" href="#suggestions" aria-label="Suggestions"><span aria-hidden="true">#</span></a> Suggested directions for remediation
 
-The following suggestions are primarily intended as high-level goals, spelled out as imperatives. The lower-level details for how to accomplish each of these should be sorted out in our actual roadmap and eventual issues on github.
+The following suggestions are primarily intended as high-level goals, spelled out as imperatives. The lower-level details for how to accomplish each of these should be sorted out in our actual roadmap and eventual issues on GitHub.
 
 Ideally, the following are written as _invitations_ for the Bokeh community to get involved. There's a lot to do!
 
