@@ -14,7 +14,7 @@ Plot tools fail to respect a user's custom changing of contrast and/or textures.
 
 ## Expected Behavior (Pass/Fail)
 
-- _FAIL_ - We expect that any styling changes a user makes (contrast, text strokes, etc) are not blocked from taking effect, and the charts do no override these styling changes.
+- _FAIL_ - We expect that any styling changes a user makes (contrast, text strokes, etc) are not blocked from taking effect, and the charts do not override these styling changes.
 
 ## Image or Video of Failure
 
