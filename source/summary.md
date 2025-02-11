@@ -69,7 +69,7 @@ This finding is primarily about the fact that a significant amount of text that 
 
 This particular issue tends to be the most difficult part of remediating a data visualization system like Bokeh, but also any interactive interface that has been built without using the correct building materials.
 
-Most major assistive technologies _navigate_ content and in order to make this possible, the correct substrate must be in place. We generally divide navigational assistive technologies into two types: screen readers and "keyboard-only" types. Navigation must be possible with _both_ methods.
+Most major assistive technologies _navigate_ content. To make this possible, the correct substrate must be in place. We generally divide navigational assistive technologies into two types: screen readers and "keyboard-only" types. Navigation must be possible with _both_ methods.
 
 Screen readers that are used on desktop devices use a keyboard, so you might think that testing with a keyboard alone should be sufficient. But testing mobile screen reader access is necessary.
 
