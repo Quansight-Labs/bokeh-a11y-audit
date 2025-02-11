@@ -1,6 +1,13 @@
 # Audit Summary
 
-_Written by [Frank Elavsky](https://www.frank.computer/), [@frankelavsky](https://github.com/frankelavsky)._
+## <a id="credits" href="#credits" aria-label="Credits"><span aria-hidden="true">#</span></a> Credits
+- [Frank Elavsky](https://www.frank.computer/), CMU, [@frankelavsky](https://github.com/frankelavsky) (conducting the audit, writing this summary, discussion).
+- Tania Allard, Quansight, [@trallard](https://github.com/trallard) (planning, management, discussion, feedback)
+- Pavithra Eswaramoorthy, Quansight, [@pavithraes](https://github.com/pavithraes) (dashboard and docs development, discussion, feedback)
+- Gabriel Fouasnon, Quansight, [@gabalafou](https://github.com/gabalafou) (discussion, feedback)
+- Mateusz Paprocki, Anaconda, [@mattpap](https://github.com/mattpap) (discussion)
+
+## <a id="introduction" href="#introduction" aria-label="Introduction"><span aria-hidden="true">#</span></a> Introduction
 
 This summary document serves 2 purposes and is organized into 2 major subheadings, below.
 
