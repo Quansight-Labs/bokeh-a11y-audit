@@ -201,6 +201,8 @@ In general, Bokeh doesn't appear to provide _any_ assistance to developers in au
 
 Also, Bokeh is a library grounded on _interaction_ with data and data visualizations. One important area of cognitive accessibility to consider is that there are many valid ways to interact with data. But by providing only one narrow path to reach a particular piece of information or outcome is a cognitive accessibility barrier as it assumes that users will always understand, remember, and correctly execute that given path of interaction.
 
+The simplest example of a "narrow path" of interaction design is something like using a lasso filter. That's just one kind of filter, and it requires the ability to use a pointer device (like a mouse), click and drag, as well as perception and memory of the previous and post states of the filter action. If there are no other ways to easily and richly filter data in an interactive way (like providing queries, dropdowns, text inputs, command line, voice control, downloadable data, etc), then this single lasso action actually *creates* exclusion for many people. The lasso itself is just one path, but interactively filtering is the analytical task. Providing multiple ways to do this, with special care for considering different disabilities and preferences that users might have, is an ideal way to design accessible experiences.
+
 ##### Evidence of this finding
 
 <ul>
