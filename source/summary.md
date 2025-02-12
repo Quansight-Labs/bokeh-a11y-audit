@@ -4,7 +4,7 @@ _[Date of latest draft: Tuesday, Feb 11th, 2025]_
 
 ## <a id="introduction" href="#introduction" aria-label="Introduction"><span aria-hidden="true">#</span></a> Introduction
 
-As a result of a signficant collaboration (perhaps the first of its kind to be publicly available at this scale) we have audited the accessibility of the Python data visualization library, Bokeh.
+As a result of a significant collaboration (perhaps the first of its kind to be publicly available at this scale) we have audited the accessibility of the Python data visualization library, Bokeh.
 
 This summary document serves 2 major purposes and is organized into 2 major subheadings, <a href="#findings">Findings</a> and <a href="#suggestions">Suggestions</a> below.
 
@@ -28,7 +28,7 @@ While simply auditing can then establish a direct line between evidence of a fai
 
 What separates this kind of high-level audit from the typical atomic or incremental approach most commonly used in open source software (which is often ad hoc) is that we have a chance to evaluate and analyze an entire ecosystem and synthesize all possible related problems at once.
 
-Addressing incremental problems as they arise can have limits, especially if there are signficantly interconnected issues. As an example, it is common to see an issue on an open source repo that asks for "alt text capabilities." While this might be great to add on, sometimes a library or tool needs several larger refactors or overhauls to really reach ideals/goals and uphold principles of good design. Data visualization libraries in particular have a habit of simply implementing ARIA directly on chart elements to address a problem like "alt text" but fail to recognize that this easily sets up new and more complex accessibility barriers down the road.
+Addressing incremental problems as they arise can have limits, especially if there are significantly interconnected issues. As an example, it is common to see an issue on an open source repo that asks for "alt text capabilities." While this might be great to add on, sometimes a library or tool needs several larger refactors or overhauls to really reach ideals/goals and uphold principles of good design. Data visualization libraries in particular have a habit of simply implementing ARIA directly on chart elements to address a problem like "alt text" but fail to recognize that this easily sets up new and more complex accessibility barriers down the road.
 
 In order to do a more systematic evaluation (and even know what the larger issues are), having a procedure for gathering evidence, taking a step back, finding similarities, connecting the biggest gaps, and setting goalposts is vital. Consider this document as a demonstration of this process.
 
