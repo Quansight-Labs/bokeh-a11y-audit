@@ -10,7 +10,7 @@ This summary document serves 2 major purposes and is organized into 2 major subh
 
 There are a total of 76 documents that contain evidence of different accessibility barriers in Bokeh's ecosystem.
 
-So in order to make sense of this volume of information, the first section of this summary focuses on providing an overview of problems and themes present in all of the evidence we gathered from Bokeh's [plotting interface](https://bokeh-a11y-audit.readthedocs.io/plotting-interface/index.html) (+30 tests with evidence of failure), [plot tools](https://bokeh-a11y-audit.readthedocs.io/plot-tools/index.html) (+20), and [annotations](https://bokeh-a11y-audit.readthedocs.io/annotations/index.html) (+26) artifacts.
+To make sense of this volume of information, the first section of this summary focuses on providing an overview of problems and themes present in all of the evidence we gathered from Bokeh's [plotting interface](https://bokeh-a11y-audit.readthedocs.io/plotting-interface/index.html) (+30 tests with evidence of failure), [plot tools](https://bokeh-a11y-audit.readthedocs.io/plot-tools/index.html) (+20), and [annotations](https://bokeh-a11y-audit.readthedocs.io/annotations/index.html) (+26) artifacts.
 
 The second section of this summary focuses on suggestions for remediation based on the connectedness of various issues, prioritization of critical failures, and (in some cases) the ease of the fix involved. The remediation process should be negotiated and discussed broadly, broken into an actionable plan, and then enacted. Our suggestions should not serve as an end to this discussion, but just a way to get it started.
 
