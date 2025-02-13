@@ -4,15 +4,33 @@ _[Date of latest draft: February 2025]_
 
 ## <a id="introduction" href="#introduction" aria-label="Introduction"><span aria-hidden="true">#</span></a> Introduction
 
-As a result of a significant collaboration (perhaps the first of its kind to be publicly available at this scale) we have audited the accessibility of the Python data visualization library, Bokeh.
+Previously, no large-scale audits or evaluations of the accessibility of a data visualization library have been made publicly available.
 
-This summary document serves 2 major purposes and is organized into 2 major subheadings, <a href="#findings">Findings</a> and <a href="#suggestions">Suggestions</a> below.
+Thanks to [CZI Essential Open Source Software (EOSS)](https://chanzuckerberg.com/eoss/) Cycle 6 grant "Accessible interactive data visualizations in Python with Bokeh," we have have conducted a thorough, ecosystem-wide audit of the accessibility capabilities of the Python data visualization library, [Bokeh](https://bokeh.org/).
 
-There are a total of 76 documents that contain evidence of different accessibility barriers in Bokeh's ecosystem.
+We present our audit's <a href="#findings">Findings</a> and <a href="#suggestions">Suggestions</a> in this summary document. There are a total of 76 documents that contain evidence of different accessibility barriers in Bokeh's ecosystem.
 
-To make sense of this volume of information, the first section of this summary focuses on providing an overview of problems and themes present in all of the evidence we gathered from Bokeh's [plotting interface](https://bokeh-a11y-audit.readthedocs.io/plotting-interface/index.html) (+30 tests with evidence of failure), [plot tools](https://bokeh-a11y-audit.readthedocs.io/plot-tools/index.html) (+20), and [annotations](https://bokeh-a11y-audit.readthedocs.io/annotations/index.html) (+26) artifacts.
+**Findings**: To make sense of this volume of information, the first section of this summary (<a href="#findings">Findings</a>) focuses on providing an overview of problems and themes present in all of the evidence we gathered from Bokeh's [plotting interface](https://bokeh-a11y-audit.readthedocs.io/plotting-interface/index.html) (+30 tests with evidence of failure), [plot tools](https://bokeh-a11y-audit.readthedocs.io/plot-tools/index.html) (+20), and [annotations](https://bokeh-a11y-audit.readthedocs.io/annotations/index.html) (+26) artifacts.
 
-The second section of this summary focuses on suggestions for remediation based on the connectedness of various issues, prioritization of critical failures, and (in some cases) the ease of the fix involved. The remediation process should be negotiated and discussed broadly, broken into an actionable plan, and then enacted. Our suggestions should not serve as an end to this discussion, but just a way to get it started.
+**Themes**: The subsections of <a href="#findings">Findings</a> below each represent higher level themes that emerged across the evidence we have gathered. Each theme's subsection contains an explanation of that theme, evidence of that theme (with links), and an example demonstration of what an accessibility barrier related to that theme looks like.
+
+**Evidence citations**: Each of the evidence documents are cited using a prefix, A-, PI-, or PT- referring each to the abbreviations for "Annotations," "Plotting Interface," and "Plot Tools." We conducted full, systematic audits for each of these subsystems within Bokeh's ecosystem, as they are each responsible for different aspects of Bokeh's capabilities. A given evidence document then also has a suffix, which is the number corresponding to the listed number of failures within that subsystem. So in our audit of Bokeh's annotations subsystem, evidence "[A-2](https://bokeh-a11y-audit.readthedocs.io/annotations/contrast.html)" would correspond to the second test type that contained an error.
+
+**Evidence documents**: Each citation to evidence links to a document of that evidence. Each evidence document contains information organized under the following headings:
+- Test Type Performed
+- Artifact Evaluated
+- Results Summary
+- Expected Behavior (Pass/Fail)
+- Image or Video of Failure
+- Steps to Reproduce
+- Guidelines and Standards Used
+- (*optional*) Related Evidence
+- Technical Details
+- (*optional*) Notes
+
+**Suggestions**: The second section of this summary document (<a href="#suggestions">Suggestions</a>) presents several focus areas for remediation based on the connectedness of various issues, prioritization of critical failures, and (in some cases) the ease of the fix involved. The remediation process should be negotiated and discussed broadly, broken into an actionable plan, and then enacted. Our suggestions should not serve as an end to this discussion, but just a way to get it started.
+
+**Getting involved**: Bokeh is an open source community, which means that there are many opportunities to get involved. We aren't just interested in collaborations with accessibility experts, but also believe that building up accessibility-focused skills *within* the Python community would be invaluable. So, if you're new to accessibility, we would still love for you to learn more and get involved. We need more Python communities that prioritize accessibility. Check out [our Github](https://github.com/Quansight-Labs/bokeh-a11y-audit) and [Bokeh's](https://github.com/bokeh/bokeh) to get started.
 
 ### <a id="method" href="#method" aria-label="Method"><span aria-hidden="true">#</span></a> Methodolody
 
@@ -22,15 +40,12 @@ Chartability was chosen because it is a framework designed specifically for audi
 
 We built an [interactive data visualization dashboard environment](https://quansight-labs.github.io/bokeh-a11y-audit/) that was designed to showcase a specific breadth of Bokeh's plotting, tooling, and annotation capabilities. Charts (which include line, bar, and scatter) demonstrated tooltips, visual filtering via clicking elements, plot tools activated via icons (which included zooming, panning, and other features), as well as special marks and text added to the visual space of certain charts. A Bokeh table was provided, as well as a tab-based user interface that enabled additional interactive views of a particular dataset. Unless otherwise noted, our evidence gathered exclusively used this environment for evaluation.
 
-_Some context on auditing and systematic evaluation_: It is important to note that audits, when performed true to their intent, are about focusing on gathering evidence of failures, issues, gaps, or problems.
-
-While simply auditing can then establish a direct line between evidence of a failure and opening an issue on GitHub, we used auditing as an opportunity to take a step back. Our evidence serves as a basis for an analysis of systemic and interconnected issues across Bokeh's ecosystem.
-
-What separates this kind of high-level audit from the typical atomic or incremental approach most commonly used in open source software (which is often ad hoc) is that we have a chance to evaluate and analyze an entire ecosystem and synthesize all possible related problems at once.
-
-Addressing incremental problems as they arise can have limits, especially if there are significantly interconnected issues. As an example, it is common to see an issue on an open source repo that asks for "alt text capabilities." While this might be great to add on, sometimes a library or tool needs several larger refactors or overhauls to really reach ideals/goals and uphold principles of good design. Data visualization libraries in particular have a habit of simply implementing ARIA directly on chart elements to address a problem like "alt text" but fail to recognize that this easily sets up new and more complex accessibility barriers down the road.
-
-In order to do a more systematic evaluation (and even know what the larger issues are), having a procedure for gathering evidence, taking a step back, finding similarities, connecting the biggest gaps, and setting goalposts is vital. Consider this document as a demonstration of this process.
+> [!NOTE]
+> _Some context on auditing and systematic evaluation_: It is important to note that audits, when performed true to their intent, are about focusing on gathering evidence of failures, issues, gaps, or problems.
+> While simply auditing can then establish a direct line between evidence of a failure and opening an issue on GitHub, we used auditing as an opportunity to take a step back. Our evidence serves as a basis for an analysis of systemic and interconnected issues across Bokeh's ecosystem.
+> What separates this kind of high-level audit from the typical atomic or incremental approach most commonly used in open source software (which is often ad hoc) is that we have a chance to evaluate and analyze an entire ecosystem and synthesize all possible related problems at once.
+> Addressing incremental problems as they arise can have limits, especially if there are significantly interconnected issues. As an example, it is common to see an issue on an open source repo that asks for "alt text capabilities." While this might be great to add on, sometimes a library or tool needs several larger refactors or overhauls to really reach ideals/goals and uphold principles of good design. Data visualization libraries in particular have a habit of simply implementing ARIA directly on chart elements to address a problem like "alt text" but fail to recognize that this easily sets up new and more complex accessibility barriers down the road.
+> In order to do a more systematic evaluation (and even know what the larger issues are), having a procedure for gathering evidence, taking a step back, finding similarities, connecting the biggest gaps, and setting goalposts is vital. Consider this document as a demonstration of this process.
 
 ### <a id="credits" href="#credits" aria-label="Credits"><span aria-hidden="true">#</span></a> Credits
 
@@ -405,3 +420,5 @@ An example of a bad API is `aria-label` versus `alt` as properties on elements. 
 But as toolmakers, we can consolidate these concepts into a new design-focused term, like `accessibility-description` or `screen-reader-description` or equivalent. Bokeh can do translation work between what actually makes an interface accessible at a low level and the **design vocabulary** that is ideal for Bokeh's practitioner-users.
 
 We have the opportunity to teach an entire community of Python data scientists, analysts, and developers how to make visualizations more accessible. To do this, we need to focus on making it as easy as possible for them to learn-through-use. Developers need smart **defaults**, thoughtful **guardrails**, powerful **utilities**, and a focus on a disability-centered **design vocabulary**.
+
+**Get involved**: Check out [our Github](https://github.com/Quansight-Labs/bokeh-a11y-audit) and [Bokeh's](https://github.com/bokeh/bokeh) to get started.
