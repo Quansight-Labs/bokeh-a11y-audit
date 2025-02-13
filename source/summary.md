@@ -1,6 +1,6 @@
 # Audit Summary
 
-_[Date of latest draft: Tuesday, Feb 11th, 2025]_
+_[Date of latest draft: February 2025]_
 
 ## <a id="introduction" href="#introduction" aria-label="Introduction"><span aria-hidden="true">#</span></a> Introduction
 
