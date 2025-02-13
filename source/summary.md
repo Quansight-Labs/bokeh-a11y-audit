@@ -48,12 +48,13 @@ We built an [interactive data visualization dashboard environment](https://quans
 > In order to do a more systematic evaluation (and even know what the larger issues are), having a procedure for gathering evidence, taking a step back, finding similarities, connecting the biggest gaps, and setting goalposts is vital. Consider this document as a demonstration of this process.
 
 ### <a id="credits" href="#credits" aria-label="Credits"><span aria-hidden="true">#</span></a> Credits
+Big collaborations like this involve many different kinds of labor. We use the [Contributor Role Taxonomy (CRediT) Classification](https://credit.niso.org/) system to acknowledge the specific work each team member did to contribute to our success.
 
-- [Frank Elavsky](https://www.frank.computer/), CMU, [@frankelavsky](https://github.com/frankelavsky) (conducting the audit, writing this summary, discussion).
-- Tania Allard, Quansight, [@trallard](https://github.com/trallard) (planning, management, discussion, feedback)
-- Pavithra Eswaramoorthy, Quansight, [@pavithraes](https://github.com/pavithraes) (dashboard and docs development, discussion, feedback)
-- Gabriel Fouasnon, Quansight, [@gabalafou](https://github.com/gabalafou) (discussion, feedback)
-- Mateusz Paprocki, Anaconda, [@mattpap](https://github.com/mattpap) (discussion)
+- [**Frank Elavsky**](https://www.frank.computer/), CMU, [@frankelavsky](https://github.com/frankelavsky): writing - original draft preparation (lead), data curation (lead), formal analysis (lead), investigation (lead), methodology (lead), conceptualization (supporting), project administration (supporting), and software (supporting).
+- **Tania Allard**, Quansight, [@trallard](https://github.com/trallard): conceptualization (lead), funding acquisition (lead), resources (lead), project administration (lead), supervision (lead), writing - review and editing (lead), software (supporting), visualization (supporting).
+- **Pavithra Eswaramoorthy**, Quansight, [@pavithraes](https://github.com/pavithraes): software (lead), visualization (lead), conceptualization (supporting), data curation (supporting), resources (supporting), writing - review and editing (supporting).
+- **Gabriel Fouasnon**, Quansight, [@gabalafou](https://github.com/gabalafou): software (supporting), visualization (supporting), conceptualization (supporting), writing - review and editing (supporting)
+- **Mateusz Paprocki**, Anaconda, [@mattpap](https://github.com/mattpap): software (supporting), visualization (supporting), conceptualization (supporting), writing - review and editing (supporting)
 
 ## <a id="findings" href="#findings" aria-label="Findings"><span aria-hidden="true">#</span></a> Overview of findings: problems and themes
 
