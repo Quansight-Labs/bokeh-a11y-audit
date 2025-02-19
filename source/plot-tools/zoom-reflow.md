@@ -18,7 +18,7 @@ Plot tools fail to reflow to fit different screen sizes, a mobile phone in this 
 
 ## Image or Video of Failure
 
-```{figure} ./assets/plot-tools_zoom-reflow.png
+```{figure} ./assets/plot-tools_zoom-reflow.jpg
 :width: 100%
 :alt: A mobile web browser is shown with five different charts. The font size of most text is too small to read. At the bottom, one of the charts is aligned far to the right, cutting off parts of the image from view (fails).
 

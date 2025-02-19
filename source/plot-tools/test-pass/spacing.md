@@ -18,7 +18,7 @@ These are fine
 
 ## Image or Video of Failure
 
-```{figure} ./assets/plot-tools_color-contrast.png
+```{figure} ../assets/plot-tools_color-contrast.png
 :width: 100%
 :alt: A color scatter plot is shown. A plotting tool button is highlighted on the right, while the contrast checking score is shown on the bottom left corner (fails).
 
