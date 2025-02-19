@@ -1,8 +1,8 @@
-# Interactions Forgiveable
+# Interactions forgivable
 
 ## Test Type Performed
 
-Interactions are forgiveable.
+Interactions are forgivable.
 
 ## Artifact Evaluated
 
@@ -20,7 +20,7 @@ Test is not applicable, this is redundant (plot tools fail to allow the user to 
 
 (similar test provided by plot tools, see below:)
 
-```{video} ../../plot-tools/assets/plot-tools_interactions-forgiveable.mp4
+```{video} ../../plot-tools/assets/plot-tools_interactions-forgivable.mp4
 :width: 100%
 :playsinline:
 ```
@@ -33,7 +33,7 @@ N/A
 
 ## Guidelines and Standards Used
 
-Interactions are not forgiveable [https://chartability.github.io/POUR-CAF/#**interactionsarenotforgiveable**](https://chartability.github.io/POUR-CAF/#__interactionsarenotforgiveable__)
+Interactions are not forgivable [https://chartability.github.io/POUR-CAF/#**interactionsarenotforgivable**](https://chartability.github.io/POUR-CAF/#__interactionsarenotforgivable__)
 
 ## Related Evidence
 

@@ -25,9 +25,9 @@ Test is not applicable.
 ## Steps to Reproduce
 Use Inspect on the plot tool icon to open Console Command. Find the "style" section for the selected button then locate the font size. -->
 
-## Guidelines and Standards Used
+<!-- ## Guidelines and Standards Used
 
-Small text size https://chartability.github.io/POUR-CAF/#__smalltextsize___critical_
+Small text size https://chartability.github.io/POUR-CAF/#__smalltextsize___critical_ -->
 
 <!-- ## Related Evidence
 (Added if additional evidence has already been gathered for related elements. This will not be edited retroactively, however, due to scope creep. This means that the latest issues will have the most Related Evidence listed.)

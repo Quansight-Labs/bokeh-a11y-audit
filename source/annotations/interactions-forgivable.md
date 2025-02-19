@@ -35,7 +35,7 @@ Using a mouse, hover over the line or dashed line on the double line chart. Move
 
 ## Guidelines and Standards Used
 
-Interactions are not forgivable [https://chartability.github.io/POUR-CAF/#**interactionsarenotforgiveable**](https://chartability.github.io/POUR-CAF/#__interactionsarenotforgiveable__)
+Interactions are not forgivable [https://chartability.github.io/POUR-CAF/#**interactionsarenotforgivable**](https://chartability.github.io/POUR-CAF/#__interactionsarenotforgivable__)
 
 ## Related Evidence
 
