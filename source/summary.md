@@ -56,7 +56,6 @@ Big collaborations like this involve many different kinds of labor. We use the [
 - **Pavithra Eswaramoorthy**, Quansight, [@pavithraes](https://github.com/pavithraes): software (lead), visualization (lead), conceptualization (supporting), funding acquisition (supporting), data curation (supporting), resources (supporting), writing - review and editing (supporting).
 - **Gabriel Fouasnon**, Quansight, [@gabalafou](https://github.com/gabalafou): writing - review and editing (supporting), validation (supporting)
 - **Mateusz Paprocki**, Anaconda, [@mattpap](https://github.com/mattpap): software (supporting), visualization (supporting), conceptualization (supporting), writing - review and editing (supporting)
-- **Bokeh Development Team**, [@bokeh/dev](https://github.com/orgs/bokeh/teams/dev): conceptualization (supporting), funding acquisition (supporting), software (supporting), visualization (supporting)
 
 ## <a id="findings" href="#findings" aria-label="Findings"><span aria-hidden="true">#</span></a> Overview of findings: problems and themes
 
