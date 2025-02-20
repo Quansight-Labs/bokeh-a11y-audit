@@ -18,7 +18,7 @@ Plotting interface provides filtering and sorting for table data.
 
 ## Image or Video of Failure
 
-```{figure} ./assets/plotting-interface_table-static.png
+```{figure} ../assets/plotting-interface_table-static.png
 :width: 100%
 :alt: A data table is shown. A sorting table is selected and highlighted in blue, sorting the data by 'Number of degrees earned in 2010'.
 

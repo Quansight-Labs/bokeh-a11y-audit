@@ -18,7 +18,7 @@ Plot tools buttons are div elements, not buttons, which is semantically invalid.
 
 ## Image or Video of Failure
 
-```{figure} ./assets/plot-tools_style-semantically-invalid.png
+```{figure} ./assets/plot-tools_semantically-invalid.png
 :width: 100%
 :alt: The Developer Tools of a web browser is opened. Visually, a button of a scatter plot for the 'pan' tool is highlighted. In HTML, it is a div element (fails).
 
