@@ -111,7 +111,7 @@ This finding is primarily about the fact that a significant amount of text that 
 
 ##### Example
 
-<p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">2</a>].</i> Below demonstrates that the lack of textual information excludes screen reader users from participation.</p>
+<p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">PI-28</a>].</i> Below demonstrates that the lack of textual information excludes screen reader users from participation.</p>
 
 ```{video} ./plotting-interface/assets/plotting-interface_visual-only.mp4
 :width: 100%
@@ -149,6 +149,7 @@ Testing for _intelligent_ navigation wasn't even possible, since even basic navi
 ##### Evidence of this finding
 
 <ul>
+    <li>Elements are visual only [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plot tools" title="Visual only evidence in plot tools">PT-18</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">PI-28</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/visual-only.html" aria-label="Visual only evidence in annotations" title="Visual only evidence in annotations">A-24</a>].</li>
     <li>Only one modality/input is provided [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/modality-input.html" aria-label="Modality Input evidence in plot tools" title="Modality Input evidence in plot tools">PT-13</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/modality-input.html" aria-label="Modality Input evidence in plotting interface" title="Modality Input evidence in plotting interface">PI-17</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/modality-input.html" aria-label="Modality Input evidence in annotations" title="Modality Input evidence in annotations">A-13</a>].</li>
     <li>Cannot be navigated according to narrative/structure [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/narrative-structure.html" aria-label="Narrative Structure evidence in plotting interface" title="Narrative Structure evidence in plotting interface">PI-18</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/narrative-structure.html" aria-label="Narrative Structure evidence in annotations" title="Narrative Structure evidence in annotations">A-14</a>].</li>
     <li>Semantically invalid [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/semantically-invalid.html" aria-label="Semantically Invalid evidence in plot tools" title="Semantically Invalid evidence in plot tools">PT-14</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/semantically-invalid.html" aria-label="Semantically Invalid evidence in plotting interface" title="Semantically Invalid evidence in plotting interface">PI-20</a>, <a href="https://bokeh-a11y-audit.readthedocs.io/annotations/semantically-invalid.html" aria-label="Semantically Invalid evidence in annotations" title="Semantically Invalid evidence in annotations">A-15</a>].</li>
@@ -165,7 +166,7 @@ Testing for _intelligent_ navigation wasn't even possible, since even basic navi
 
 ##### Example
 
-<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">PT-18</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
 
 ```{video} ./plot-tools/assets/plot-tools_visual-only.mp4
 :width: 100%
@@ -209,7 +210,7 @@ For sighted mouse users with motor and dexterity disabilities, tooltips can be h
 
 ##### Example
 
-<p><i>Example taken from annotations [<a href="" aria-label="Contrast evidence in annotation" title="Contrast evidence in annotation">23</a>].</i> Below demonstrates the near-invisibility of the interactive annotation element used to toggle a line chart on and off.</p>
+<p><i>Example taken from annotations [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/contrast.html" aria-label="Contrast evidence in annotation" title="Contrast evidence in annotation">A-2</a>].</i> Below demonstrates the near-invisibility of the interactive annotation element used to toggle a line chart on and off.</p>
 
 ```{figure} ./annotations/assets/annotations_contrast_1.png
 :width: 100%
@@ -253,7 +254,7 @@ The simplest example of a "narrow path" of interaction design is something like 
 
 ##### Example
 
-<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/plot-tools/visual-only.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">1</a>].</i> Below demonstrates a screen reader user's frustrating and confusing interaction experience.</p>
+<p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/information-complexity.html" aria-label="Information Complexity evidence in plotting interface" title="Information Complexity evidence in plotting interface">PI-12</a>].</i> Below demonstrates how lack of encoding channels (using different colors) hurts discriminability and adds complexity.</p>
 
 ```{figure} ./plotting-interface/assets/plotting-interface_information-complexity_1.png
 :width: 100%
@@ -288,7 +289,7 @@ Again, as mentioned previously in this audit summary: it is difficult to expect 
 
 ##### Example
 
-<p><i>Example taken from plot tools [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/share-reproduce.html" aria-label="Share and reproduce evidence in plot tools" title="Share and reproduce evidence in plot tools">1</a>].</i> Below demonstrates how a screen reader user interacts with an input and then loses their location and focus, in addition to receiving no system feedback about their original input.</p>
+<p><i>Example taken from annotations [<a href="https://bokeh-a11y-audit.readthedocs.io/annotations/share-reproduce.html" aria-label="Share and reproduce evidence in plot tools" title="Share and reproduce evidence in plot tools">A-16</a>].</i> Below demonstrates how a screen reader user interacts with an input and then loses their location and focus, in addition to receiving no system feedback about their original input.</p>
 
 ```{video} ./plot-tools/assets/plot-tools_changes-easy-to-follow.mp4
 :width: 100%
@@ -334,7 +335,7 @@ Bokeh should be built in a way that enables a myriad of current technologies to 
 
 ##### Example
 
-<p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/zoom-reflow.html" aria-label="Zoom and reflow evidence in plotting interface" title="Zoom and reflow evidence in plotting interface">1</a>].</i> Below demonstrates how a high-zoom user will have a worse experience reading Bokeh's text than someone who uses Bokeh at 100% zoom. Because Bokeh renders with canvas, text becomes rasterized and does not scale well compared to HTML or SVG elements when zoomed.</p>
+<p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/zoom-reflow.html" aria-label="Zoom and reflow evidence in plotting interface" title="Zoom and reflow evidence in plotting interface">PI-30</a>].</i> Below demonstrates how a high-zoom user will have a worse experience reading Bokeh's text than someone who uses Bokeh at 100% zoom. Because Bokeh renders with canvas, text becomes rasterized and does not scale well compared to HTML or SVG elements when zoomed.</p>
 
 ```{figure} ./plotting-interface/assets/plotting-interface_zoom-reflow_6.png
 :width: 100%
@@ -366,7 +367,7 @@ Ideally, all content on the web is flexible enough to handle these variations th
 
 ##### Example
 
-<p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/contrast-texture-adjustments.html" aria-label="Contrast and texture evidence in plotting interface" title="Contrast and texture evidence in plotting interface">1</a>].</i> Below demonstrates how an inflexible visualization is incapable of correctly responding to an operating system's *High Contrast* mode.</p>
+<p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/contrast-texture-adjustments.html" aria-label="Contrast and texture evidence in plotting interface" title="Contrast and texture evidence in plotting interface">PI-5</a>].</i> Below demonstrates how an inflexible visualization is incapable of correctly responding to an operating system's *High Contrast* mode.</p>
 
 ```{figure} ./plotting-interface/assets/plotting-interface_style-change-respected.png
 :width: 100%
