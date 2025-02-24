@@ -1,3 +1,9 @@
+---
+html_meta:
+  "property=og:description": "Plot annotations accessibility audit results"
+  "description": "Plot annotations accessibility audit results"
+---
+
 # Annotations
 
 ```{toctree}

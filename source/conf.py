@@ -16,6 +16,7 @@ author = 'Bokeh contributors'
 extensions = [
     "myst_parser",
     "sphinxcontrib.video",
+    "sphinxext.opengraph",
     ]
 
 templates_path = ['_templates']
@@ -42,3 +43,18 @@ html_context = {
     "github_version": "main",
     "doc_path": "source",
 }
+
+# -- Opengraph setup -------------------------------------------------
+ogp_site_url = "https://bokeh-a11y-audit.readthedocs.io/"
+ogp_image = "https://static.bokeh.org/branding/icons/bokeh-icon.png"
+ogp_site_name = False # So we can customise the name with tags
+ogp_custom_meta_tags = [
+    '<meta property="og:site_name" content="Bokeh Accessibility Audit">',
+    '<meta name="twitter:card" content="summary">'
+    '<meta property="twitter:title" content="Bokeh Accessibility Audit">',
+]
+ogp_social_media_cards ={
+  "image": "./images/bokeh-icon.png",
+}
+# generates description from the page content
+ogp_enable_meta_description = True

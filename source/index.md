@@ -1,3 +1,9 @@
+---
+html_meta:
+  "property=og:description": "Findings and recommendations to make Bokeh tools and plots more accessible"
+  "description": "Findings and recommendations to make Bokeh tools and plots more accessible"
+---
+
 # Bokeh Accessibility Audit Summary
 
 ```{toctree}
