@@ -1,3 +1,9 @@
+---
+html_meta:
+  "property=og:description": "Plot tools accessibility audit results"
+  "description": "Plot tools accessibility audit results"
+---
+
 # Plot tools
 
 ```{toctree}

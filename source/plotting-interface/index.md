@@ -1,3 +1,9 @@
+---
+html_meta:
+  "property=og:description": "Plotting interface accessibility audit results"
+  "description": "Plotting interface accessibility audit results"
+---
+
 # Plotting interface
 
 ```{toctree}
