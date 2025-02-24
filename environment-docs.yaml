@@ -8,6 +8,7 @@ dependencies:
   - pydata-sphinx-theme
   - myst-parser
   - pip:
-    - sphinx-autobuild
-    - sphinxcontrib-video
-    - pre-commit
+      - sphinx-autobuild
+      - sphinxcontrib-video
+      - pre-commit
+      - sphinxext-opengraph
