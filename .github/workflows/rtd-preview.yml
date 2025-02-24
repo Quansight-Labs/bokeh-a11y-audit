@@ -16,3 +16,4 @@ jobs:
       - uses: readthedocs/actions/preview@v1
         with:
           project-slug: "bokeh-a11y-audit"
+          single-version: "true"
