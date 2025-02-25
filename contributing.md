@@ -22,6 +22,7 @@ The audit findings are organized and presented with [Sphinx](https://www.sphinx-
   ```
   ````
 
+- Add meaningful alt-text to images.
 - Use the following syntax for embedding videos:
 
   ````md
