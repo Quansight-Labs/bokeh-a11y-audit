@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: bokeh-a11y-audi
+title: bokeh-a11y-audit
 message: >-
   If you use this resource, please cite it using the
   metadata from this file.
@@ -29,11 +29,14 @@ repository-code: >-
   https://github.com/Quansight-Labs/bokeh-a11y-audit/tree/main
 url: "https://bokeh-a11y-audit.readthedocs.io/"
 abstract: >-
-  Findings and progress of the Bokeh accessibility
-  audit as part of the Accessible interactive data
-  visualizations in Python with
-  Bokeh grant funded by the
-  CZI EOSS Cycle 6.
+  Interactive data science tools currently exclude people
+  with disabilities from participating in their capabilities.
+  In this work, we conducted an accessibility audit of Bokeh,
+  an interactive visualization library for Python, to identify
+  evidence of barriers and areas for improvement.
+  This document presents our findings and progress of that audit as part
+  of the grant Accessible interactive data visualizations in Python with Bokeh
+  funded by CZI EOSS Cycle 6.
 keywords:
   - accessibility
   - data visualization
