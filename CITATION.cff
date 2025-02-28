@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+title: bokeh-a11y-audi
+message: >-
+  If you use this resource, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: "Frank"
+    family-names: "Elavsky"
+    orcid: "https://orcid.org/0000-0002-6849-5893"
+    affiliation: "Carnegie Mellon University"
+  - given-names: "Gabriel"
+    family-names: "Fouasnon"
+    affiliation: "Quansight Labs"
+  - given-names: "Mateusz"
+    family-names: "Paprocki"
+    affiliation: "Bokeh, Anaconda"
+  - given-names: "Pavithra"
+    family-names: "Eswaramoorthy"
+    affiliation: "Bokeh, Quansight Labs"
+  - given-names: "Tania"
+    family-names: "Allard"
+    affiliation: "Quansight Labs"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.14923641
+    description: Repository DOI
+repository-code: >-
+  https://github.com/Quansight-Labs/bokeh-a11y-audit/tree/main
+url: "https://bokeh-a11y-audit.readthedocs.io/"
+abstract: >-
+  Findings and progress of the Bokeh accessibility
+  audit as part of the Accessible interactive data
+  visualizations in Python with
+  Bokeh grant funded by the
+  CZI EOSS Cycle 6.
+keywords:
+  - accessibility
+  - data visualization
+  - python
+  - bokeh
+  - digital
+  - assistive technologies
+  - open source
+  - scientific computing
+  - javascript
+license: BSD-3-Clause
