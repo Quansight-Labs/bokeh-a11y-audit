@@ -1,4 +1,4 @@
-# Changes Easy to Follow
+# 1. Changes Easy to Follow
 
 ## Test Type Performed
 

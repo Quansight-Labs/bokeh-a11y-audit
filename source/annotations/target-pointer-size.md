@@ -1,4 +1,4 @@
-# Target Pointer Size
+# 22. Target Pointer Size
 
 ## Test Type Performed
 
