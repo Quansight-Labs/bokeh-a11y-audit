@@ -1,4 +1,4 @@
-# 23. Tedious
+# 22. Tedious
 
 ## Test Type Performed
 

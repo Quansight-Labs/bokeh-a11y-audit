@@ -1,4 +1,4 @@
-# 24. Text Adjustments
+# 23. Text Adjustments
 
 ## Test Type Performed
 

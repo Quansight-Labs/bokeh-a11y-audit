@@ -1,4 +1,4 @@
-# 21. Tab Stops
+# 20. Tab Stops
 
 ## Test Type Performed
 

@@ -1,4 +1,4 @@
-# 19. Spacing
+# 18. Spacing
 
 ## Test Type Performed
 
