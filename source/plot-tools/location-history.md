@@ -1,4 +1,4 @@
-# Location History
+# 12. Location History
 
 ## Test Type Performed
 
