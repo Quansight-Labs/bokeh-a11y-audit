@@ -260,13 +260,13 @@ The simplest example of a "narrow path" of interaction design is something like 
 
 ##### Example
 
-<p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/information-complexity.html" aria-label="Information Complexity evidence in plotting interface" title="Information Complexity evidence in plotting interface">PI-12</a>].</i> Below demonstrates how lack of encoding channels (using different colors) hurts discriminability and adds complexity.</p>
+<p><i>Example taken from plotting interface [<a href="https://bokeh-a11y-audit.readthedocs.io/plotting-interface/human-readable.html" aria-label="Visual only evidence in plotting interface" title="Visual only evidence in plotting interface">PI-11</a>].</i> Below demonstrates how axis labels become less readable at super-high zoom levels.</p>
 
-```{figure} ./plotting-interface/assets/plotting-interface_information-complexity_1.png
+```{figure} ./plotting-interface/assets/plotting-interface_human-readable_1.png
 :width: 100%
-:alt: A scatter plot is shown. In the chart's upper tab, 'All Species' is selected. Three categories are shown, but are hard to differentiate from one another based on their color and patterns.
+:alt: A line chart is shown. A 'Wheel Zoom' tool has been used to continually zoom in on the chart, which changes the axes data accordingly. In the bottom left corner, a blue box is highlighting an axis label that reads 'Year: 1988.2027845' (fails).
 
-A scatter plot is shown. Three categories are shown, but are hard to differentiate from one another based on their color and patterns.
+A line chart is shown. A 'Wheel Zoom' tool has been used to continually zoom in on the chart, which changes the axes data accordingly. In the bottom left corner, a blue box is highlighting an axis label that reads 'Year: 1988.2027845' (fails).
 ```
 
 #### <a id="finding-2C" href="#finding-2C" aria-label="Finding 2C"><span aria-hidden="true">#</span></a> C. Interactive capabilities and system state are not clear
