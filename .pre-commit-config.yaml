@@ -7,7 +7,7 @@ ci:
 repos:
   # Codespell: Spell checks the documentation
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
+    rev: v2.4.3
     hooks:
       - id: codespell
         types_or: [markdown]
@@ -22,7 +22,7 @@ repos:
 
   # Misc hooks: https://github.com/pre-commit/pre-commit-hooks#hooks-available
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       # Autoformat: Makes sure files end in a newline and only a newline
       - id: end-of-file-fixer
