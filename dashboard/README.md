@@ -12,13 +12,13 @@ This dashboard can be accessed at <https://quansight-labs.github.io/bokeh-a11y-a
 
 2. Navigate to the dashboard folder: `cd bokeh-a11y-audit/dashboard`
 
-3. Install `conda` if needed and create a `conda` environment with the required packages: `conda env create -f environment-dashboard.yml.yml`
+3. Install `conda` if needed and create a `conda` environment with the required packages: `conda env create -f environment-dashboard.yaml`
 
 4. Activate the environment: `conda activate bokeh-dashboard`
 
 5. Start JupyterLab: `jupyter lab`
 
-6. Run and the update the code in `dashboard.ipynb`.
+6. Run and update the code in `dashboard.ipynb`.
 
 ## Deploy dashboard with GitHub pages
 
