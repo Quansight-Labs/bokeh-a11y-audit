@@ -1,4 +1,4 @@
-# Contrast Texture Adjustments
+# 5. Contrast Texture Adjustments
 
 ## Test Type Performed
 
