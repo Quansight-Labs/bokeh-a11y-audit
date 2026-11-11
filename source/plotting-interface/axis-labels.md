@@ -1,4 +1,4 @@
-# Axis Labels
+# 1. Axis Labels
 
 ## Test Type Performed
 
